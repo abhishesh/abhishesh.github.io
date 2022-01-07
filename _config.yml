@@ -1,1 +1,13 @@
 theme: jekyll-theme-cayman
+
+minima:
+  date_format: "%b %-d, %Y"
+
+  # generate social links in footer
+  social_links:
+    twitter: abhishesh
+    github: abhishesh
+    instagram: attaboyabhi
+    linkedin: abhishesh
+    googleplus: +abhishesh
+    keybase: abhishesh
