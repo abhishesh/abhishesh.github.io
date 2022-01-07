@@ -1,5 +1,10 @@
 theme: jekyll-theme-cayman
 
+title: Abhishesh
+author:
+  name: Abhishesh Sharma
+  email: abhishesh@gmail.com
+  
 minima:
   date_format: "%b %-d, %Y"
 
