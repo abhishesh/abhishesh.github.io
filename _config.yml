@@ -1,5 +1,5 @@
 title: Abhishesh's Homepage
-description: Bookmark this to keep an eye on my project updates!
+description: Bookmark this to keep watch on new updates
   
 minima:
   date_format: "%b %-d, %Y"
@@ -8,7 +8,6 @@ minima:
   social_links:
     twitter: abhishesh
     github: abhishesh
-    instagram: attaboyabhi
     linkedin: abhishesh
     keybase: abhishesh
 
