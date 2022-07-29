@@ -1,18 +1,15 @@
 title: Abhishesh's Homepage
 description: Bookmark this to keep watch on new updates
-  
+
+theme: minima
+
 minima:
   date_format: "%b %-d, %Y"
-
-  # generate social links in footer
   social_links:
     twitter: abhishesh
     github: abhishesh
     linkedin: abhishesh
     keybase: abhishesh
-
-# Build settings
-theme: minima
 
 plugins:
  - jekyll-feed

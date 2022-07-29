@@ -25,4 +25,3 @@ Hi, I am Abhishesh!
     * Applications
         * Azure IoTEdge
         * MQTT
-
