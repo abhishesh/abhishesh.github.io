@@ -15,13 +15,14 @@ Hi, I am Abhishesh!
 * Exploratory Data Analysis
     * D-Tale, Tableau
 * GPU Related
-    * NVIDIA Merlin, CUDA
+    * NVIDIA Merlin, CUDA, CuDF
 * DeFi
     * Solana
     * Truffle Suite
 * IoT
     * Protocols
         * Zigbee, CAN bus, MODBUS, BACnet
-    * Applications
-        * Azure IoTEdge
-        * MQTT
+    * Applications/Messaging
+        * Azure IoTEdge, MQTT
+* Deep Learning
+    * Keras, Tensorflow, PyTorch, Scikit-learn
