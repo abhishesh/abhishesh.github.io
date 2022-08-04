@@ -10,7 +10,7 @@
 
 > Interests
 
-**Technology:** I like solving complex technical problems and have used the following to solve them over past 2 decades.
+**Technology:** I like solving complex technical problems and have used the following to solve them over the past 2 decades.
 
 |Category| Tools|
 |-|-|
@@ -31,7 +31,7 @@
 |App Security|OWASP|
 |Version Control|CVS, SVN, VSS, Clearcase, Perforce, Git (mostly git these days)|
 
-**Photography:** a picture is worth thousand words. I have been learning photography since 2016 and I am very fond of manual lenses. Thanks to short flange focal distance of mirrorless cameras and in body optical image stablization in Sony Cameras, I can use half a century old lenses on modern digital cameras effectively and create some beautiful images full of character.
+**Photography:** a picture is worth a thousand words. I have been learning photography since 2016 and I am very fond of manual lenses. Thanks to the short flange focal distance of mirrorless cameras and in-body optical image stabilization in Sony Cameras, I can use half-a-century-old lenses on modern digital cameras effectively and create some beautiful images full of character.
 
 |Category| Tools|
 |-|-|
@@ -41,7 +41,7 @@
 |Manual Lenses|Minolta, Helios, Pentacon, Yashica, Industar, Super Takumar, Vivitar, Voigtlander Nokton|
 |Adapters|Sigma MC11, Fotga (M42 to NEX/ MD to NEX, M42 to EF, C to NEX), M42 Extension tubes|
 
-**Audiophile:** as a strong proponent of consuming anything in pure form, music cannot be any diffrent. During the pandemic, I really missed live music performances and hence decided to get similar sound stage and imaging at home. Also while flying or in local transit, I love the quiet offered by noise cancelling headphones.
+**Audiophile:** as a strong proponent of consuming anything in pure form, music cannot be any different. During the pandemic, I really missed live music performances and hence decided to get a similar sound stage and imaging at home. Also while flying or in local transit, I love the quiet offered by noise-cancelling headphones.
 
 |Category| Tools|
 |-|-|
@@ -52,6 +52,6 @@
 
 **Mechanical Watches** have been fascinated by them of late!
 
-**Brewing Coffee** love brewing expresso and have watched numerous James Hoffmann videos during pandemic! Try to tweak my humble Delonghi coffee machine for coarseness of grind and time to brew, whenever I lay hands on a new variant of coffee bean.
+**Brewing Coffee** love brewing expresso and have watched numerous [James Hoffmann](https://www.jameshoffmann.co.uk/) youtube videos during pandemic! Try to tweak my humble Delonghi coffee machine for the coarseness of grind and time to brew, whenever I lay my hands on a new variety of coffee beans.
 
 [![pages-build-deployment](https://github.com/abhishesh/abhishesh.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/abhishesh/abhishesh.github.io/actions/workflows/pages/pages-build-deployment)
