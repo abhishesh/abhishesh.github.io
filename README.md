@@ -61,6 +61,10 @@ Some resources to test your high end system:
   * Keith don't go - Nils Lofgren
   * Hotel California - Eagles
 
+My Youtube Playlists
+
+* [MyFaves](https://youtube.com/playlist?list=PLj55yZwiFXSTzrE8k7Lse6HNOzAnYGBXq)
+
 **Mechanical Watches** have been fascinated by them of late!
 
 
