@@ -41,6 +41,11 @@
 |Manual Lenses|Minolta, Helios, Pentacon, Yashica, Industar, Super Takumar, Vivitar, Voigtlander Nokton|
 |Adapters|Sigma MC11, Fotga (M42 to NEX/ MD to NEX, M42 to EF, C to NEX), M42 Extension tubes|
 
+Some samples online!
+
+* [Flickr](https://flickr.com/photos/abhishesh-sharma/)
+* [500px](https://500px.com/p/AbhisheshSharma)
+
 **Audiophile:** as a strong proponent of consuming anything in pure form, music cannot be any different. During the pandemic, I really missed live music performances and hence decided to get a similar sound stage and imaging at home. Also while flying or in local transit, I love the quiet offered by noise-cancelling headphones.
 
 |Category| Tools|
@@ -50,7 +55,14 @@
 |Over ear|Audio Technica ATH-M50X, Sony WH-1000XM3|
 |In ear|Sony WF-1000XM4|
 
+Some resources to test your high end system:
+
+* [audiophile.io](https://audiophilemusic.io/portfolio/top-10-samplers-for-test-high-end-system/)
+  * Keith don't go - Nils Lofgren
+  * Hotel California - Eagles
+
 **Mechanical Watches** have been fascinated by them of late!
+
 
 **Brewing Coffee** love brewing expresso and have watched numerous [James Hoffmann](https://www.jameshoffmann.co.uk/) youtube videos during pandemic! Try to tweak my humble Delonghi coffee machine for the coarseness of grind and time to brew, whenever I lay my hands on a new variety of coffee beans.
 
