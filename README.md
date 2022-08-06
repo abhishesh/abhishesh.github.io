@@ -33,11 +33,12 @@
 
 **Photography:** a picture is worth a thousand words. I have been learning photography since 2016 and I am very fond of manual lenses. Thanks to the short flange focal distance of mirrorless cameras and in-body optical image stabilization in Sony Cameras, I can use half-a-century-old lenses on modern digital cameras effectively and create some beautiful images full of character.
 
+
 |Category| Tools|
 |-|-|
 |Camera| Sony A7III, Canon 70D, Canon 5D Mark I|
-|Canon Lenses||
-|Sony Lenses||
+|Canon Lenses|Tamron 24-70 G2, Canon Tokina 100mm f2.8, Canon 40mm f2.8, 50mm f1.8 II, Canon 18-55mm f3.5-5.6|
+|Sony Lenses|Sony 100-400 GM, Sony 70-200 f4 G, 85mm f1.8, 28mm f2, 20mm f2.8 APS-C, Zeiss 16-70 f4 APS-C |
 |Manual Lenses|Minolta, Helios, Pentacon, Yashica, Industar, Super Takumar, Vivitar, Voigtlander Nokton|
 |Adapters|Sigma MC11, Fotga (M42 to NEX/ MD to NEX, M42 to EF, C to NEX), M42 Extension tubes|
 
