@@ -75,4 +75,8 @@ My Youtube Playlists
 
 **Brewing Coffee** love brewing expresso and have watched numerous [James Hoffmann](https://www.jameshoffmann.co.uk/) youtube videos during pandemic! Try to tweak my humble Delonghi coffee machine for the coarseness of grind and time to brew, whenever I lay my hands on a new variety of coffee beans.
 
-[![pages-build-deployment](https://github.com/abhishesh/abhishesh.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/abhishesh/abhishesh.github.io/actions/workflows/pages/pages-build-deployment)
+**Mechanical Keyboard** a mechanical keyboard is a must have productivity tool
+
+I use the following
+* Keychron K2
+* Akko ACR Pro 75 - Gasket Mount !
