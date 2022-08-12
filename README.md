@@ -1,15 +1,16 @@
 > About me!
 
-* Convergent thinker by day and divergent by night!
-* Less but better
-* Keep it short and sweet
+* convergent thinker by day and divergent by night!
+* less but better
+* keep it short and sweet
 * vim over emacs
 * **nix** over windows
 * DIY enthusiast
-* Dog person
+* 🐶 person
 * expresso && chai
 * no half measures 
-* Sony fanboy (guilty!)
+* skeuomorphism to neumorphism
+* SONY fanboy (guilty!)
 
 > Interests
 
@@ -34,7 +35,7 @@
 |App Security|OWASP|
 |Version Control|CVS, SVN, VSS, Clearcase, Perforce, Git (mostly git these days)|
 
-**Photography:** a picture is worth a thousand words. I have been learning photography since 2016 and I am very fond of manual lenses. Thanks to the short flange focal distance of mirrorless cameras and in-body optical image stabilization in Sony Cameras, I can use half-a-century-old lenses on modern digital cameras effectively and create some beautiful images full of character and microcontrast.
+**Photography:** a picture is worth a thousand words. I have been learning photography since 2016 and I am very fond of manual lenses. Thanks to the short flange focal distance of mirrorless cameras and in-body optical image stabilization in Sony() Cameras, I can use half-a-century-old lenses on modern digital cameras effectively and create some beautiful images full of character and microcontrast.
 
 |Category| Tools|
 |--------|------|
