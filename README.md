@@ -14,8 +14,6 @@
 
 **Technology:** I like solving complex technical problems and have used the following to solve them over the past 2 decades.
 
-<details>
-  <summary>details!</summary>
 
 |Category| Tools|
 |-|-|
@@ -35,14 +33,11 @@
 |Network Packet Analysis|Wireshark, tcpdump, iptraf|
 |App Security|OWASP|
 |Version Control|CVS, SVN, VSS, Clearcase, Perforce, Git (mostly git these days)|
-</details>
+{% endcapture %}
 <br>
 
 **Photography:** a picture is worth a thousand words. I have been learning photography since 2016 and I am very fond of manual lenses. Thanks to the short flange focal distance of mirrorless cameras and in-body optical image stabilization in Sony Cameras, I can use half-a-century-old lenses on modern digital cameras effectively and create some beautiful images full of character.
 
-
-<details>
-  <summary>details!</summary>
 
 |Category| Tools|
 |--------|------|
@@ -60,13 +55,10 @@ Some samples online!
 Editing !
 
 * [Adobe Lightroom Classic](https://lightroom.adobe.com/)
-</details>
 <br>
 
 **Audiophile:** as a strong proponent of consuming anything in pure form, music cannot be any different. During the pandemic, I really missed live music performances and hence decided to get a similar sound stage and imaging at home. Also while flying or in local transit, I love the quiet offered by noise-cancelling headphones.
 
-<details>
-  <summary>details!</summary>
 
 |Category| Tools|
 |-|-|
@@ -84,7 +76,6 @@ Some resources to test your high end system:
 My Youtube Playlists
 
 * [MyFaves](https://youtube.com/playlist?list=PLj55yZwiFXSTzrE8k7Lse6HNOzAnYGBXq)
-</details>
 <br>
 
 **Mechanical Watches** have been fascinated by them of late!
@@ -95,13 +86,9 @@ My Youtube Playlists
 
 **Mechanical Keyboard** a mechanical keyboard is a must have productivity tool
 
-<details>
-  <summary>details!</summary>
-  
 I use the following
 * Keychron K2
 * Akko ACR Pro 75 - Gasket Mount !
-</details>
 
 
 ## 🔗 Links
