@@ -1,6 +1,7 @@
 > About me!
 
 * convergent thinker by day and divergent by night!
+* in prepetual search for perfection
 * less but better
 * keep it short and sweet
 * vim over emacs
@@ -11,6 +12,7 @@
 * no half measures 
 * skeuomorphism to neumorphism
 * SONY fanboy (guilty!)
+* 🇮🇳🇸🇬🇫🇷🇺🇸🇮🇹🇲🇾🇬🇧🇵🇹🇰🇭🇮🇩🇻🇦🇦🇪󠁳󠁣󠁴󠁿🏴󠁧󠁢󠁳󠁣󠁴󠁿🇭🇰
 
 > Interests
 
