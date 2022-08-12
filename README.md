@@ -86,6 +86,12 @@ I use the following
 * Keychron K2
 * Akko ACR Pro 75 - Gasket Mount!
 
+**Perfumes**
+
+Perhaps another pandemic-driven proclivity is love for perfumes. I tried and purchased many new fragrances that I never forayed into earlier.
+
+[Perfumes](https://www.fragrantica.com/member/1459421)
+
 
 ## 🔗 Links
 
