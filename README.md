@@ -16,6 +16,7 @@
 
 <details>
   <summary>details!</summary>
+
 |Category| Tools|
 |-|-|
 |Cloud Computing|AWS, Azure, GCP, Digital Ocean, Linode|
@@ -66,6 +67,7 @@ Editing !
 
 <details>
   <summary>details!</summary>
+
 |Category| Tools|
 |-|-|
 |Active Speaker| KEF LSX|
@@ -95,6 +97,7 @@ My Youtube Playlists
 
 <details>
   <summary>details!</summary>
+  
 I use the following
 * Keychron K2
 * Akko ACR Pro 75 - Gasket Mount !
