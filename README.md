@@ -84,13 +84,20 @@ My Youtube Playlists
 
 I use the following
 * Keychron K2
+  * brown switch
+  * bluetooth 
 * Akko ACR Pro 75 - Gasket Mount!
 
 **Perfumes**
 
-Perhaps another pandemic-driven proclivity is love for perfumes. I tried and purchased many new fragrances that I never forayed into earlier.
+Perhaps another pandemic-driven proclivity is love for perfumes. I tried and purchased many new fragrances that I never forayed into earlier. Aficionado of [Alberto Morillas](https://www.firmenich.com/fragrance/fine-fragrance/people/alberto-morillas). 40% of my blind buy perfumes in the past has been his perfumes.
 
-[Perfumes](https://www.fragrantica.com/member/1459421)
+[Perfumes I like](https://www.fragrantica.com/member/1459421)
+
+
+**Desk Setup**
+
+TBD 
 
 
 ## 🔗 Links
