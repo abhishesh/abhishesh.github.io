@@ -9,7 +9,7 @@
 * DIY enthusiast
 * 🐶 person
 * expresso && chai
-* no half measures 
+* no half measures
 * skeuomorphism to neumorphism
 * SONY fanboy (guilty!)
 * 🇮🇳🇸🇬🇫🇷🇺🇸🇮🇹🇲🇾🇬🇧🇵🇹🇰🇭🇮🇩🇻🇦🇦🇪󠁳󠁣󠁴󠁿🏴󠁧󠁢󠁳󠁣󠁴󠁿🇭🇰🇹🇭
@@ -37,7 +37,7 @@
 |App Security|OWASP|
 |Version Control|CVS, SVN, VSS, Clearcase, Perforce, Git (mostly git these days)|
 
-**Photography:** a picture is worth a thousand words. I have been learning photography since 2016 and I am very fond of manual lenses. Thanks to the short flange focal distance of mirrorless cameras and in-body optical image stabilization in Sony() Cameras, I can use half-a-century-old lenses on modern digital cameras effectively and create some beautiful images full of character and microcontrast.
+**Photography:** a picture is worth a thousand words. I have been learning photography since 2016 and I am very fond of manual lenses. Thanks to the short flange focal distance of mirrorless cameras and in-body optical image stabilization in Sony Cameras, I can use half-a-century-old lenses on modern digital cameras effectively and create some beautiful images full of character and microcontrast.
 
 |Category| Tools|
 |--------|------|
@@ -56,16 +56,14 @@ Editing Tools!
 
 * [Adobe Lightroom Classic](https://lightroom.adobe.com/)
 
+**Audiophile:** As a strong proponent of consuming anything in pure form, music cannot be any different. I try to get a similar sound stage and imaging at the home of what an artist intends in a recording studio. Also, while flying or in local transit, I love the quiet offered by the noise-canceling headphones.
 
-**Audiophile:** as a strong proponent of consuming anything in pure form, music cannot be any different. During the pandemic, I really missed live music performances and hence decided to get a similar sound stage and imaging at home. Also while flying or in local transit, I love the quiet offered by noise-cancelling headphones.
-
-
-|Category| Tools|
-|-|-|
-|Active Speaker| KEF LSX|
+|Category|Tools|
+|--------|-----|
+|Active Speaker|KEF LSX|
 |Passive Speakers| Bluesound Powernode 2i driving ELAC Debut Reference Speakers|
-|Over ear|Audio Technica ATH-M50X, Sony WH-1000XM3|
-|In ear|Sony WF-1000XM4|
+|Over-ear hedphones|Audio Technica ATH-M50X, Sony WH-1000XM3|
+|In-ear headphones|Sony WF-1000XM4|
 
 Some resources to test your high end system:
 
@@ -77,31 +75,24 @@ My Youtube Playlists
 
 * [MyFaves](https://youtube.com/playlist?list=PLj55yZwiFXSTzrE8k7Lse6HNOzAnYGBXq)
 
-
 **Mechanical Watches** have been fascinated by them of late!
-
 
 **Brewing Coffee** love brewing expresso and have watched numerous [James Hoffmann](https://www.jameshoffmann.co.uk/) youtube videos during pandemic! Try to tweak my humble Delonghi coffee machine for the coarseness of grind and time to brew, whenever I lay my hands on a new variety of coffee beans.
 
 **Mechanical Keyboard** a mechanical keyboard is a must have productivity tool for someone who has to type for hours.
 
 I use the following
+
 * Keychron K2
   * brown switch
-  * bluetooth 
+  * bluetooth
 * Akko ACR Pro 75 - Gasket Mount!
 
-**Perfumes**
+**Perfumes** Perhaps another pandemic-driven proclivity is love for perfumes. I tried and purchased many new fragrances that I never forayed into earlier. Aficionado of [Alberto Morillas](https://www.firmenich.com/fragrance/fine-fragrance/people/alberto-morillas). 40% of my blind buy perfumes in the past has been his perfumes.
 
-Perhaps another pandemic-driven proclivity is love for perfumes. I tried and purchased many new fragrances that I never forayed into earlier. Aficionado of [Alberto Morillas](https://www.firmenich.com/fragrance/fine-fragrance/people/alberto-morillas). 40% of my blind buy perfumes in the past has been his perfumes.
+[My profile on Fragrantica](https://www.fragrantica.com/member/1459421)
 
-[Perfumes I like](https://www.fragrantica.com/member/1459421)
-
-
-**Desk Setup**
-
-TBD 
-
+**Desk Setup** TBD
 
 ## 🔗 Links
 
