@@ -12,6 +12,7 @@
 * no half measures
 * skeuomorphism to neumorphism
 * SONY fanboy (guilty!)
+* Ghibli Studio Fan [Ghibli Movies](https://www.imdb.com/list/ls561133549/)
 * 🇮🇳🇸🇬🇫🇷🇺🇸🇮🇹🇲🇾🇬🇧🇵🇹🇰🇭🇮🇩🇻🇦🇦🇪󠁳󠁣󠁴󠁿🏴󠁧󠁢󠁳󠁣󠁴󠁿🇭🇰🇹🇭
 
 > Interests
