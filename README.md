@@ -13,7 +13,7 @@
 * skeuomorphism to neumorphism
 * SONY fanboy (guilty!)
 * Ghibli Studio Fan [Ghibli Movies](https://www.imdb.com/list/ls561133549/)
-* 🇮🇳🇸🇬🇫🇷🇺🇸🇮🇹🇲🇾🇬🇧🇵🇹🇰🇭🇮🇩🇻🇦🇦🇪󠁳󠁣󠁴󠁿🏴󠁧󠁢󠁳󠁣󠁴󠁿🇭🇰🇹🇭
+* 🇮🇳🇸🇬🇫🇷🇺🇸🇮🇹🇲🇾🇬🇧🇵🇹🇰🇭🇮🇩🇻🇦🇦🇪󠁳󠁣󠁴󠁿🏴󠁧󠁢󠁳󠁣󠁴󠁿🇭🇰🇹🇭🇰🇷
 
 > Interests
 
@@ -52,10 +52,14 @@ Some samples online!
 
 * [Flickr](https://flickr.com/photos/abhishesh-sharma/)
 * [500px](https://500px.com/p/AbhisheshSharma)
+* [VSCO](https://vsco.co/attaboyabhi/gallery)
 
 Editing Tools!
 
 * [Adobe Lightroom Classic](https://lightroom.adobe.com/)
+* LR Mobile
+* Snapseed
+
 
 **Audiophile:** As a strong proponent of consuming anything in pure form, music cannot be any different. I try to get a similar sound stage and imaging at the home of what an artist intends in a recording studio. Also, while flying or in local transit, I love the quiet offered by the noise-canceling headphones.
 
@@ -63,7 +67,7 @@ Editing Tools!
 |--------|-----|
 |Active Speaker|KEF LSX|
 |Passive Speakers| Bluesound Powernode 2i driving ELAC Debut Reference Speakers|
-|Over-ear hedphones|Audio Technica ATH-M50X, Sony WH-1000XM3|
+|Over-ear hedphones|Audio Technica ATH-M50X, Sony WH-1000XM3, Sennheiser MOMENTUM 4|
 |In-ear headphones|Sony WF-1000XM4|
 
 Some resources to test your high end system:
