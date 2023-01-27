@@ -8,6 +8,7 @@
 * **nix** over windows
 * DIY enthusiast
 * 🐶 person
+* Flâner - wander aimlessly through city
 * expresso && chai
 * no half measures
 * skeuomorphism to neumorphism
@@ -63,13 +64,14 @@ Editing Tools!
 
 **Audiophile:** As a strong proponent of consuming anything in pure form, music cannot be any different. I try to get a similar sound stage and imaging at the home of what an artist intends in a recording studio. Also, while flying or in local transit, I love the quiet offered by the noise-canceling headphones.
 
-|Category|Tools|
-|--------|-----|
+|Category|Equipment|
+|--------|---------|
 |Active Speaker|KEF LSX|
-|Passive Speakers| Bluesound Powernode 2i driving ELAC Debut Reference Speakers|
-|Over-ear hedphones|Audio Technica ATH-M50X, Sony WH-1000XM3, Sennheiser MOMENTUM 4|
 |In-ear headphones|Sony WF-1000XM4|
-|USB C DAC | Cayin RU6 with R-2R resistor ladder circuit| 
+|Over-ear hedphones (closed back)|Audio Technica ATH-M50X, Sony WH-1000XM3, Sennheiser MOMENTUM 4|
+|USB C DAC | Cayin RU6 with R-2R resistor ladder circuit|
+|Passive Speakers| Bluesound Powernode 2i driving ELAC Debut Reference Speakers|
+|Over ear (Open back) headphones| Meze 109 Pro|
 
 Some resources to test your high end system:
 
