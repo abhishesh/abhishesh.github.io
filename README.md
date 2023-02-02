@@ -72,6 +72,9 @@ Editing Tools!
 |USB C DAC | Cayin RU6 with R-2R resistor ladder circuit|
 |Passive Speakers| Bluesound Powernode 2i driving ELAC Debut Reference Speakers|
 |Over ear (Open back) headphones| Meze 109 Pro|
+|Microphones| Saramonic VMIC, Shure MV7 |
+
+Huge Fan of [Darko Audio](https://darko.audio/)
 
 Some resources to test your high end system:
 
@@ -82,6 +85,8 @@ Some resources to test your high end system:
 My Youtube Playlists
 
 * [MyFaves](https://youtube.com/playlist?list=PLj55yZwiFXSTzrE8k7Lse6HNOzAnYGBXq)
+
+
 
 **Mechanical Watches** have been fascinated by them of late!
 
@@ -100,10 +105,18 @@ I use the following
 
 [My profile on Fragrantica](https://www.fragrantica.com/member/1459421)
 
-**Desk Setup** TBD
+**Desk Setup**
+
+* Omnidesk Pro WildWood - Phesantwood
+* Dell U2720Q on Prism+ Arc Opus
+* Alienware Aurora R12 running Linux :)
+* Benq Screenbar
+
+[Latest Pic](https://vsco.co/attaboyabhi/media/63cad1ff40e07c79c2000001)
+
+
 
 ## 🔗 Links
 
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://abhishesh.com/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abhishesh)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/abhishesh)
