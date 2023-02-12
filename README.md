@@ -67,7 +67,7 @@ Editing Tools!
 |Category|Equipment|
 |--------|---------|
 |Active Speaker|KEF LSX|
-|In-ear headphones|Sony WF-1000XM4|
+|In-ear headphones|Sony WF-1000XM4, Sennheiser IE300|
 |Over-ear hedphones (closed back)|Audio Technica ATH-M50X, Sony WH-1000XM3, Sennheiser MOMENTUM 4|
 |USB C DAC | Cayin RU6 with R-2R resistor ladder circuit|
 |Passive Speakers| Bluesound Powernode 2i driving ELAC Debut Reference Speakers|
