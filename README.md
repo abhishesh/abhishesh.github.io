@@ -7,7 +7,7 @@
 * vim over emacs
 * **nix** over windows
 * DIY enthusiast
-* 🐶 person
+* 🐶 person [Penny's Hooman](https://vsco.co/attaboyabhi/media/6455962a32f88f1693000001) 
 * Flâner - wander aimlessly through city
 * expresso && chai
 * no half measures
@@ -26,17 +26,19 @@
 |Programming|C/C++, Python, nodejs, Golang, Scala, Rust, R, Perl, Java, GW-BASIC, FORTRAN|
 |Web Frameworks|Django, Hug, Bottle, Flask|
 |Microservices|Service Mesh (Istio)|
-|Big Data|Airflow, Dataflow, Apache Spark, Apache Beam, Apache Flink, Apache Kafka, Databricks, Ray, Dask|
+|Prompt Engineering|Large Language Models - langchain|
+|Big Data|Airflow, Dataflow, Apache (Spark, Beam, Flink, Kafka), Databricks, Ray, Dask|
 |Static Analysis of Code|Understand for C & C++, Apache Solr (based on Apache Lucene)|
 |Dynamic Analysis of Code|Valgrind|
 |Exploratory Data Analysis|D-Tale, Tableau|
-|GPU processing|NVIDIA Merlin, CUDA, CuDF|
+|GPU processing|Merlin, CUDA, CuDF, Triton (NVIDIA)|
 |DeFi|Solana, Truffle Suite|
 |IoT Protocols|Zigbee, CAN bus, MODBUS, BACnet|
 |IoT Applications/Messaging|Azure IoTEdge, MQTT|
 |Deep Learning|Keras, Tensorflow, PyTorch, Scikit-learn|
 |Network Packet Analysis|Wireshark, tcpdump, iptraf|
 |App Security|OWASP|
+|Diagrams|draw.io, plantuml, mermaid |
 |Version Control|CVS, SVN, VSS, Clearcase, Perforce, Git (mostly git these days)|
 
 **Photography:** a picture is worth a thousand words. I have been learning photography since 2016 and I am very fond of manual lenses. Thanks to the short flange focal distance of mirrorless cameras and in-body optical image stabilization in Sony Cameras, I can use half-a-century-old lenses on modern digital cameras effectively and create some beautiful images full of character and microcontrast.
@@ -87,8 +89,9 @@ My Youtube Playlists
 * [MyFaves](https://youtube.com/playlist?list=PLj55yZwiFXSTzrE8k7Lse6HNOzAnYGBXq)
 
 
-
 **Mechanical Watches** have been fascinated by them of late!
+
+
 
 **Brewing Coffee** love brewing expresso and have watched numerous [James Hoffmann](https://www.jameshoffmann.co.uk/) youtube videos during pandemic! Try to tweak my humble Delonghi coffee machine for the coarseness of grind and time to brew, whenever I lay my hands on a new variety of coffee beans.
 
@@ -112,7 +115,7 @@ I use the following
 * Alienware Aurora R12 running Linux :)
 * Benq Screenbar
 
-[Latest Pic](https://vsco.co/attaboyabhi/media/63cad1ff40e07c79c2000001)
+[Latest Pic](https://vsco.co/attaboyabhi/media/646442ae32f88f14ad000001)
 
 
 
