@@ -1,7 +1,7 @@
 > About me!
 
-* convergent thinker by day and divergent by night!
 * in prepetual search for perfection
+* convergent thinker by day and divergent by night!
 * less but better
 * keep it short and sweet
 * vim over emacs
@@ -61,7 +61,7 @@ Editing Tools!
 
 * [Adobe Lightroom Classic](https://lightroom.adobe.com/)
 * LR Mobile
-* Snapseed
+* VSCO
 
 
 **Audiophile:** As a strong proponent of consuming anything in pure form, music cannot be any different. I try to get a similar sound stage and imaging at the home of what an artist intends in a recording studio. Also, while flying or in local transit, I love the quiet offered by the noise-canceling headphones.
@@ -69,36 +69,31 @@ Editing Tools!
 |Category|Equipment|
 |--------|---------|
 |Active Speaker|KEF LSX|
-|In-ear headphones|Sony WF-1000XM4, Sennheiser IE300|
-|Over-ear hedphones (closed back)|Audio Technica ATH-M50X, Sony WH-1000XM3, Sennheiser MOMENTUM 4|
-|USB C DAC | Cayin RU6 with R-2R resistor ladder circuit|
-|Passive Speakers| Bluesound Powernode 2i driving ELAC Debut Reference Speakers|
+|In-ear headphones|Sony WF-1000XM4 , Sennheiser IE300 (wired)|
+|Over-ear headphones (Closed back)|Audio Technica ATH-M50X (wired), Sony WH-1000XM3, Sennheiser MOMENTUM 4|
 |Over ear (Open back) headphones| Meze 109 Pro|
+|USB C DAC | Cayin RU6 with R-2R resistor ladder circuit|
+|Portable Audio Player| Sony NW-A306|
+|Passive Speakers| ELAC Debut Reference Speakers driven by Bluesound Powernode 2i|
 |Microphones| Saramonic VMIC, Shure MV7 |
 
-Huge Fan of [Darko Audio](https://darko.audio/)
-
-Some resources to test your high end system:
-
-* [audiophile.io](https://audiophilemusic.io/portfolio/top-10-samplers-for-test-high-end-system/)
-  * Keith don't go - Nils Lofgren
-  * Hotel California - Eagles
-
-My Youtube Playlists
-
-* [MyFaves](https://youtube.com/playlist?list=PLj55yZwiFXSTzrE8k7Lse6HNOzAnYGBXq)
+* Huge Fan of [Darko Audio](https://darko.audio/)
+* Favourite Streaming Service: [Tidal](tidal)
+  * Public playlist created by me
+    * [Tamang Bro](https://tidal.com/browse/playlist/8a868f8b-63cf-4dea-9658-ffe4d10a1b9d)
+* Some resources to test your high end system:
+  * [audiophile.io](https://audiophilemusic.io/portfolio/top-10-samplers-for-test-high-end-system/)
+    * Keith don't go - Nils Lofgren
+    * Hotel California - Eagles
 
 
 **Mechanical Watches** have been fascinated by them of late!
-
-
 
 **Brewing Coffee** love brewing expresso and have watched numerous [James Hoffmann](https://www.jameshoffmann.co.uk/) youtube videos during pandemic! Try to tweak my humble Delonghi coffee machine for the coarseness of grind and time to brew, whenever I lay my hands on a new variety of coffee beans.
 
 **Mechanical Keyboard** a mechanical keyboard is a must have productivity tool for someone who has to type for hours.
 
 I use the following
-
 * Keychron K2
   * brown switch
   * bluetooth
@@ -118,8 +113,8 @@ I use the following
 [Latest Pic](https://vsco.co/attaboyabhi/media/646442ae32f88f14ad000001)
 
 
-
 ## 🔗 Links
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abhishesh)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/abhishesh)
+
