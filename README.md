@@ -116,22 +116,22 @@ I use the following
 
 I have travelled to following countries apart from my home country `India`
 * Singapore (work here)
-* Indonesia
 * Malaysia
+* Indonesia
 * Cambodia
 * Thailand
-* Korea
-* Japan
 * Macao
 * Hong Kong
-* France
-* Italy
-* Monaco
-* Portugal
-* Vatican City
-* United Kingdom
-* Scotland
+* Korea
+* Japan
 * United Arab Emirates
+* Italy
+* Vatican City 
+* Monaco
+* France
+* United Kingdom 
+* Scotland
+* Portugal
 * United States of America
 
 ## 🔗 Links
