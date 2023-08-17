@@ -2,19 +2,19 @@
 
 * in prepetual search for perfection
 * convergent thinker by day and divergent by night!
+* skeuomorphism to neumorphism
+* flâner - wander aimlessly through city
+* no half measures
 * less but better
 * keep it short and sweet
 * vim over emacs
 * **nix** over windows
 * DIY enthusiast
-* 🐶 person [Penny's Hooman](https://vsco.co/attaboyabhi/media/6455962a32f88f1693000001) 
-* Flâner - wander aimlessly through city
 * expresso && chai
-* no half measures
-* skeuomorphism to neumorphism
-* SONY fanboy (guilty!)
+* SONY fanboy (guilty! rather anything made in Japan or designed in Japan)
 * Ghibli Studio Fan [Ghibli Movies](https://www.imdb.com/list/ls561133549/)
-* 🇮🇳🇸🇬🇫🇷🇺🇸🇮🇹🇲🇾🇬🇧🇵🇹🇰🇭🇮🇩🇻🇦🇦🇪󠁳󠁣󠁴󠁿🏴󠁧󠁢󠁳󠁣󠁴󠁿🇭🇰🇹🇭🇰🇷🇯🇵
+* 🐶 person [Penny's Hooman](https://vsco.co/attaboyabhi/media/6455962a32f88f1693000001) 
+
 
 > Interests
 
@@ -69,8 +69,8 @@ Editing Tools!
 |Category|Equipment|
 |--------|---------|
 |Active Speaker|KEF LSX|
-|In-ear headphones|Sony WF-1000XM4 , Sennheiser IE300 (wired)|
-|Over-ear headphones (Closed back)|Audio Technica ATH-M50X (wired), Sony WH-1000XM3, Sennheiser MOMENTUM 4|
+|In-ear headphones|Sony WF-1000XM4 & WF-1000XM5, Sennheiser IE300 (wired)|
+|Over-ear headphones (Closed back)|Audio Technica ATH-M50X (wired), Sony WH-1000XM3 (sold), Sennheiser MOMENTUM 4|
 |Over ear (Open back) headphones| Meze 109 Pro|
 |USB C DAC | Cayin RU6 with R-2R resistor ladder circuit|
 |Portable Audio Player| Sony NW-A306|
@@ -112,6 +112,27 @@ I use the following
 
 [Latest Pic](https://vsco.co/attaboyabhi/media/646442ae32f88f14ad000001)
 
+**Travel**
+
+I have travelled to following countries apart from my home country `India`
+* Singapore (work here)
+* Indonesia
+* Malaysia
+* Cambodia
+* Thailand
+* Korea
+* Japan
+* Macao
+* Hong Kong
+* France
+* Italy
+* Monaco
+* Portugal
+* Vatican City
+* United Kingdom
+* Scotland
+* United Arab Emirates
+* United States of America
 
 ## 🔗 Links
 
