@@ -47,7 +47,7 @@
 |--------|------|
 |Camera| Sony A7III, Canon 70D, Canon 5D Mark I|
 |Canon Lenses|Tamron 24-70 G2, Canon Tokina 100mm f2.8, Canon 40mm f2.8, 50mm f1.8 II, Canon 18-55mm f3.5-5.6|
-|Sony Lenses|Sony 100-400 GM, Sony 70-200 f4 G, 85mm f1.8, 28mm f2, 20mm f2.8 APS-C, Zeiss 16-70 f4 APS-C |
+|Sony Lenses| 100-400 GM, 70-200 f2.8 GM, 85mm f1.8, 28mm f2, Tamron 28-75 f2.8|
 |Manual Lenses|Voigtlander 12mm f5.6, Voigtlander Nokton 40mm f1.2, Voigtlander Nokton 58mm f1.4 (Nikon Mount), Samyang 85mm f1.4, Pentacon 50mm f1.8, Helios 44-2 Zebra  58mm f2, Minolta 35 70 f3.5 (MDIII 1981-84), Minolta MC ROKKOR PG 50mm f1.4 (MC-X 1973), Vivitar 100 500 , SuperTakumar 135mm f3.5, Minolta 50mm f2 (first manual I bought), Minolta 45mm f2, Pentacon 50mm f1.8 II, 200mm f3.5 (MCII 1970), Industar 50mm f3.5, Fujian 35mm f1.7, Helios 44-4 58mm f2, Yashica 50mm f2|
 |Adapters|Sigma MC11, Fotga (M42 to NEX/ MD to NEX, M42 to EF, C to NEX), M42 Extension tubes|
 
@@ -70,7 +70,7 @@ Editing Tools!
 |--------|---------|
 |Active Speaker|KEF LSX|
 |In-ear headphones|Sony WF-1000XM4 & WF-1000XM5, Sennheiser IE300 (wired)|
-|Over-ear headphones (Closed back)|Audio Technica ATH-M50X (wired), Sony WH-1000XM3 (sold), Sennheiser MOMENTUM 4|
+|Over-ear headphones (Closed back)|Audio Technica ATH-M50X (wired), Sennheiser MOMENTUM 4|
 |Over ear (Open back) headphones| Meze 109 Pro|
 |USB C DAC | Cayin RU6 with R-2R resistor ladder circuit|
 |Portable Audio Player| Sony NW-A306|
@@ -133,6 +133,7 @@ I have travelled to following countries apart from my home country `India`
 * Scotland
 * Portugal
 * United States of America
+
 
 ## 🔗 Links
 
