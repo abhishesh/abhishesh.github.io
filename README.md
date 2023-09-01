@@ -119,6 +119,7 @@ I have travelled to following countries apart from my home country `India`
 * Malaysia
 * Indonesia
 * Cambodia
+* Vietnam
 * Thailand
 * Macao
 * Hong Kong
