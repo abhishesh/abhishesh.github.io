@@ -87,9 +87,13 @@ Editing Tools!
     * Hotel California - Eagles
 
 
-**Mechanical Watches** have been fascinated by them of late!
+**Mechanical Watches** Mechanical watches symbolize a blend of intricate craftsmanship, timeless design, and a nod to tradition. Their appeal lies not just in their functionality but also in the artistry and engineering behind their construction. These watches don't just tell time; they tell a story of heritage, skill, and precision, appreciated by those who value the beauty of mechanical complexity over digital simplicity.
+
+* I have a Tudor Black Bay that I really love and goes well with casuals and formals alike
+* Next on my to buy list is Rolex Explorer (black dial). I like the simplicity and elegance it carries.
 
 **Brewing Coffee** love brewing expresso and have watched numerous [James Hoffmann](https://www.jameshoffmann.co.uk/) youtube videos during pandemic! Try to tweak my humble Delonghi coffee machine for the coarseness of grind and time to brew, whenever I lay my hands on a new variety of coffee beans.
+
 
 **Mechanical Keyboard** a mechanical keyboard is a must have productivity tool for someone who has to type for hours.
 
@@ -97,7 +101,10 @@ I use the following
 * Keychron K2
   * brown switch
   * bluetooth
-* Akko ACR Pro 75 - Gasket Mount!
+* Akko ACR Pro 75
+  * Gasket Mount
+  * Smooth like butter!
+
 
 **Perfumes** Perhaps another pandemic-driven proclivity is love for perfumes. I tried and purchased many new fragrances that I never forayed into earlier. Aficionado of [Alberto Morillas](https://www.firmenich.com/fragrance/fine-fragrance/people/alberto-morillas). 40% of my blind buy perfumes in the past has been his perfumes.
 
@@ -109,6 +116,8 @@ I use the following
 * Dell U2720Q on Prism+ Arc Opus
 * Alienware Aurora R12 running Linux :)
 * Benq Screenbar
+* Ipad Pro 1st Gen
+* Macbook Pro 2019 16"
 
 [Latest Pic](https://vsco.co/attaboyabhi/media/646442ae32f88f14ad000001)
 
@@ -135,6 +144,10 @@ I have travelled to following countries apart from my home country `India`
 * Portugal
 * United States of America
 
+I would be travelling to following countries at end of 2023
+* Switzerland
+* Finland
+* Estonia
 
 ## 🔗 Links
 
