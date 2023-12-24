@@ -143,11 +143,13 @@ I have travelled to following countries apart from my home country `India`
 * Scotland
 * Portugal
 * United States of America
-
-I would be travelling to following countries at end of 2023
 * Switzerland
+
+I am travelling to following countries 2023-24
+* Liechtenstein
 * Finland
 * Estonia
+
 
 ## 🔗 Links
 
