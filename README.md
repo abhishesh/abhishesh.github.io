@@ -145,6 +145,7 @@ I have travelled to following countries apart from my home country `India`
 * Switzerland
 * Finland
 * Sweden
+* Estonia
 
 ## 🔗 Links
 
