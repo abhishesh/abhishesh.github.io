@@ -5,6 +5,7 @@
 * skeuomorphism to neumorphism
 * flâner - wander aimlessly through city
 * no half measures
+* be curious, not judgemental
 * less but better
 * keep it short and sweet
 * vim over emacs
