@@ -46,10 +46,10 @@
 
 |Category| Tools|
 |--------|------|
-|Camera| Sony A7RV, Sony A7III, Canon 70D, Canon 5D Mark I|
-|Canon Lenses| Canon Tokina 100mm f2.8, Canon 40mm f2.8, 50mm f1.8 II, Canon 18-55mm f3.5-5.6|
+|Camera| Sony A7RV, Canon 70D, Canon 5D Mark I|
+|Canon Lenses| Tokina 100mm f2.8, 40mm f2.8, 50mm f1.8 II, 18-55mm f3.5-5.6|
 |Sony Lenses| 100-400 GM, 70-200 f2.8 GM II, 85mm f1.8, 28mm f2, Tamron 28-75 f2.8, Voigtlander 12mm f5.6, Voigtlander Nokton 40mm f1.2|
-|Manual Lenses| Voigtlander Nokton 58mm f1.4 (Nikon Mount), Samyang 85mm f1.4, Pentacon 50mm f1.8, Helios 44-2 Zebra  58mm f2, Minolta 35 70 f3.5 (MDIII 1981-84), Minolta MC ROKKOR PG 50mm f1.4 (MC-X 1973), Vivitar 100 500 , SuperTakumar 135mm f3.5, Minolta 50mm f2 (first manual I bought), Minolta 45mm f2, Pentacon 50mm f1.8 II, 200mm f3.5 (MCII 1970), Industar 50mm f3.5, Fujian 35mm f1.7, Helios 44-4 58mm f2, Yashica 50mm f2|
+|Manual Lenses| Voigtlander Nokton 58mm f1.4 (Nikon Mount), Samyang 85mm f1.4 (Canon Mount), Pentacon 50mm f1.8, Helios 44-2 Zebra  58mm f2, Minolta 35 70 f3.5 (MDIII 1981-84), Minolta MC ROKKOR PG 50mm f1.4 (MC-X 1973), Vivitar 100 500 , SuperTakumar 135mm f3.5, Minolta 50mm f2 (first manual I bought), Minolta 45mm f2, Pentacon 50mm f1.8 II, 200mm f3.5 (MCII 1970), Industar 50mm f3.5, Fujian 35mm f1.7, Helios 44-4 58mm f2, Yashica 50mm f2|
 |Adapters|Sigma MC11, Fotga (M42 to NEX/ MD to NEX, M42 to EF, C to NEX), M42 Extension tubes|
 
 Some samples online!
