@@ -119,7 +119,7 @@ I use the following
 * Ipad Pro 1st Gen
 * Macbook Pro 2019 16"
 
-[Latest Pic](https://vsco.co/attaboyabhi/media/646442ae32f88f14ad000001)
+[Latest Pic](https://vsco.co/attaboyabhi/media/65c395b793559a0b87ef31b8)
 
 **Travel**
 
