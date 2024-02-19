@@ -27,10 +27,10 @@
 |Programming|C/C++, Python, nodejs, Golang, Scala, Rust, R, Perl, Java, GW-BASIC, FORTRAN|
 |Web Frameworks|Django, Hug, Bottle, Flask|
 |Microservices|Service Mesh (Istio)|
-|Prompt Engineering|Large Language Models - langchain|
-|Big Data|Airflow, Dataflow, Apache (Spark, Beam, Flink, Kafka), Databricks, Ray, Dask|
+|Prompt Engineering|Large Language Models - langchain, Pydantic, Ollama|
+|Big Data|Airflow, Dataflow, Apache (Spark, Beam, Flink, Kafka), Databricks, Ray, Dask, Polars (Rust)|
 |Static Analysis of Code|Understand for C & C++, Apache Solr (based on Apache Lucene)|
-|Dynamic Analysis of Code|Valgrind|
+|Dynamic Analysis of Code|GDB (GNU Debugger), LLDB, PDB (Python Debugger), Visual Studio Debugger, Valgrind, gprof, JProfiler, YourKit Java Profiler, Py-Spy, JaCoCo, gcov, Coverage.py, Istanbul (nyc), OWASP ZAP (Zed Attack Proxy), Burp Suite, sqlmap, AFL (American Fuzzy Lop), libFuzzer, Boofuzz, Runtime Verification and Monitoring, DTrace, SystemTap, Memory Leak and Error Detection, AddressSanitizer (ASan), LeakSanitizer (LSan), Valgrind's Memcheck|
 |Exploratory Data Analysis|D-Tale, Tableau|
 |GPU processing|Merlin, CUDA, CuDF, Triton (NVIDIA)|
 |DeFi|Solana, Truffle Suite|
