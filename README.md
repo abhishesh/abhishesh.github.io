@@ -14,7 +14,7 @@
 * expresso && chai
 * SONY fanboy (guilty! rather anything made in Japan or designed in Japan)
 * Ghibli Studio Fan [Ghibli Movies](https://www.imdb.com/list/ls561133549/)
-* 🐶 person [Penny's Hooman](https://vsco.co/attaboyabhi/media/6455962a32f88f1693000001) 
+* 🐶 person [Penny's Hooman](https://vsco.co/attaboyabhi/media/65cca5c36bd9965e53757958) 
 
 
 > Interests
@@ -119,7 +119,7 @@ I use the following
 * Ipad Pro 1st Gen
 * Macbook Pro 2019 16"
 
-[Latest Pic](https://vsco.co/attaboyabhi/media/65c395b793559a0b87ef31b8)
+[Desk Setup Latest](https://vsco.co/attaboyabhi/media/65c395b793559a0b87ef31b8)
 
 **Travel**
 
