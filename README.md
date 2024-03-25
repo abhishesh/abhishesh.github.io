@@ -133,8 +133,9 @@ I use the following
 
 **Travel**
 
-I have travelled to following countries apart from my home country `India`
-Singapore (work here)|Malaysia|Indonesia|Cambodia|Vietnam|Thailand|Macao|Hong Kong|Korea|Japan|United Arab Emirates|Italy|Vatican City |Monaco|France|United Kingdom |Scotland|Portugal|United States of America|Switzerland|Finland|Sweden|Estonia|
+I have travelled to the following countries apart from my home country `India` and my work home for the last decade, Singapore:
+Malaysia, Indonesia, Cambodia, Vietnam, Thailand, Macao, Hong Kong, Korea, Japan, United Arab Emirates, Italy, Vatican City, Monaco, France, United Kingdom, Scotland, Portugal, United States of America, Switzerland, Finland, Sweden, Estonia.
+
 
 ## 🔗 Links
 
