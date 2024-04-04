@@ -55,9 +55,9 @@ Editing Tools!
 |Active Speaker|KEF LSX|
 |In-ear headphones|Sony WF-1000XM4 & WF-1000XM5, Sennheiser IE300 (wired)|
 |Over-ear headphones (Closed back)|Audio Technica ATH-M50X (wired), Sennheiser MOMENTUM 4|
-|Over ear (Open back) headphones| Meze 109 Pro|
-|USB C DAC | Cayin RU6 with R-2R resistor ladder circuit|
-|Portable Audio Player| Sony NW-A306|
+|Over ear (Open back) headphones| [Meze 109 Pro](https://vsco.co/attaboyabhi/media/63e531de32f88f1ff6000001)|
+|USB C DAC | [Cayin RU6](https://vsco.co/attaboyabhi/media/63e531de32f88f1ff6000001) with R-2R resistor ladder circuit|
+|Portable Audio Player| [Sony NW-A306](https://vsco.co/attaboyabhi/video/8c276d2d-8c1c-4644-9c95-41fcaee8ef02)|
 |Passive Speakers| ELAC Debut Reference Speakers driven by Bluesound Powernode 2i|
 |Microphones| Saramonic VMIC, Shure MV7 |
 
