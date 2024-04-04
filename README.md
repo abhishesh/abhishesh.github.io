@@ -28,10 +28,10 @@ I am in prepetual search for perfection
 |Category|Tools|
 |--------|-----|
 |Manual Lenses Adapted to Sony Mount|[Pentacon 50mm f1.8](https://www.stenersenoutdoors.com/blog/pentacon-an-imperfect-jewel-according-to-my-taste-anyway), [Helios 44-2 Zebra 58mm f2](https://mbphotox.wordpress.com/2015/09/19/helios-44-1-58mm-f2-zebra/), [Minolta 35 70 f3.5 (MDIII 1981-84)](https://fourbillionyears.org/minolta-md-35-70mm-f-3-5-an-outstanding-lens/), [Minolta MC ROKKOR PG 50mm f1.4 (MC-X 1973)](https://www.rokkorfiles.com/Battle%20of%2050s2.htm), [Vivitar 100-500](https://www.pentaxforums.com/userreviews/vivitar-series-1-100-500mm-f5-6-8.html) , [SuperTakumar 135mm f3.5](https://www.pentaxforums.com/lensreviews/S-M-C-Super-Takumar-135mm-F3.5.html), [Minolta 50mm f2 (first manual I bought)](https://northernwintersky.wordpress.com/2018/07/26/minolta-md-50mm-f-2-review/), [Minolta 45mm f2](https://kingjvpesphoto.com/blog/2018/12/28/minolta-rokkor-45mm-f2-the-best-minolta-lens), [Pentacon 50mm f1.8 II](https://phillipreeve.net/blog/pentacon-auto-50-mm-f-1-8-multi-coating/), [200mm f3.5 (MCII 1970)](https://minolta.su/minolta-mc-rokkor-qf-200mm-f3-5-mc2/), [Industar 50mm f3.5](https://foxfotoco.medium.com/vintage-lens-review-soviet-industar-50mm-f3-5-ca6dd3ef294e), [Fujian 35mm f1.7](https://radojuva.com/en/2022/05/fujian-china-tv-lens-gds-35-f-35mm-1-7/), [Helios 44-4 58mm f2](https://alikgriffin.com/helios-44-2-review-king-character/), [Yashica 50mm f2](http://forum.mflenses.com/yashica-ml-50mm-f2-test-t84092.html)|
-|Sony Mount Manual Focus FF|Voigtlander Nokton 40mm f1.2, Voigtlander 12mm f5.6|
-|Nikon Manual Focus FF| Voigtlander Nokton 58mm f1.4|
+|Sony Mount Manual Focus FF|[Voigtlander Nokton 40mm f1.2](https://dustinabbott.net/2020/04/voigtlander-nokton-40mm-f1-2-review/), [Voigtlander 12mm f5.6](https://phillipreeve.net/blog/review-voigtlander-12mm-5-6-aspherical-ultra-wide-heliar/)|
+|Nikon Manual Focus FF| [Voigtlander Nokton 58mm f1.4](https://www.stevehuffphoto.com/2016/12/22/voigtlander-nokton-58mm-f1-4-ii-lens-review-going-retro-by-craig-litten/)|
 |Canon Mount Automatic Focus FF|Tokina 100mm f2.8, 40mm f2.8, 50mm f1.8 II|
-|Canon Mount Manual Focus FF|Samyang 85mm f1.4|
+|Canon Mount Manual Focus FF|[Samyang 85mm f1.4](https://www.lksamyang.com/en/product/product-view.php?seq=311)|
 |Sony Mount Automatic Focus FF|Sony 100-400 GM, 28mm f2, Tamron 28-75 f2.8|
 |Adapters/Extension Tubes|Sigma MC11, Sony 1.4TX Extender, Fotga (M42 to NEX/ MD to NEX, M42 to EF, C to NEX), M42 Extension tubes|
 |Camera| Sony A7RV, Canon 70D, Canon 5D Mark I|
