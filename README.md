@@ -23,7 +23,8 @@ I am in prepetual search for perfection
 
 > Interests
 
-**Photography:** a picture is worth a thousand words. I have been learning photography since 2016 and I am very fond of manual lenses. Thanks to the short flange focal distance of mirrorless cameras and in-body optical image stabilization in Sony Cameras, I can use half-a-century-old lenses on modern digital cameras effectively and create some beautiful images full of character and microcontrast.
+**Photography:**
+a picture is worth a thousand words. I have been learning photography since 2016 and I am very fond of manual lenses. Thanks to the short flange focal distance of mirrorless cameras and in-body optical image stabilization in Sony Cameras, I can use half-a-century-old lenses on modern digital cameras effectively and create some beautiful images full of character and microcontrast.
 
 |Category|Tools|
 |--------|-----|
@@ -48,17 +49,18 @@ Editing Tools!
 * [Adobe Lightroom Classic](https://lightroom.adobe.com/)
 
 
-**Audiophile:** As a strong proponent of consuming anything in pure form, music cannot be any different. I try to get a similar sound stage and imaging at the home of what an artist intends in a recording studio. Also, while flying or in local transit, I love the quiet offered by the noise-canceling headphones.
+**Audiophile:**
+As a strong proponent of consuming anything in pure form, music cannot be any different. I try to get a similar sound stage and imaging at the home of what an artist intends in a recording studio. Also, while flying or in local transit, I love the quiet offered by the noise-canceling headphones.
 
 |Category|Equipment|
 |--------|---------|
 |Active Speaker|KEF LSX|
-|In-ear headphones|Sony WF-1000XM4 & WF-1000XM5, Sennheiser IE300 (wired)|
-|Over-ear headphones (Closed back)|Audio Technica ATH-M50X (wired), Sennheiser MOMENTUM 4|
-|Over ear (Open back) headphones| [Meze 109 Pro](https://vsco.co/attaboyabhi/media/63e531de32f88f1ff6000001)|
-|USB C DAC | [Cayin RU6](https://vsco.co/attaboyabhi/media/63e531de32f88f1ff6000001) with R-2R resistor ladder circuit|
+|In-ear headphones|Sony WF-1000XM4 & WF-1000XM5, [Sennheiser IE300](https://sg.sennheiser-hearing.com/products/ie-300)|
+|Over-ear (Closed back)|Audio Technica ATH-M50X, Sennheiser MOMENTUM 4|
+|Over-ear (Open back)|[Meze 109 Pro](https://vsco.co/attaboyabhi/media/63e531de32f88f1ff6000001)|
+|USB C DAC|[Cayin RU6](https://vsco.co/attaboyabhi/media/63e531de32f88f1ff6000001) with R-2R resistor ladder circuit|
 |Portable Audio Player| [Sony NW-A306](https://vsco.co/attaboyabhi/video/8c276d2d-8c1c-4644-9c95-41fcaee8ef02)|
-|Passive Speakers| ELAC Debut Reference Speakers driven by Bluesound Powernode 2i|
+|Passive Speakers| [ELAC Debut Reference DBR62](https://www.elac.com/category-bookshelf-speakers-debut-reference-dbr-62) Speakers driven by [Bluesound Powernode 2i](https://www.whathifi.com/reviews/bluesound-powernode-2i)|
 |Microphones| Saramonic VMIC, Shure MV7 |
 
 * Huge Fan of [Darko Audio](https://darko.audio/)
@@ -71,15 +73,18 @@ Editing Tools!
     * Hotel California - Eagles
 
 
-**Mechanical Watches** Mechanical watches symbolize a blend of intricate craftsmanship, timeless design, and a nod to tradition. Their appeal lies not just in their functionality but also in the artistry and engineering behind their construction. These watches don't just tell time; they tell a story of heritage, skill, and precision, appreciated by those who value the beauty of mechanical complexity over digital simplicity.
+**Mechanical Watches**
+Mechanical watches symbolize a blend of intricate craftsmanship, timeless design, and a nod to tradition. Their appeal lies not just in their functionality but also in the artistry and engineering behind their construction. These watches don't just tell time; they tell a story of heritage, skill, and precision, appreciated by those who value the beauty of mechanical complexity over digital simplicity.
 
 * I have a Tudor Black Bay that I really love and goes well with casuals and formals alike
 * Next on my to buy list is Rolex Explorer (black dial). I like the simplicity and elegance it carries.
 
-**Coffee** love brewing expresso and have watched numerous [James Hoffmann](https://www.jameshoffmann.co.uk/) youtube videos during pandemic! Try to tweak my humble Delonghi coffee machine for the coarseness of grind and time to brew, whenever I lay my hands on a new variety of coffee beans.
+**Coffee**
+love brewing expresso and have watched numerous [James Hoffmann](https://www.jameshoffmann.co.uk/) youtube videos during pandemic! Try to tweak my humble Delonghi coffee machine for the coarseness of grind and time to brew, whenever I lay my hands on a new variety of coffee beans.
 
 
-**Mechanical Keyboard** a mechanical keyboard is a must have productivity tool for someone who has to type for hours.
+**Mechanical Keyboard**
+a mechanical keyboard is a must have productivity tool for someone who has to type for hours.
 
 I use the following
 * Keychron K2
@@ -90,12 +95,14 @@ I use the following
   * Smooth like butter!
 
 
-**Perfumes** Perhaps another pandemic-driven proclivity is love for perfumes. I tried and purchased many new fragrances that I never forayed into earlier. Aficionado of [Alberto Morillas](https://www.firmenich.com/fragrance/fine-fragrance/people/alberto-morillas). 40% of my blind buy perfumes in the past has been his perfumes.
+**Perfumes**
+Perhaps another pandemic-driven proclivity is love for perfumes. I tried and purchased many new fragrances that I never forayed into earlier. Aficionado of [Alberto Morillas](https://www.firmenich.com/fragrance/fine-fragrance/people/alberto-morillas). 40% of my blind buy perfumes in the past has been his perfumes.
 
 [My profile on Fragrantica](https://www.fragrantica.com/member/1459421)
 
 
-**Technology:** I like solving complex technical problems and have used the following to solve them over the past 2 decades.
+**Technology:**
+I like solving complex technical problems and have used the following to solve them over the past 2 decades.
 
 To refactor the table you provided for better organization and readability, we can structure it by grouping similar tools under broader categories, reducing redundancy, and using consistent naming. Here's a cleaner version of the table:
 
@@ -124,7 +131,6 @@ To refactor the table you provided for better organization and readability, we c
 
 
 **Desk Setup**
-
 * Omnidesk Pro WildWood - Phesantwood
 * Dell U2720Q on Prism+ Arc Opus
 * Alienware Aurora R12 running Linux :)
@@ -135,7 +141,6 @@ To refactor the table you provided for better organization and readability, we c
 [Desk Setup Latest](https://vsco.co/attaboyabhi/media/65c395b793559a0b87ef31b8)
 
 **Travel**
-
 I have travelled to the following countries apart from my home country `India` and my work home for the last decade, Singapore:
 Malaysia, Indonesia, Cambodia, Vietnam, Thailand, Macao, Hong Kong, Korea, Japan, United Arab Emirates, Italy, Vatican City, Monaco, France, United Kingdom, Scotland, Portugal, United States of America, Switzerland, Finland, Sweden, Estonia.
 
