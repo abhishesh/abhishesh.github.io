@@ -55,13 +55,13 @@ As a strong proponent of consuming anything in pure form, music cannot be any di
 |Category|Equipment|
 |--------|---------|
 |Active Speaker|KEF LSX|
-|In-ear headphones|Sony WF-1000XM4 & WF-1000XM5, [Sennheiser IE300](https://sg.sennheiser-hearing.com/products/ie-300)|
+|In-ear headphones|[Sony WF-1000XM4](https://www.sony.com.sg/headphones/products/wf-1000xm4) & [Sony WF-1000XM5](https://store.sony.com.sg/products/wf-1000xm5), [Sennheiser IE300](https://sg.sennheiser-hearing.com/products/ie-300)|
 |Over-ear (Closed back)|Audio Technica ATH-M50X, Sennheiser MOMENTUM 4|
 |Over-ear (Open back)|[Meze 109 Pro](https://vsco.co/attaboyabhi/media/63e531de32f88f1ff6000001)|
 |USB C DAC|[Cayin RU6](https://vsco.co/attaboyabhi/media/63e531de32f88f1ff6000001) with R-2R resistor ladder circuit|
 |Portable Audio Player| [Sony NW-A306](https://vsco.co/attaboyabhi/video/8c276d2d-8c1c-4644-9c95-41fcaee8ef02)|
 |Passive Speakers| [ELAC Debut Reference DBR62](https://www.elac.com/category-bookshelf-speakers-debut-reference-dbr-62) Speakers driven by [Bluesound Powernode 2i](https://www.whathifi.com/reviews/bluesound-powernode-2i)|
-|Microphones| Saramonic VMIC, Shure MV7 |
+|Microphones|[Saramonic VMIC](https://www.saramonic.com/product/vmic-pro), [Shure MV7](https://shop.shure.com.sg/products/mv7-microphone)|
 
 * Huge Fan of [Darko Audio](https://darko.audio/)
 * Favourite Streaming Service: [Tidal](tidal)
