@@ -102,32 +102,7 @@ Perhaps another pandemic-driven proclivity is love for perfumes. I tried and pur
 
 
 **Technology:**
-I like solving complex technical problems and have used the following to solve them over the past 2 decades.
-
-To refactor the table you provided for better organization and readability, we can structure it by grouping similar tools under broader categories, reducing redundancy, and using consistent naming. Here's a cleaner version of the table:
-
-| **Category**                  | **Tools**                                                                                                   |
-|-------------------------------|-------------------------------------------------------------------------------------------------------------|
-| **Cloud Platforms**           | AWS, Azure, GCP, Digital Ocean, Linode                                                                      |
-| **Programming Languages**     | C/C++, Python, Node.js, Golang, Scala, Rust, Mojo, R, Perl, Java, GW-BASIC, FORTRAN                         |
-| **Web Development Frameworks**| Django, Hug, Bottle, Flask, ExpressJS, Gin                                                                  |
-| **Microservices**             | Istio (Service Mesh)                                                                                        |
-| **Prompt Engineering**        | Langchain, Pydantic, Ollama                                                                                 |
-| **Big Data & Streaming**      | Airflow, Dataflow, Apache Spark, Apache Beam, Apache Flink, Apache Kafka, Databricks, Ray, Dask, Polars     |
-| **Static Code Analysis**      | Understand for C & C++, Apache Solr                                                                         |
-| **Dynamic Code Analysis**     | GDB, LLDB, PDB, Visual Studio Debugger, Valgrind, gprof, Various Profilers and Analyzers (JProfiler, YourKit Java Profiler, Py-Spy, JaCoCo, gcov, Coverage.py, Istanbul), Security Tools (OWASP ZAP, Burp Suite, sqlmap), Fuzzing Tools (AFL, libFuzzer, Boofuzz), Runtime Verification & Monitoring (DTrace, SystemTap), Memory Management Tools (AddressSanitizer, LeakSanitizer, Valgrind's Memcheck) |
-| **Data Visualization**        | D-Tale, Tableau                                                                                             |
-| **GPU Processing**            | Merlin, CUDA, CuDF, Triton                                                                                  |
-| **Decentralized Finance (DeFi)** | Solana, Truffle Suite                                                                                       |
-| **IoT Protocols**             | Zigbee, CAN bus, MODBUS, BACnet                                                                             |
-| **IoT Applications & Messaging** | Azure IoTEdge, MQTT                                                                                        |
-| **Deep Learning Frameworks**  | Keras, TensorFlow, PyTorch, Scikit-learn                                                                    |
-| **Network Packet Analysis**   | Wireshark, tcpdump, iptraf                                                                                  |
-| **Application Security**      | OWASP                                                                                                       |
-| **Diagramming Tools**         | draw.io, PlantUML, Mermaid                                                                                  |
-| **Version Control Systems**   | CVS, SVN, VSS, Clearcase, Perforce, Git                                                                     |
-
-
+I like solving complex technical problems (see Linkedin :))
 
 
 **Desk Setup**
