@@ -56,7 +56,7 @@ As a strong proponent of consuming anything in pure form, music cannot be any di
 |--------|---------|
 |Active Speaker|KEF LSX|
 |In-ear headphones|[Sony WF-1000XM4](https://www.sony.com.sg/headphones/products/wf-1000xm4) & [Sony WF-1000XM5](https://store.sony.com.sg/products/wf-1000xm5), [Sennheiser IE300](https://sg.sennheiser-hearing.com/products/ie-300)|
-|Over-ear (Closed back)|Audio Technica ATH-M50X, Sennheiser MOMENTUM 4|
+|Over-ear (Closed back)|[Audio Technica ATH-M50X](https://www.audio-technica.com/en-eu/ath-m50x), [Sennheiser MOMENTUM 4](https://sg.sennheiser-hearing.com/products/momentum-4-wireless)|
 |Over-ear (Open back)|[Meze 109 Pro](https://vsco.co/attaboyabhi/media/63e531de32f88f1ff6000001)|
 |USB C DAC|[Cayin RU6](https://vsco.co/attaboyabhi/media/63e531de32f88f1ff6000001) with R-2R resistor ladder circuit|
 |Portable Audio Player| [Sony NW-A306](https://vsco.co/attaboyabhi/video/8c276d2d-8c1c-4644-9c95-41fcaee8ef02)|
