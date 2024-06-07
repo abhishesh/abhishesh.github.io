@@ -33,9 +33,9 @@ a picture is worth a thousand words. I have been learning photography since 2016
 |Nikon Manual Focus FF| [Voigtlander Nokton 58mm f1.4](https://www.stevehuffphoto.com/2016/12/22/voigtlander-nokton-58mm-f1-4-ii-lens-review-going-retro-by-craig-litten/)|
 |Canon Mount Automatic Focus FF|Tokina 100mm f2.8, 40mm f2.8, 50mm f1.8 II|
 |Canon Mount Manual Focus FF|[Samyang 85mm f1.4](https://www.lksamyang.com/en/product/product-view.php?seq=311)|
-|Sony Mount Automatic Focus FF|Sony 100-400 GM, 28mm f2, Tamron 28-75 f2.8|
-|Adapters/Extension Tubes|Sigma MC11, Sony 1.4TX Extender, Fotga (M42 to NEX/ MD to NEX, M42 to EF, C to NEX), M42 Extension tubes|
-|Camera| Sony A7RV, Canon 70D, Canon 5D Mark I|
+|Sony Mount Automatic Focus FF|[Sony 100-400 GM](https://www.sony.com.sg/electronics/camera-lenses/sel100400gm), [28mm f2](https://www.sony.com.sg/electronics/camera-lenses/sel28f20-series), [Tamron 28-75 f2.8](https://www.tamron.com/global/consumer/lenses/a036/)|
+|Adapters/Extension Tubes|[Sigma MC11](https://www.sigma-global.com/en/accessories/mc-11/), [Sony 1.4TX  Extender](https://www.sony.com.sg/electronics/camera-lenses/sel14tc), Fotga (M42 to NEX/ MD to NEX, M42 to EF, C to NEX), M42 Extension tubes|
+|Camera| [Sony A7RV](https://www.sony.com.sg/microsite/promotions/product.html?series=7R%20V%2035mm%20full-frame%20camera%20with%2061.0MP&category=interchangeable_lens_cameras&sub_category=ilc_cameras&model=ILCE-7RM5&name=ILCE-7RM5?cid=Cat-ILC-MYP24_SG_Model:sem:goog:ILCE-7RM5&gad_source=1&gclid=CjwKCAjwvIWzBhAlEiwAHHWgvc2TlIharMJ9HWw2lO85cSS1cV5DWGhRX2ee7wxunDjoRr4tfDeZ2xoC4DIQAvD_BwE&gclsrc=aw.ds), [Canon 70D](https://www.dpreview.com/reviews/canon-eos-70d), [Canon 5D Mark I](https://en.wikipedia.org/wiki/Canon_EOS_5D)|
 
 **Some samples online!**
 
