@@ -120,9 +120,10 @@ I have travelled to the following countries apart from my home country `India` a
 Malaysia, Indonesia, Cambodia, Vietnam, Thailand, Macao, Hong Kong, Korea, Japan, United Arab Emirates, Italy, Vatican City, Monaco, France, United Kingdom, Scotland, Portugal, United States of America, Switzerland, Finland, Sweden, Estonia.
 
 
-## 🔗 Links
 
-[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abhishesh)
+**🔗 Links**
+
+![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/abhishesh/)
 ![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/abhishesh)
 
 
