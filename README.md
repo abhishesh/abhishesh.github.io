@@ -123,7 +123,7 @@ Malaysia, Indonesia, Cambodia, Vietnam, Thailand, Macao, Hong Kong, Korea, Japan
 
 **🔗 Links**
 
-![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/abhishesh/)
-![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/abhishesh)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/abhishesh/)
+[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/abhishesh)](https://twitter.com/abhishesh)
 
 
