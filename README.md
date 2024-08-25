@@ -77,7 +77,7 @@ As a strong proponent of consuming anything in pure form, music cannot be any di
 Mechanical watches symbolize a blend of intricate craftsmanship, timeless design, and a nod to tradition. Their appeal lies not just in their functionality but also in the artistry and engineering behind their construction. These watches don't just tell time; they tell a story of heritage, skill, and precision, appreciated by those who value the beauty of mechanical complexity over digital simplicity.
 
 * I have a Tudor Black Bay that I really love and goes well with casuals and formals alike
-* Next on my to buy list is Rolex Explorer (black dial). I like the simplicity and elegance it carries.
+* Next on my to buy list is Rolex Explorer. I like the simplicity and elegance it carries.
 
 **Coffee**
 love brewing expresso and have watched numerous [James Hoffmann](https://www.jameshoffmann.co.uk/) youtube videos during pandemic! Try to tweak my humble Delonghi coffee machine for the coarseness of grind and time to brew, whenever I lay my hands on a new variety of coffee beans.
@@ -90,6 +90,7 @@ I use the following
 * Keychron K2
   * brown switch
   * bluetooth
+  * [how it sounds](https://soundcloud.com/abhishesh-sharma/keychron-red-switch-sound?si=f80ff33fb8a344dbbd5070fa75a801a6&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)
 * Akko ACR Pro 75
   * Gasket Mount
   * Smooth like butter!
@@ -115,8 +116,13 @@ I like solving complex technical problems (see Linkedin :))
 
 [Desk Setup Latest](https://vsco.co/attaboyabhi/media/65c395b793559a0b87ef31b8)
 
+**Hobby & Mentorship Projects**
+- [elections_india](abhishesh.com/elections_india)
+- [bytechor](abhishesh.com/bytechor)
+
+
 **Travel**
-I have travelled to the following countries apart from my home country `India` and my work home for the last decade, Singapore:
+I have travelled to the following countries apart from my home country `India` and my work home for the last decade, `Singapore`:
 Malaysia, Indonesia, Cambodia, Vietnam, Thailand, Macao, Hong Kong, Korea, Japan, United Arab Emirates, Italy, Vatican City, Monaco, France, United Kingdom, Scotland, Portugal, United States of America, Switzerland, Finland, Sweden, Estonia.
 
 
