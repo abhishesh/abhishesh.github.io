@@ -119,6 +119,7 @@ I like solving complex technical problems (see Linkedin :))
 **Hobby & Mentorship Projects**
 - [elections_india](https://abhishesh.com/elections_india)
 - [bytechor](https://abhishesh.com/bytechor)
+- [air_quality](https://abhishesh.com/air_quality)
 
 
 **Travel**
