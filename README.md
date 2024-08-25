@@ -117,8 +117,8 @@ I like solving complex technical problems (see Linkedin :))
 [Desk Setup Latest](https://vsco.co/attaboyabhi/media/65c395b793559a0b87ef31b8)
 
 **Hobby & Mentorship Projects**
-- [elections_india](abhishesh.com/elections_india)
-- [bytechor](abhishesh.com/bytechor)
+- [elections_india](https://abhishesh.com/elections_india)
+- [bytechor](https://abhishesh.com/bytechor)
 
 
 **Travel**
