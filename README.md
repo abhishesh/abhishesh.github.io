@@ -114,7 +114,8 @@ I like solving complex technical problems (see Linkedin :))
 * Ipad Pro 1st Gen
 * Macbook Pro 2019 16"
 
-[Desk Setup Latest](https://vsco.co/attaboyabhi/media/65c395b793559a0b87ef31b8)
+[Desk Setup 1](https://vsco.co/attaboyabhi/media/65c395b793559a0b87ef31b8)
+[Desk Setup 2](https://vsco.co/attaboyabhi/media/66d892fdcb549a1437fac762)
 
 **Hobby & Mentorship Projects**
 - [elections_india](https://abhishesh.com/elections_india)
