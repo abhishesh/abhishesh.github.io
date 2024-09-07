@@ -118,11 +118,14 @@ I like solving complex technical problems (see Linkedin :))
 [Desk Setup 2](https://vsco.co/attaboyabhi/media/66d892fdcb549a1437fac762)
 
 **Hobby & Mentorship Projects**
-- [elections_india](https://abhishesh.com/elections_india)
-- [bytechor](https://abhishesh.com/bytechor)
-- [air_quality](https://abhishesh.com/air_quality)
+- [Elections Data India](https://abhishesh.com/elections_india)
+- [Bytechor](https://abhishesh.com/bytechor)
+- [Air Quality dataset - Airthings Wave Plus](https://abhishesh.com/air_quality)
 - [URA_SG_Dataset](https://abhishesh.com/URA_SG_Dataset)
+- [HomeBridge](https://homebridge.io/)
+- [DuckDB lover](https://duckdb.org/)
 
+![Github Public Stats](https://github-readme-stats.vercel.app/api?username=abhishesh&show_icons=true)
 
 **Travel**
 I have travelled to the following countries apart from my home country `India` and my work home for the last decade, `Singapore`:
