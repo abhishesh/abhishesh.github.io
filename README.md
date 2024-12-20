@@ -9,6 +9,7 @@ I am in prepetual search for perfection
   * keep it short and sweet
   * skeuomorphism to neumorphism
   * convergent thinker by day and divergent by night!
+  * I am the documentation 🤓 [context](https://www.youtube.com/watch?v=0RQtwftu92Y)
 
 * Prefrences & Interests
   * vim over emacs
