@@ -16,7 +16,7 @@ I am in prepetual search for perfection
   * **nix** over windows
   * expresso && chai
   * DIY enthusiast
-  * flâner - wander aimlessly through city
+  * flâneur - wander aimlessly through city
   * SONY fanboy (guilty! rather anything made in Japan or designed in Japan)
   * Ghibli Studio Fan [Ghibli Movies](https://www.imdb.com/list/ls561133549/)
   * 🐶 person [Penny's Hooman - Flickr](https://flickr.com/photos/abhishesh-sharma/albums/72177720312673306/)
