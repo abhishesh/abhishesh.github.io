@@ -1,6 +1,6 @@
 > About me!
 
-I am in prepetual search for perfection
+I am in perpetual search for perfection
 
 * Principles
   * no half measures
