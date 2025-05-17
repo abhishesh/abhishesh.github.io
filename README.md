@@ -65,7 +65,7 @@ As a strong proponent of consuming anything in pure form, music cannot be any di
 |Microphones|[Saramonic VMIC](https://www.saramonic.com/product/vmic-pro), [Shure MV7](https://shop.shure.com.sg/products/mv7-microphone)|
 
 
-** 📋 Summary Table **
+📋 **Summary Table**
 
 | Headphone            | Bass        | Mids       | Treble     | Sound Signature               | FR Graph |
 |----------------------|-------------|------------|------------|-------------------------------|----------|
@@ -76,7 +76,7 @@ As a strong proponent of consuming anything in pure form, music cannot be any di
 
 
 
-** 🎯 Recommendations **
+🎯 **Recommendations**
 
 - **Bass Lovers**: Sony WF-1000XM5, Momentum 4
 - **Balanced Tonality**: Meze 109 Pro
