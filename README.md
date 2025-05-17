@@ -64,6 +64,25 @@ As a strong proponent of consuming anything in pure form, music cannot be any di
 |Passive Speakers| [ELAC Debut Reference DBR62](https://www.elac.com/category-bookshelf-speakers-debut-reference-dbr-62) Speakers driven by [Bluesound Powernode 2i](https://www.whathifi.com/reviews/bluesound-powernode-2i)|
 |Microphones|[Saramonic VMIC](https://www.saramonic.com/product/vmic-pro), [Shure MV7](https://shop.shure.com.sg/products/mv7-microphone)|
 
+
+** 📋 Summary Table **
+
+| Headphone            | Bass        | Mids       | Treble     | Sound Signature               | FR Graph |
+|----------------------|-------------|------------|------------|-------------------------------|----------|
+| Momentum 4 Wireless  | Warm & Rich | Clear      | Smooth     | Consumer-friendly             | [Link](https://kuulokenurkka.squig.link/?share=Harman_2018_Target%2CMomentum_4_%28ANC_ON%29_%2A%2A) |
+| WF-1000XM5           | Punchy      | Recessed   | Smooth     | V-shaped                      | [Link](https://tgx78.squig.link/?share=Xm5) |
+| IE300                | Full-bodied | Recessed   | Sparkly    | Warm with enhanced treble     | [Link](https://squig.link/?share=Crinacle_Target%2CSennheiser_IE300) |
+| Meze 109 Pro         | Neutral     | Natural    | Smooth     | Balanced and natural          | [Link](https://kuulokenurkka.squig.link/?share=Harman_2018_Target%2C109_Pro) |
+
+
+
+** 🎯 Recommendations **
+
+- **Bass Lovers**: Sony WF-1000XM5, Momentum 4
+- **Balanced Tonality**: Meze 109 Pro
+- **Treble Enthusiasts**: Sennheiser IE300
+
+
 * Huge Fan of [Darko Audio](https://darko.audio/)
 * Favourite Streaming Service: [Tidal](tidal)
   * Public playlist created by me
