@@ -56,11 +56,11 @@ As a strong proponent of consuming anything in pure form, music cannot be any di
 |Category|Equipment|
 |--------|---------|
 |Active Speaker|[KEF LSX](https://www.whathifi.com/reviews/kef-lsx)|
-|In-ear headphones|[Sony WF-1000XM4](https://www.sony.com.sg/headphones/products/wf-1000xm4) & [Sony WF-1000XM5](https://store.sony.com.sg/products/wf-1000xm5), [Sennheiser IE300](https://sg.sennheiser-hearing.com/products/ie-300)|
+|In-ear headphones|[Sony WF-1000XM4](https://www.sony.com.sg/headphones/products/wf-1000xm4) & [Sony WF-1000XM5](https://store.sony.com.sg/products/wf-1000xm5), [Sennheiser IE300](https://sg.sennheiser-hearing.com/products/ie-300), [Kiwi Ears x Crinacle Singolo × 1 Blue](https://www.linsoul.com/products/kiwi-ears-x-crinacle-singolo), [TANGZU Waner SG2](https://www.linsoul.com/products/tangzu-waner-sg2)|
 |Over-ear (Closed back)|[Audio Technica ATH-M50X](https://www.audio-technica.com/en-eu/ath-m50x), [Sennheiser MOMENTUM 4](https://sg.sennheiser-hearing.com/products/momentum-4-wireless)|
 |Over-ear (Open back)|[Meze 109 Pro](https://vsco.co/attaboyabhi/media/63e531de32f88f1ff6000001)|
 |USB C DAC|[Cayin RU6](https://vsco.co/attaboyabhi/media/63e531de32f88f1ff6000001) with R-2R resistor ladder circuit|
-|Portable Audio Player| [Sony NW-A306](https://vsco.co/attaboyabhi/video/8c276d2d-8c1c-4644-9c95-41fcaee8ef02)|
+|Portable Audio Player| [Sony NW-A306](https://vsco.co/attaboyabhi/video/8c276d2d-8c1c-4644-9c95-41fcaee8ef02) gifted!|
 |Passive Speakers| [ELAC Debut Reference DBR62](https://www.elac.com/category-bookshelf-speakers-debut-reference-dbr-62) Speakers driven by [Bluesound Powernode 2i](https://www.whathifi.com/reviews/bluesound-powernode-2i)|
 |Microphones|[Saramonic VMIC](https://www.saramonic.com/product/vmic-pro), [Shure MV7](https://shop.shure.com.sg/products/mv7-microphone)|
 
@@ -73,14 +73,15 @@ As a strong proponent of consuming anything in pure form, music cannot be any di
 | WF-1000XM5           | Punchy      | Recessed   | Smooth     | V-shaped                      | [Link](https://tgx78.squig.link/?share=Xm5) |
 | IE300                | Full-bodied | Recessed   | Sparkly    | Warm with enhanced treble     | [Link](https://squig.link/?share=Crinacle_Target%2CSennheiser_IE300) |
 | Meze 109 Pro         | Neutral     | Natural    | Smooth     | Balanced and natural          | [Link](https://kuulokenurkka.squig.link/?share=Harman_2018_Target%2C109_Pro) |
-
-
+| Kiwi Ears Singolo    | Controlled  | Forward    | Refined    | Neutral reference tuning      | [Link](https://squig.link/?share=Crinacle_Target%2CKiwi_Ears_Singolo) |
+| TANGZU Waner SG2     | Present     | Balanced   | Extended   | Slightly warm with good detail| [Link](https://squig.link/?share=Harman_Target%2CTANGZU_Waner_SG2) |
 
 🎯 **Recommendations**
 
 - **Bass Lovers**: Sony WF-1000XM5, Momentum 4
-- **Balanced Tonality**: Meze 109 Pro
+- **Balanced Tonality**: Meze 109 Pro, Kiwi Ears Singolo
 - **Treble Enthusiasts**: Sennheiser IE300
+- **Value & Detail**: TANGZU Waner SG2
 
 
 * Huge Fan of [Darko Audio](https://darko.audio/)
