@@ -67,31 +67,29 @@ As a strong proponent of consuming anything in pure form, music cannot be any di
 
 📋 **Summary Table**
 
-| Headphone            | Bass        | Mids       | Treble     | Sound Signature               | FR Graph |
-|----------------------|-------------|------------|------------|-------------------------------|----------|
-| Momentum 4 Wireless  | Warm & Rich | Clear      | Smooth     | Consumer-friendly             | [Link](https://kuulokenurkka.squig.link/?share=Harman_2018_Target%2CMomentum_4_%28ANC_ON%29_%2A%2A) |
-| WF-1000XM5           | Punchy      | Recessed   | Smooth     | V-shaped                      | [Link](https://tgx78.squig.link/?share=Xm5) |
-| IE300                | Full-bodied | Recessed   | Sparkly    | Warm with enhanced treble     | [Link](https://squig.link/?share=Crinacle_Target%2CSennheiser_IE300) |
-| Meze 109 Pro         | Neutral     | Natural    | Smooth     | Balanced and natural          | [Link](https://kuulokenurkka.squig.link/?share=Harman_2018_Target%2C109_Pro) |
-| Kiwi Ears Singolo    | Controlled  | Forward    | Refined    | Neutral reference tuning      | [Link](https://squig.link/?share=Crinacle_Target%2CKiwi_Ears_Singolo) |
-| TANGZU Waner SG2     | Present     | Balanced   | Extended   | Slightly warm with good detail| [Link](https://squig.link/?share=Harman_Target%2CTANGZU_Waner_SG2) |
+| Headphone              | Bass              | Mids              | Treble            | Sound Signature                            | FR Graph |
+|------------------------|-------------------|-------------------|-------------------|--------------------------------------------|----------|
+| Momentum 4 Wireless    | Warm & Rich       | Clear             | Smooth            | Consumer-friendly                          | [Link](https://kuulokenurkka.squig.link/?share=Harman_2018_Target%2CMomentum_4_%28ANC_ON%29_%2A%2A) |
+| WF-1000XM5             | Punchy            | Recessed          | Smooth            | V-shaped                                   | [Link](https://tgx78.squig.link/?share=Xm5) |
+| IE300                  | Full-bodied       | Recessed          | Sparkly           | Warm with enhanced treble                  | [Link](https://squig.link/?share=Crinacle_Target%2CSennheiser_IE300) |
+| Meze 109 Pro           | Neutral           | Natural           | Smooth            | Balanced and natural                       | [Link](https://kuulokenurkka.squig.link/?share=Harman_2018_Target%2C109_Pro) |
+| Kiwi Ears Singolo      | Controlled        | Forward           | Refined           | Neutral reference tuning                   | [Link](https://squig.link/?share=Crinacle_Target%2CKiwi_Ears_Singolo) |
+| TANGZU Waner SG2       | Present           | Balanced          | Extended          | Slightly warm with good detail             | [Link](https://squig.link/?share=Harman_Target%2CTANGZU_Waner_SG2) |
+| Audio Technica ATH-M50x| Punchy & Tight    | Slightly Recessed | Bright            | Slight V-shape with energetic upper mids   | [Link](https://squig.link/?share=Harman_2018_Target%2CAudio-Technica_ATH-M50x) |
 
 🎯 **Recommendations**
 
 - **Bass Lovers**: Sony WF-1000XM5, Momentum 4
 - **Balanced Tonality**: Meze 109 Pro, Kiwi Ears Singolo
-- **Treble Enthusiasts**: Sennheiser IE300
+- **Treble Enthusiasts**: Sennheiser IE300, Audio-Technica ATH-M50x
 - **Value & Detail**: TANGZU Waner SG2
 
 
-* Huge Fan of [Darko Audio](https://darko.audio/)
-* Favourite Streaming Service: [Tidal](tidal)
-  * Public playlist created by me
-    * [Tamang Bro](https://tidal.com/browse/playlist/8a868f8b-63cf-4dea-9658-ffe4d10a1b9d)
-* Some resources to test your high end system:
-  * [audiophile.io](https://audiophilemusic.io/portfolio/top-10-samplers-for-test-high-end-system/)
-    * Keith don't go - Nils Lofgren
-    * Hotel California - Eagles
+* Devouted follower of [Darko Audio](https://darko.audio/)
+* My Curated Paylist [Tamang Bro](https://tidal.com/browse/playlist/8a868f8b-63cf-4dea-9658-ffe4d10a1b9d)
+* System-test reference tracks (courtesy of [audiophile.io](https://audiophilemusic.io/portfolio/top-10-samplers-for-test-high-end-system/))
+    * "Keith don't go" - Nils Lofgren
+    * "Hotel California" - Eagles
 
 
 **Mechanical Watches**
