@@ -56,7 +56,7 @@ As a strong proponent of consuming anything in pure form, music cannot be any di
 |Category|Equipment|
 |--------|---------|
 |Active Speaker|[KEF LSX](https://www.whathifi.com/reviews/kef-lsx)|
-|In-ear headphones|[Sony WF-1000XM4](https://www.sony.com.sg/headphones/products/wf-1000xm4) & [Sony WF-1000XM5](https://store.sony.com.sg/products/wf-1000xm5), [Sennheiser IE300](https://sg.sennheiser-hearing.com/products/ie-300), [Kiwi Ears x Crinacle Singolo × 1 Blue](https://www.linsoul.com/products/kiwi-ears-x-crinacle-singolo), [TANGZU Waner SG2](https://www.linsoul.com/products/tangzu-waner-sg2)|
+|In-ear headphones|[Sony WF-1000XM4](https://www.sony.com.sg/headphones/products/wf-1000xm4) & [Sony WF-1000XM5](https://store.sony.com.sg/products/wf-1000xm5), [Sennheiser IE300](https://sg.sennheiser-hearing.com/products/ie-300), [Kiwi Ears x Crinacle Singolo × 1 Blue](https://www.linsoul.com/products/kiwi-ears-x-crinacle-singolo), [TANGZU Waner SG2](https://www.linsoul.com/products/tangzu-waner-sg2), Klipsch X4i|
 |Over-ear (Closed back)|[Audio Technica ATH-M50X](https://www.audio-technica.com/en-eu/ath-m50x), [Sennheiser MOMENTUM 4](https://sg.sennheiser-hearing.com/products/momentum-4-wireless)|
 |Over-ear (Open back)|[Meze 109 Pro](https://vsco.co/attaboyabhi/media/63e531de32f88f1ff6000001)|
 |USB C DAC|[Cayin RU6](https://vsco.co/attaboyabhi/media/63e531de32f88f1ff6000001) with R-2R resistor ladder circuit|
@@ -76,20 +76,25 @@ As a strong proponent of consuming anything in pure form, music cannot be any di
 | Kiwi Ears Singolo      | Controlled        | Forward           | Refined           | Neutral reference tuning                   | [Link](https://squig.link/?share=Crinacle_Target%2CKiwi_Ears_Singolo) |
 | TANGZU Waner SG2       | Present           | Balanced          | Extended          | Slightly warm with good detail             | [Link](https://squig.link/?share=Harman_Target%2CTANGZU_Waner_SG2) |
 | Audio Technica ATH-M50x| Punchy & Tight    | Slightly Recessed | Bright            | Slight V-shape with energetic upper mids   | [Link](https://squig.link/?share=Harman_2018_Target%2CAudio-Technica_ATH-M50x) |
+| Klipsch X4i            | Tight & Controlled | Forward          | Crisp             | Mildly bright with mid-forward clarity     | NA |
+
 
 🎯 **Recommendations**
 
 - **Bass Lovers**: Sony WF-1000XM5, Momentum 4
 - **Balanced Tonality**: Meze 109 Pro, Kiwi Ears Singolo
-- **Treble Enthusiasts**: Sennheiser IE300, Audio-Technica ATH-M50x
+- **Treble Enthusiasts**: Sennheiser IE300, Audio-Technica ATH-M50x, Klipsch X4i
 - **Value & Detail**: TANGZU Waner SG2
 
 
 * Devouted follower of [Darko Audio](https://darko.audio/)
-* My Curated Paylist [Tamang Bro](https://tidal.com/browse/playlist/8a868f8b-63cf-4dea-9658-ffe4d10a1b9d)
+* [Crinacle](https://crinacle.com/)  for Chi-Fi and general audio gear
 * System-test reference tracks (courtesy of [audiophile.io](https://audiophilemusic.io/portfolio/top-10-samplers-for-test-high-end-system/))
-    * "Keith don't go" - Nils Lofgren
-    * "Hotel California" - Eagles
+* My Curated Paylist
+    * [Tidal - Needle in the soul](https://tidal.com/playlist/9ce1405b-8422-40f8-8dcc-b0982a7a96d5)
+    * [Tidal - Bit-Perfect Bangers](https://tidal.com/playlist/1e4ccc65-8e0c-48a8-8c52-498764818672)  
+
+
 
 
 **Mechanical Watches**
