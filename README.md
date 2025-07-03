@@ -53,7 +53,7 @@ a picture is worth a thousand words. I have been learning photography since 2016
 **Audiophile:**
 As a strong proponent of consuming anything in pure form, music cannot be any different. I try to get a similar sound stage and imaging at the home of what an artist intends in a recording studio. Also, while flying or in local transit, I love the quiet offered by the noise-canceling headphones.
 
-# 🎧 Audiophile Gear Setup
+**🎧 Audiophile Gear Setup**
 
 | **Category**            | **Equipment** |
 |-------------------------|---------------|
@@ -66,7 +66,7 @@ As a strong proponent of consuming anything in pure form, music cannot be any di
 | **Passive Speakers**    | [ELAC Debut Reference DBR62](https://www.elac.com/category-bookshelf-speakers-debut-reference-dbr-62) powered by [Bluesound Powernode 2i](https://www.whathifi.com/reviews/bluesound-powernode-2i) |
 | **Microphones**         | [Saramonic VMIC](https://www.saramonic.com/product/vmic-pro), [Shure MV7](https://shop.shure.com.sg/products/mv7-microphone) |
 
-# 📊 Headphone Sound Summary
+**📊 Headphone Sound Summary**
 
 | **Headphone**             | **Bass**           | **Mids**            | **Treble**          | **Sound Signature**                          | **FR Graph** |
 |---------------------------|--------------------|---------------------|---------------------|----------------------------------------------|--------------|
@@ -80,7 +80,7 @@ As a strong proponent of consuming anything in pure form, music cannot be any di
 | Klipsch X4i               | Tight & Controlled | Forward             | Crisp               | Mildly bright with mid-forward clarity       | NA |
 | Moondrop Aria 2           | Sub-bass lean, clean | Mildly forward    | Smoothly extended   | Harman-inspired with air & clarity           | [Link](https://squig.link/?share=Harman_2018_Target%2CMoondrop_Aria_2) |
 
-# 🎯 Recommended Use Cases
+**🎯 Recommended Use Cases**
 
 - **Bass Lovers**: `Sony WF-1000XM5`, `Momentum 4`
 - **Balanced Tonality**: `Meze 109 Pro`, `Kiwi Ears Singolo`, `Moondrop Aria 2`
