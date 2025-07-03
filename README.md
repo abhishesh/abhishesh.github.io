@@ -53,38 +53,39 @@ a picture is worth a thousand words. I have been learning photography since 2016
 **Audiophile:**
 As a strong proponent of consuming anything in pure form, music cannot be any different. I try to get a similar sound stage and imaging at the home of what an artist intends in a recording studio. Also, while flying or in local transit, I love the quiet offered by the noise-canceling headphones.
 
-|Category|Equipment|
-|--------|---------|
-|Active Speaker|[KEF LSX](https://www.whathifi.com/reviews/kef-lsx)|
-|In-ear headphones|[Sony WF-1000XM4](https://www.sony.com.sg/headphones/products/wf-1000xm4) & [Sony WF-1000XM5](https://store.sony.com.sg/products/wf-1000xm5), [Sennheiser IE300](https://sg.sennheiser-hearing.com/products/ie-300), [Kiwi Ears x Crinacle Singolo × 1 Blue](https://www.linsoul.com/products/kiwi-ears-x-crinacle-singolo), [TANGZU Waner SG2](https://www.linsoul.com/products/tangzu-waner-sg2), Klipsch X4i|
-|Over-ear (Closed back)|[Audio Technica ATH-M50X](https://www.audio-technica.com/en-eu/ath-m50x), [Sennheiser MOMENTUM 4](https://sg.sennheiser-hearing.com/products/momentum-4-wireless)|
-|Over-ear (Open back)|[Meze 109 Pro](https://vsco.co/attaboyabhi/media/63e531de32f88f1ff6000001)|
-|USB C DAC|[Cayin RU6](https://vsco.co/attaboyabhi/media/63e531de32f88f1ff6000001) with R-2R resistor ladder circuit|
-|Portable Audio Player| [Sony NW-A306](https://vsco.co/attaboyabhi/video/8c276d2d-8c1c-4644-9c95-41fcaee8ef02) gifted!|
-|Passive Speakers| [ELAC Debut Reference DBR62](https://www.elac.com/category-bookshelf-speakers-debut-reference-dbr-62) Speakers driven by [Bluesound Powernode 2i](https://www.whathifi.com/reviews/bluesound-powernode-2i)|
-|Microphones|[Saramonic VMIC](https://www.saramonic.com/product/vmic-pro), [Shure MV7](https://shop.shure.com.sg/products/mv7-microphone)|
+# 🎧 Audiophile Gear Setup
 
+| **Category**            | **Equipment** |
+|-------------------------|---------------|
+| **Active Speaker**      | [KEF LSX](https://www.whathifi.com/reviews/kef-lsx) |
+| **In-Ear Headphones**   | [Sony WF-1000XM4](https://www.sony.com.sg/headphones/products/wf-1000xm4), [Sony WF-1000XM5](https://store.sony.com.sg/products/wf-1000xm5), [Sennheiser IE300](https://sg.sennheiser-hearing.com/products/ie-300), [Kiwi Ears x Crinacle Singolo](https://www.linsoul.com/products/kiwi-ears-x-crinacle-singolo), [TANGZU Waner SG2](https://www.linsoul.com/products/tangzu-waner-sg2), Klipsch X4i, [Moondrop Aria 2](https://www.linsoul.com/products/moondrop-aria-2) |
+| **Over-Ear (Closed Back)** | [Audio Technica ATH-M50X](https://www.audio-technica.com/en-eu/ath-m50x), [Sennheiser MOMENTUM 4](https://sg.sennheiser-hearing.com/products/momentum-4-wireless) |
+| **Over-Ear (Open Back)**   | [Meze 109 Pro](https://vsco.co/attaboyabhi/media/63e531de32f88f1ff6000001) |
+| **USB-C DAC**          | [Cayin RU6](https://vsco.co/attaboyabhi/media/63e531de32f88f1ff6000001) (R-2R resistor ladder) |
+| **Portable Audio Player** | [Sony NW-A306](https://vsco.co/attaboyabhi/video/8c276d2d-8c1c-4644-9c95-41fcaee8ef02) *(gifted)* |
+| **Passive Speakers**    | [ELAC Debut Reference DBR62](https://www.elac.com/category-bookshelf-speakers-debut-reference-dbr-62) powered by [Bluesound Powernode 2i](https://www.whathifi.com/reviews/bluesound-powernode-2i) |
+| **Microphones**         | [Saramonic VMIC](https://www.saramonic.com/product/vmic-pro), [Shure MV7](https://shop.shure.com.sg/products/mv7-microphone) |
 
-📋 **Summary Table**
+# 📊 Headphone Sound Summary
 
-| Headphone              | Bass              | Mids              | Treble            | Sound Signature                            | FR Graph |
-|------------------------|-------------------|-------------------|-------------------|--------------------------------------------|----------|
-| Momentum 4 Wireless    | Warm & Rich       | Clear             | Smooth            | Consumer-friendly                          | [Link](https://kuulokenurkka.squig.link/?share=Harman_2018_Target%2CMomentum_4_%28ANC_ON%29_%2A%2A) |
-| WF-1000XM5             | Punchy            | Recessed          | Smooth            | V-shaped                                   | [Link](https://tgx78.squig.link/?share=Xm5) |
-| IE300                  | Full-bodied       | Recessed          | Sparkly           | Warm with enhanced treble                  | [Link](https://squig.link/?share=Crinacle_Target%2CSennheiser_IE300) |
-| Meze 109 Pro           | Neutral           | Natural           | Smooth            | Balanced and natural                       | [Link](https://kuulokenurkka.squig.link/?share=Harman_2018_Target%2C109_Pro) |
-| Kiwi Ears Singolo      | Controlled        | Forward           | Refined           | Neutral reference tuning                   | [Link](https://squig.link/?share=Crinacle_Target%2CKiwi_Ears_Singolo) |
-| TANGZU Waner SG2       | Present           | Balanced          | Extended          | Slightly warm with good detail             | [Link](https://squig.link/?share=Harman_Target%2CTANGZU_Waner_SG2) |
-| Audio Technica ATH-M50x| Punchy & Tight    | Slightly Recessed | Bright            | Slight V-shape with energetic upper mids   | [Link](https://squig.link/?share=Harman_2018_Target%2CAudio-Technica_ATH-M50x) |
-| Klipsch X4i            | Tight & Controlled | Forward          | Crisp             | Mildly bright with mid-forward clarity     | NA |
+| **Headphone**             | **Bass**           | **Mids**            | **Treble**          | **Sound Signature**                          | **FR Graph** |
+|---------------------------|--------------------|---------------------|---------------------|----------------------------------------------|--------------|
+| Momentum 4 Wireless       | Warm & Rich        | Clear               | Smooth              | Consumer-friendly                            | [Link](https://kuulokenurkka.squig.link/?share=Harman_2018_Target%2CMomentum_4_%28ANC_ON%29_%2A%2A) |
+| WF-1000XM5                | Punchy             | Recessed            | Smooth              | V-shaped                                     | [Link](https://tgx78.squig.link/?share=Xm5) |
+| IE300                     | Full-bodied        | Recessed            | Sparkly             | Warm with enhanced treble                    | [Link](https://squig.link/?share=Crinacle_Target%2CSennheiser_IE300) |
+| Meze 109 Pro              | Neutral            | Natural             | Smooth              | Balanced and natural                         | [Link](https://kuulokenurkka.squig.link/?share=Harman_2018_Target%2C109_Pro) |
+| Kiwi Ears Singolo         | Controlled         | Forward             | Refined             | Neutral reference tuning                     | [Link](https://squig.link/?share=Crinacle_Target%2CKiwi_Ears_Singolo) |
+| TANGZU Waner SG2          | Present            | Balanced            | Extended            | Slightly warm with good detail               | [Link](https://squig.link/?share=Harman_Target%2CTANGZU_Waner_SG2) |
+| Audio Technica ATH-M50x   | Punchy & Tight     | Slightly Recessed   | Bright              | Slight V-shape with energetic upper mids     | [Link](https://squig.link/?share=Harman_2018_Target%2CAudio-Technica_ATH-M50x) |
+| Klipsch X4i               | Tight & Controlled | Forward             | Crisp               | Mildly bright with mid-forward clarity       | NA |
+| Moondrop Aria 2           | Sub-bass lean, clean | Mildly forward    | Smoothly extended   | Harman-inspired with air & clarity           | [Link](https://squig.link/?share=Harman_2018_Target%2CMoondrop_Aria_2) |
 
+# 🎯 Recommended Use Cases
 
-🎯 **Recommendations**
-
-- **Bass Lovers**: Sony WF-1000XM5, Momentum 4
-- **Balanced Tonality**: Meze 109 Pro, Kiwi Ears Singolo
-- **Treble Enthusiasts**: Sennheiser IE300, Audio-Technica ATH-M50x, Klipsch X4i
-- **Value & Detail**: TANGZU Waner SG2
+- **Bass Lovers**: `Sony WF-1000XM5`, `Momentum 4`
+- **Balanced Tonality**: `Meze 109 Pro`, `Kiwi Ears Singolo`, `Moondrop Aria 2`
+- **Treble Enthusiasts**: `Sennheiser IE300`, `ATH-M50x`, `Klipsch X4i`, `Moondrop Aria 2`
+- **Value & Detail**: `TANGZU Waner SG2`, `Moondrop Aria 2`
 
 
 * Devouted follower of [Darko Audio](https://darko.audio/)
