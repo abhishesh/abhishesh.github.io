@@ -72,7 +72,7 @@ GEM
     colorator (1.1.0)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
-    digest (3.1.0)
+    digest (3.2.0)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
@@ -85,7 +85,6 @@ GEM
     http_parser.rb (0.8.0)
     i18n (1.9.1)
       concurrent-ruby (~> 1.0)
-    io-wait (0.2.1)
     jekyll (4.2.1)
       addressable (~> 2.4)
       colorator (~> 1.0)
@@ -131,7 +130,7 @@ GEM
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
     minitest (5.15.0)
-    net-imap (0.2.3)
+    net-imap (0.2.5)
       digest
       net-protocol
       strscan
@@ -139,8 +138,7 @@ GEM
       digest
       net-protocol
       timeout
-    net-protocol (0.1.2)
-      io-wait
+    net-protocol (0.2.2)
       timeout
     net-smtp (0.3.1)
       digest
@@ -193,11 +191,11 @@ GEM
     safe_yaml (1.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
-    strscan (3.0.1)
+    strscan (3.1.5)
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     thor (1.2.1)
-    timeout (0.2.0)
+    timeout (0.4.3)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.8.0)
@@ -214,7 +212,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.2)
   jekyll-feed
-  minima (~> 2)
+  minima (~> 2.5)
   rails
   webrick
 
