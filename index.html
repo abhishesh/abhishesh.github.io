@@ -1,0 +1,463 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishesh Sharma</title>
+    <style>
+        .tab-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .tab-nav {
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 20px;
+            gap: 5px;
+        }
+        
+        .tab-button {
+            background: none;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            color: #666;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .tab-button:hover {
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .tab-button.active {
+            color: #2196F3;
+            border-bottom-color: #2196F3;
+            background-color: #f8f9ff;
+        }
+        
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.3s ease-in;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .section-title {
+            color: #333;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f5f5f5;
+            font-weight: 600;
+        }
+        
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .link-item {
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .principles-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .principles-list li {
+            background: #f8f9fa;
+            margin: 8px 0;
+            padding: 10px 15px;
+            border-radius: 6px;
+            border-left: 4px solid #2196F3;
+        }
+        
+        @media (max-width: 768px) {
+            .tab-nav {
+                flex-direction: column;
+            }
+            
+            .tab-button {
+                text-align: left;
+                border-bottom: none;
+                border-left: 3px solid transparent;
+            }
+            
+            .tab-button.active {
+                border-left-color: #2196F3;
+                border-bottom-color: transparent;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="tab-container">
+        <nav class="tab-nav">
+            <button class="tab-button active" onclick="showTab('about')">About</button>
+            <button class="tab-button" onclick="showTab('photography')">Photography</button>
+            <button class="tab-button" onclick="showTab('audio')">Audio</button>
+            <button class="tab-button" onclick="showTab('hobbies')">Hobbies</button>
+            <button class="tab-button" onclick="showTab('tech')">Tech & Projects</button>
+            <button class="tab-button" onclick="showTab('travel')">Travel</button>
+        </nav>
+
+        <div id="about" class="tab-content active">
+            <h2 class="section-title">About me!</h2>
+            <p><em>I am in perpetual search for perfection</em></p>
+            
+            <h3>Principles</h3>
+            <ul class="principles-list">
+                <li>no half measures</li>
+                <li>be curious, not judgemental</li>
+                <li>less but better</li>
+                <li>keep it short and sweet</li>
+                <li>skeuomorphism to neumorphism</li>
+                <li>convergent thinker by day and divergent by night!</li>
+                <li>I am the documentation 🤓 <a href="https://www.youtube.com/watch?v=0RQtwftu92Y">context</a></li>
+            </ul>
+
+            <h3>Preferences & Interests</h3>
+            <ul class="principles-list">
+                <li>vim over emacs</li>
+                <li><strong>*nix</strong> over windows</li>
+                <li>expresso && chai</li>
+                <li>DIY enthusiast</li>
+                <li>flâneur - wander aimlessly through city</li>
+                <li>SONY fanboy (guilty! rather anything made in Japan or designed in Japan)</li>
+                <li>Ghibli Studio Fan <a href="https://www.imdb.com/list/ls561133549/">Ghibli Movies</a></li>
+                <li>🐶 person <a href="https://flickr.com/photos/abhishesh-sharma/albums/72177720312673306/">Penny's Hooman - Flickr</a></li>
+            </ul>
+
+            <div class="links-grid">
+                <div class="link-item">
+                    <a href="https://www.linkedin.com/in/abhishesh/">LinkedIn</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://twitter.com/abhishesh">Twitter</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="photography" class="tab-content">
+            <h2 class="section-title">Photography</h2>
+            <p>A picture is worth a thousand words. I have been learning photography since 2016 and I am very fond of manual lenses. Thanks to the short flange focal distance of mirrorless cameras and in-body optical image stabilization in Sony Cameras, I can use half-a-century-old lenses on modern digital cameras effectively and create some beautiful images full of character and microcontrast.</p>
+
+            <h3>Equipment</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Tools</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Manual Lenses Adapted to Sony Mount</td>
+                        <td>Pentacon 50mm f1.8, Helios 44-2 Zebra 58mm f2, Minolta 35-70 f3.5, Minolta MC ROKKOR PG 50mm f1.4, Vivitar 100-500, SuperTakumar 135mm f3.5, and more</td>
+                    </tr>
+                    <tr>
+                        <td>Sony Mount Manual Focus FF</td>
+                        <td>Voigtlander Nokton 40mm f1.2, Voigtlander 12mm f5.6</td>
+                    </tr>
+                    <tr>
+                        <td>Sony Mount Automatic Focus FF</td>
+                        <td>Sony 100-400 GM, 28mm f2, Tamron 28-75 f2.8</td>
+                    </tr>
+                    <tr>
+                        <td>Camera</td>
+                        <td>Sony A7RV, Canon 70D, Canon 5D Mark I</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Portfolio Links</h3>
+            <div class="links-grid">
+                <div class="link-item">
+                    <a href="https://flickr.com/photos/abhishesh-sharma/">Flickr</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://500px.com/p/AbhisheshSharma">500px</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://vsco.co/attaboyabhi/gallery">VSCO</a>
+                </div>
+            </div>
+
+            <h3>Editing Tools</h3>
+            <ul>
+                <li>VSCO</li>
+                <li>Adobe Lightroom Classic</li>
+            </ul>
+        </div>
+
+        <div id="audio" class="tab-content">
+            <h2 class="section-title">Audiophile</h2>
+            <p>As a strong proponent of consuming anything in pure form, music cannot be any different. I try to get a similar sound stage and imaging at the home of what an artist intends in a recording studio. Also, while flying or in local transit, I love the quiet offered by the noise-canceling headphones.</p>
+
+            <h3>🎧 Audiophile Gear Setup</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Equipment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Active Speaker</td>
+                        <td>KEF LSX</td>
+                    </tr>
+                    <tr>
+                        <td>In-Ear Headphones</td>
+                        <td>Sony WF-1000XM4, Sony WF-1000XM5, Sennheiser IE300, Kiwi Ears x Crinacle Singolo, TANGZU Waner SG2, Klipsch X4i, Moondrop Aria 2</td>
+                    </tr>
+                    <tr>
+                        <td>Over-Ear (Closed Back)</td>
+                        <td>Audio Technica ATH-M50X, Sennheiser MOMENTUM 4</td>
+                    </tr>
+                    <tr>
+                        <td>Over-Ear (Open Back)</td>
+                        <td>Meze 109 Pro</td>
+                    </tr>
+                    <tr>
+                        <td>USB-C DAC</td>
+                        <td>Cayin RU6 (R-2R resistor ladder), Quedelix 5K, Jcally JM6 Pro</td>
+                    </tr>
+                    <tr>
+                        <td>Portable Audio Player</td>
+                        <td>Sony NW-A306 (gifted)</td>
+                    </tr>
+                    <tr>
+                        <td>Passive Speakers</td>
+                        <td>ELAC Debut Reference DBR62 powered by Bluesound Powernode 2i</td>
+                    </tr>
+                    <tr>
+                        <td>Microphones</td>
+                        <td>Saramonic VMIC, Shure MV7</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>📊 Headphone Sound Summary</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Headphone</th>
+                        <th>Bass</th>
+                        <th>Mids</th>
+                        <th>Treble</th>
+                        <th>Sound Signature</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Momentum 4 Wireless</td>
+                        <td>Warm & Rich</td>
+                        <td>Clear</td>
+                        <td>Smooth</td>
+                        <td>Consumer-friendly</td>
+                    </tr>
+                    <tr>
+                        <td>WF-1000XM5</td>
+                        <td>Punchy</td>
+                        <td>Recessed</td>
+                        <td>Smooth</td>
+                        <td>V-shaped</td>
+                    </tr>
+                    <tr>
+                        <td>IE300</td>
+                        <td>Full-bodied</td>
+                        <td>Recessed</td>
+                        <td>Sparkly</td>
+                        <td>Warm with enhanced treble</td>
+                    </tr>
+                    <tr>
+                        <td>Meze 109 Pro</td>
+                        <td>Neutral</td>
+                        <td>Natural</td>
+                        <td>Smooth</td>
+                        <td>Balanced and natural</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Resources</h3>
+            <ul>
+                <li>Devoted follower of <a href="https://darko.audio/">Darko Audio</a></li>
+                <li><a href="https://crinacle.com/">Crinacle</a> for Chi-Fi and general audio gear</li>
+                <li>My Curated Playlists:
+                    <ul>
+                        <li><a href="https://tidal.com/playlist/9ce1405b-8422-40f8-8dcc-b0982a7a96d5">Tidal - Needle in the soul</a></li>
+                        <li><a href="https://tidal.com/playlist/1e4ccc65-8e0c-48a8-8c52-498764818672">Tidal - Bit-Perfect Bangers</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="hobbies" class="tab-content">
+            <h2 class="section-title">Hobbies</h2>
+            
+            <h3>Mechanical Watches</h3>
+            <p>Mechanical watches symbolize a blend of intricate craftsmanship, timeless design, and a nod to tradition. Their appeal lies not just in their functionality but also in the artistry and engineering behind their construction.</p>
+            <ul>
+                <li>I have a Tudor Black Bay that I really love and goes well with casuals and formals alike</li>
+                <li>Next on my to buy list is Rolex Explorer. I like the simplicity and elegance it carries.</li>
+            </ul>
+
+            <h3>Coffee</h3>
+            <p>Love brewing espresso and have watched numerous <a href="https://www.jameshoffmann.co.uk/">James Hoffmann</a> YouTube videos during pandemic! Try to tweak my humble Delonghi coffee machine for the coarseness of grind and time to brew, whenever I lay my hands on a new variety of coffee beans.</p>
+
+            <h3>Mechanical Keyboards</h3>
+            <p>A mechanical keyboard is a must have productivity tool for someone who has to type for hours.</p>
+            <ul>
+                <li><strong>Keychron K2</strong> - Brown switch, Bluetooth, <a href="https://soundcloud.com/abhishesh-sharma/keychron-red-switch-sound">how it sounds</a></li>
+                <li><strong>Akko ACR Pro 75</strong> - Gasket Mount, Smooth like butter!</li>
+            </ul>
+
+            <h3>Perfumes</h3>
+            <p>Perhaps another pandemic-driven proclivity is love for perfumes. I tried and purchased many new fragrances that I never forayed into earlier. Aficionado of Alberto Morillas. 40% of my blind buy perfumes in the past has been his perfumes.</p>
+            <p><a href="https://www.fragrantica.com/member/1459421">My profile on Fragrantica</a></p>
+        </div>
+
+        <div id="tech" class="tab-content">
+            <h2 class="section-title">Technology & Projects</h2>
+            
+            <p>I like solving complex technical problems (see LinkedIn :))</p>
+
+            <h3>Desk Setup</h3>
+            <ul>
+                <li>Omnidesk Pro WildWood - Pheasantwood</li>
+                <li>Dell U2720Q on Prism+ Arc Opus</li>
+                <li>Alienware Aurora R12 running Linux :)</li>
+                <li>Benq Screenbar</li>
+                <li>iPad Pro 1st Gen</li>
+                <li>MacBook Pro 2019 16"</li>
+            </ul>
+            
+            <div class="links-grid">
+                <div class="link-item">
+                    <a href="https://vsco.co/attaboyabhi/media/65c395b793559a0b87ef31b8">Desk Setup 1</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://vsco.co/attaboyabhi/media/66d892fdcb549a1437fac762">Desk Setup 2</a>
+                </div>
+            </div>
+
+            <h3>Hobby & Mentorship Projects</h3>
+            <div class="links-grid">
+                <div class="link-item">
+                    <a href="https://abhishesh.com/elections_india">Elections Data India</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://abhishesh.com/bytechor">Bytechor</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://abhishesh.com/air_quality">Air Quality Dataset</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://abhishesh.com/URA_SG_Dataset">URA SG Dataset</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://homebridge.io/">HomeBridge</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://duckdb.org/">DuckDB lover</a>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <img src="https://github-readme-stats.vercel.app/api?username=abhishesh&show_icons=true" alt="Github Public Stats">
+            </div>
+        </div>
+
+        <div id="travel" class="tab-content">
+            <h2 class="section-title">Travel</h2>
+            <p>I have travelled to the following countries apart from my home country <code>India</code> and my work home for the last decade, <a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72157671074602024/with/34523847754">Singapore</a>:</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 20px 0;">
+                <div class="link-item">Malaysia</div>
+                <div class="link-item">Indonesia</div>
+                <div class="link-item">Cambodia</div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314042365/">Vietnam</a></div>
+                <div class="link-item">Thailand</div>
+                <div class="link-item">Macao</div>
+                <div class="link-item">Hong Kong</div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720322536997/">Korea</a></div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314033207/">Japan</a></div>
+                <div class="link-item">United Arab Emirates</div>
+                <div class="link-item">Italy</div>
+                <div class="link-item">Vatican City</div>
+                <div class="link-item">Monaco</div>
+                <div class="link-item">France</div>
+                <div class="link-item">United Kingdom</div>
+                <div class="link-item">Scotland</div>
+                <div class="link-item">Portugal</div>
+                <div class="link-item">United States of America</div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314033137/">Switzerland</a></div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314040692/">Finland</a></div>
+                <div class="link-item">Sweden</div>
+                <div class="link-item">Estonia</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all buttons
+            const tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => button.classList.remove('active'));
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
