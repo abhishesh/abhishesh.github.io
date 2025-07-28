@@ -103,30 +103,87 @@ layout: default
         .principles-list {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
         
         .principles-list li {
             background: #f8f9fa;
             margin: 8px 0;
-            padding: 10px 15px;
-            border-radius: 6px;
+            padding: 12px 15px;
+            border-radius: 8px;
             border-left: 4px solid #2196F3;
+            position: relative;
+            line-height: 1.5;
+        }
+        
+        .principles-list li::before {
+            content: "•";
+            color: #2196F3;
+            font-weight: bold;
+            position: absolute;
+            left: -10px;
+            top: 12px;
         }
         
         @media (max-width: 768px) {
+            .tab-container {
+                padding: 10px;
+            }
+            
             .tab-nav {
                 flex-direction: column;
+                gap: 0;
             }
             
             .tab-button {
                 text-align: left;
                 border-bottom: none;
                 border-left: 3px solid transparent;
+                padding: 15px 20px;
+                font-size: 18px;
             }
             
             .tab-button.active {
                 border-left-color: #2196F3;
                 border-bottom-color: transparent;
+            }
+            
+            .section-title {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+            
+            .principles-list li {
+                padding: 10px 12px;
+                margin: 6px 0;
+                font-size: 14px;
+            }
+            
+            .principles-list li::before {
+                left: -8px;
+                top: 10px;
+            }
+            
+            table {
+                font-size: 14px;
+                overflow-x: auto;
+                display: block;
+                white-space: nowrap;
+            }
+            
+            th, td {
+                padding: 8px;
+                min-width: 120px;
+            }
+            
+            .links-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 10px;
+            }
+            
+            .link-item {
+                padding: 8px;
+                font-size: 14px;
             }
         }
     </style>
