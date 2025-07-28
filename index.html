@@ -100,29 +100,137 @@ layout: default
             text-align: center;
         }
         
+        .hero-tagline {
+            font-size: 28px;
+            font-weight: 300;
+            color: #2c3e50;
+            text-align: center;
+            margin: 30px 0 50px 0;
+            padding: 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 0.5px;
+            line-height: 1.4;
+        }
+        
+        .content-section {
+            margin-bottom: 50px;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e8ecf3;
+        }
+        
+        .section-icon {
+            width: 32px;
+            height: 32px;
+            margin-right: 12px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .principles-icon {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+        
+        .preferences-icon {
+            background: linear-gradient(135deg, #ffecd2, #fcb69f);
+        }
+        
+        .section-header h3 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
         .principles-list {
             list-style: none;
             padding: 0;
             margin: 0;
+            display: grid;
+            gap: 15px;
         }
         
         .principles-list li {
-            background: #f8f9fa;
-            margin: 8px 0;
-            padding: 12px 15px;
-            border-radius: 8px;
-            border-left: 4px solid #2196F3;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-left: 4px solid transparent;
             position: relative;
-            line-height: 1.5;
+            line-height: 1.6;
+            font-size: 16px;
+            color: #34495e;
+            transition: all 0.3s ease;
+        }
+        
+        .principles-list.principles li {
+            border-left-color: #667eea;
+        }
+        
+        .principles-list.preferences li {
+            border-left-color: #fcb69f;
+        }
+        
+        .principles-list li:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
         }
         
         .principles-list li::before {
-            content: "•";
-            color: #2196F3;
-            font-weight: bold;
+            content: "";
             position: absolute;
-            left: -10px;
-            top: 12px;
+            left: 15px;
+            top: 24px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            opacity: 0.6;
+        }
+        
+        .principles-list.principles li::before {
+            background: #667eea;
+        }
+        
+        .principles-list.preferences li::before {
+            background: #fcb69f;
+        }
+        
+        .context-link {
+            display: inline-flex;
+            align-items: center;
+            margin-left: 8px;
+            padding: 4px 8px;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 6px;
+            text-decoration: none;
+            color: #667eea;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .context-link:hover {
+            background: rgba(102, 126, 234, 0.2);
+            transform: scale(1.05);
+        }
+        
+        .context-link::before {
+            content: "🤓";
+            margin-right: 4px;
         }
         
         @media (max-width: 768px) {
@@ -153,15 +261,53 @@ layout: default
                 margin-bottom: 15px;
             }
             
-            .principles-list li {
-                padding: 10px 12px;
-                margin: 6px 0;
+            .hero-tagline {
+                font-size: 20px;
+                margin: 20px 0 30px 0;
+                padding: 20px 15px;
+                letter-spacing: 0.3px;
+            }
+            
+            .content-section {
+                margin-bottom: 35px;
+            }
+            
+            .section-header {
+                margin-bottom: 20px;
+                padding-bottom: 12px;
+            }
+            
+            .section-icon {
+                width: 28px;
+                height: 28px;
+                margin-right: 10px;
                 font-size: 14px;
             }
             
+            .section-header h3 {
+                font-size: 20px;
+            }
+            
+            .principles-list {
+                gap: 12px;
+            }
+            
+            .principles-list li {
+                padding: 16px;
+                font-size: 15px;
+                border-radius: 10px;
+            }
+            
             .principles-list li::before {
-                left: -8px;
-                top: 10px;
+                left: 12px;
+                top: 20px;
+                width: 5px;
+                height: 5px;
+            }
+            
+            .context-link {
+                font-size: 13px;
+                padding: 3px 6px;
             }
             
             table {
@@ -201,30 +347,42 @@ layout: default
 
         <div id="about" class="tab-content active">
             <h2 class="section-title">About me!</h2>
-            <p><em>I am in perpetual search for perfection</em></p>
+            <div class="hero-tagline">
+                I am in perpetual search for perfection
+            </div>
             
-            <h3>Principles</h3>
-            <ul class="principles-list">
-                <li>no half measures</li>
-                <li>be curious, not judgemental</li>
-                <li>less but better</li>
-                <li>keep it short and sweet</li>
-                <li>skeuomorphism to neumorphism</li>
-                <li>convergent thinker by day and divergent by night!</li>
-                <li>I am the documentation 🤓 <a href="https://www.youtube.com/watch?v=0RQtwftu92Y">context</a></li>
-            </ul>
+            <div class="content-section">
+                <div class="section-header">
+                    <div class="section-icon principles-icon">⚡</div>
+                    <h3>Principles</h3>
+                </div>
+                <ul class="principles-list principles">
+                    <li>no half measures</li>
+                    <li>be curious, not judgemental</li>
+                    <li>less but better</li>
+                    <li>keep it short and sweet</li>
+                    <li>skeuomorphism to neumorphism</li>
+                    <li>convergent thinker by day and divergent by night!</li>
+                    <li>I am the documentation <a href="https://www.youtube.com/watch?v=0RQtwftu92Y" class="context-link">context</a></li>
+                </ul>
+            </div>
 
-            <h3>Preferences & Interests</h3>
-            <ul class="principles-list">
-                <li>vim over emacs</li>
-                <li><strong>*nix</strong> over windows</li>
-                <li>expresso && chai</li>
-                <li>DIY enthusiast</li>
-                <li>flâneur - wander aimlessly through city</li>
-                <li>SONY fanboy (guilty! rather anything made in Japan or designed in Japan)</li>
-                <li>Ghibli Studio Fan <a href="https://www.imdb.com/list/ls561133549/">Ghibli Movies</a></li>
-                <li>🐶 person <a href="https://flickr.com/photos/abhishesh-sharma/albums/72177720312673306/">Penny's Hooman - Flickr</a></li>
-            </ul>
+            <div class="content-section">
+                <div class="section-header">
+                    <div class="section-icon preferences-icon">❤️</div>
+                    <h3>Preferences & Interests</h3>
+                </div>
+                <ul class="principles-list preferences">
+                    <li>vim over emacs</li>
+                    <li><strong>*nix</strong> over windows</li>
+                    <li>expresso && chai</li>
+                    <li>DIY enthusiast</li>
+                    <li>flâneur - wander aimlessly through city</li>
+                    <li>SONY fanboy (guilty! rather anything made in Japan or designed in Japan)</li>
+                    <li>Ghibli Studio Fan <a href="https://www.imdb.com/list/ls561133549/" class="context-link">Movies</a></li>
+                    <li>🐶 person <a href="https://flickr.com/photos/abhishesh-sharma/albums/72177720312673306/" class="context-link">Penny's Hooman</a></li>
+                </ul>
+            </div>
 
             <div class="links-grid">
                 <div class="link-item">
