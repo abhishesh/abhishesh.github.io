@@ -27,11 +27,23 @@ layout: default
         body.homepage footer {
             display: none;
         }
+
+        /* Universal overflow prevention */
+        * {
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        html {
+            overflow-x: hidden;
+        }
         
         body {
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             min-height: 100vh;
             font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            box-sizing: border-box;
         }
         
         .hero-gradient {
@@ -493,8 +505,8 @@ layout: default
 </head>
 <body class="homepage">
     <!-- Hero Section -->
-    <section class="hero-gradient px-6 py-20 text-center">
-        <div class="max-w-4xl mx-auto">
+    <section class="hero-gradient py-20 text-center" style="padding-left: 1.5rem; padding-right: 1.5rem; box-sizing: border-box;">
+        <div class="max-w-4xl mx-auto" style="max-width: calc(100vw - 3rem); box-sizing: border-box;">
             <h1 class="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-cyan-400 bg-clip-text text-transparent">
                 Abhishesh Sharma
             </h1>
@@ -535,7 +547,7 @@ layout: default
                 </ul>
             </div>
 
-            <div class="flex justify-center space-x-4 mb-12">
+            <div class="flex justify-center space-x-4 mb-12" style="flex-wrap: wrap; gap: 1rem;">
                 <a href="https://www.linkedin.com/in/abhishesh/" class="bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-6 py-3 rounded-lg transition-colors">
                     LinkedIn
                 </a>
