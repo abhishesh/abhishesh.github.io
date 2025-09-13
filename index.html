@@ -22,6 +22,12 @@ layout: default
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        /* Hide header/footer on homepage only */
+        body.homepage header,
+        body.homepage footer {
+            display: none;
+        }
+        
         body {
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             min-height: 100vh;
@@ -410,7 +416,7 @@ layout: default
         }
     </style>
 </head>
-<body>
+<body class="homepage">
     <!-- Hero Section -->
     <section class="hero-gradient px-6 py-20 text-center">
         <div class="max-w-4xl mx-auto">
