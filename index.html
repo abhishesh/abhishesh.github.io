@@ -34,8 +34,13 @@ layout: default
             box-sizing: border-box;
         }
 
-        html {
+        html, body {
             overflow-x: hidden;
+            max-width: 100vw;
+        }
+
+        .tab-container, .tab-container * {
+            max-width: 100%;
         }
         
         body {
@@ -136,12 +141,23 @@ layout: default
             table-layout: fixed;
             word-wrap: break-word;
         }
+
+        /* Specific fix for equipment table */
+        .table-wrapper table {
+            min-width: 0;
+        }
+
+        .table-wrapper td:nth-child(2) {
+            max-width: calc(60vw - 100px);
+            min-width: 0;
+        }
         
         .table-wrapper {
             overflow-x: auto;
             margin: 20px 0;
             width: 100%;
             box-sizing: border-box;
+            max-width: 100%;
         }
         
         th, td {
@@ -422,6 +438,11 @@ layout: default
                 width: calc(100vw - 20px);
                 max-width: calc(100vw - 20px);
                 padding: 10px;
+            }
+
+            .table-wrapper td:nth-child(2) {
+                max-width: calc(60vw - 60px);
+                min-width: 0;
             }
             
             .tab-nav {
