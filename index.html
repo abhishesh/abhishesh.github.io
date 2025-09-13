@@ -229,8 +229,48 @@ layout: default
             line-height: 1.6;
         }
         
-        .content-section {
-            margin-bottom: 30px;
+        .sub-tab-nav {
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #334155;
+            margin-bottom: 20px;
+            gap: 5px;
+            background: rgba(51, 65, 85, 0.3);
+            border-radius: 8px;
+            padding: 8px;
+        }
+        
+        .sub-tab-button {
+            background: none;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            color: #94a3b8;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+            border-radius: 6px;
+        }
+        
+        .sub-tab-button:hover {
+            color: #06b6d4;
+            background-color: rgba(6, 182, 212, 0.1);
+        }
+        
+        .sub-tab-button.active {
+            color: #06b6d4;
+            border-bottom-color: #06b6d4;
+            background-color: rgba(6, 182, 212, 0.15);
+        }
+        
+        .sub-tab-content {
+            display: none;
+            animation: fadeIn 0.3s ease-in;
+        }
+        
+        .sub-tab-content.active {
+            display: block;
         }
         
         .section-header {
@@ -717,26 +757,41 @@ layout: default
         <div id="hobbies" class="tab-content">
             <h2 class="section-title">Hobbies</h2>
             
-            <h3>Mechanical Watches</h3>
-            <p>Mechanical watches symbolize a blend of intricate craftsmanship, timeless design, and a nod to tradition. Their appeal lies not just in their functionality but also in the artistry and engineering behind their construction.</p>
-            <ul>
-                <li>I have a Tudor Black Bay that I really love and goes well with casuals and formals alike</li>
-                <li>Next on my to buy list is Rolex Explorer. I like the simplicity and elegance it carries.</li>
-            </ul>
+            <nav class="sub-tab-nav">
+                <button class="sub-tab-button active" onclick="showSubTab('watches')">Watches</button>
+                <button class="sub-tab-button" onclick="showSubTab('coffee')">Coffee</button>
+                <button class="sub-tab-button" onclick="showSubTab('keyboards')">Keyboards</button>
+                <button class="sub-tab-button" onclick="showSubTab('perfumes')">Perfumes</button>
+            </nav>
 
-            <h3>Coffee</h3>
-            <p>Love brewing espresso and have watched numerous <a href="https://www.jameshoffmann.co.uk/">James Hoffmann</a> YouTube videos during pandemic! Try to tweak my humble Delonghi coffee machine for the coarseness of grind and time to brew, whenever I lay my hands on a new variety of coffee beans.</p>
+            <div id="watches" class="sub-tab-content active">
+                <h3>Mechanical Watches</h3>
+                <p>Mechanical watches symbolize a blend of intricate craftsmanship, timeless design, and a nod to tradition. Their appeal lies not just in their functionality but also in the artistry and engineering behind their construction.</p>
+                <ul>
+                    <li>I have a Tudor Black Bay that I really love and goes well with casuals and formals alike</li>
+                    <li>Next on my to buy list is Rolex Explorer. I like the simplicity and elegance it carries.</li>
+                </ul>
+            </div>
 
-            <h3>Mechanical Keyboards</h3>
-            <p>A mechanical keyboard is a must have productivity tool for someone who has to type for hours.</p>
-            <ul>
-                <li><strong>Keychron K2</strong> - Brown switch, Bluetooth, <a href="https://soundcloud.com/abhishesh-sharma/keychron-red-switch-sound">how it sounds</a></li>
-                <li><strong>Akko ACR Pro 75</strong> - Gasket Mount, Smooth like butter!</li>
-            </ul>
+            <div id="coffee" class="sub-tab-content">
+                <h3>Coffee</h3>
+                <p>Love brewing espresso and have watched numerous <a href="https://www.jameshoffmann.co.uk/">James Hoffmann</a> YouTube videos during pandemic! Try to tweak my humble Delonghi coffee machine for the coarseness of grind and time to brew, whenever I lay my hands on a new variety of coffee beans.</p>
+            </div>
 
-            <h3>Perfumes</h3>
-            <p>Perhaps another pandemic-driven proclivity is love for perfumes. I tried and purchased many new fragrances that I never forayed into earlier. Aficionado of <a href="https://www.firmenich.com/fragrance/fine-fragrance/people/alberto-morillas">Alberto Morillas</a>. 40% of my blind buy perfumes in the past has been his perfumes.</p>
-            <p><a href="https://www.fragrantica.com/member/1459421">My profile on Fragrantica</a></p>
+            <div id="keyboards" class="sub-tab-content">
+                <h3>Mechanical Keyboards</h3>
+                <p>A mechanical keyboard is a must have productivity tool for someone who has to type for hours.</p>
+                <ul>
+                    <li><strong>Keychron K2</strong> - Brown switch, Bluetooth, <a href="https://soundcloud.com/abhishesh-sharma/keychron-red-switch-sound">how it sounds</a></li>
+                    <li><strong>Akko ACR Pro 75</strong> - Gasket Mount, Smooth like butter!</li>
+                </ul>
+            </div>
+
+            <div id="perfumes" class="sub-tab-content">
+                <h3>Perfumes</h3>
+                <p>Perhaps another pandemic-driven proclivity is love for perfumes. I tried and purchased many new fragrances that I never forayed into earlier. Aficionado of <a href="https://www.firmenich.com/fragrance/fine-fragrance/people/alberto-morillas">Alberto Morillas</a>. 40% of my blind buy perfumes in the past has been his perfumes.</p>
+                <p><a href="https://www.fragrantica.com/member/1459421">My profile on Fragrantica</a></p>
+            </div>
         </div>
 
         <div id="tech" class="tab-content">
@@ -841,6 +896,22 @@ layout: default
             
             // Show selected tab content
             document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+
+        function showSubTab(subTabName) {
+            // Hide all sub-tab contents
+            const subTabContents = document.querySelectorAll('.sub-tab-content');
+            subTabContents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all sub-tab buttons
+            const subTabButtons = document.querySelectorAll('.sub-tab-button');
+            subTabButtons.forEach(button => button.classList.remove('active'));
+            
+            // Show selected sub-tab content
+            document.getElementById(subTabName).classList.add('active');
             
             // Add active class to clicked button
             event.target.classList.add('active');
