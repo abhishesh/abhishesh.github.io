@@ -134,6 +134,7 @@ layout: default
             border-radius: 12px;
             overflow: hidden;
             table-layout: fixed;
+            word-wrap: break-word;
         }
         
         .table-wrapper {
@@ -152,6 +153,10 @@ layout: default
             font-weight: 400;
             font-size: 15px;
             line-height: 1.5;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
+            max-width: 0;
         }
         
         tr {
@@ -232,6 +237,8 @@ layout: default
             text-decoration: none;
             transition: color 0.3s ease;
             font-weight: 400;
+            word-break: break-word;
+            overflow-wrap: break-word;
         }
         
         a:hover {
@@ -487,8 +494,12 @@ layout: default
             
             th, td {
                 padding: 8px;
-                min-width: 80px;
+                min-width: 60px;
+                max-width: 0;
                 word-wrap: break-word;
+                word-break: break-word;
+                overflow-wrap: break-word;
+                white-space: normal;
             }
             
             .links-grid {
