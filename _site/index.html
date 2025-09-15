@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Abhishesh</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Abhishesh" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Abhishesh" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Abhishesh" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","headline":"Abhishesh","name":"Abhishesh","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Abhishesh" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Abhishesh</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishesh Sharma - Data & Analytics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Hide header/footer on homepage only */
+        body.homepage header,
+        body.homepage footer {
+            display: none;
+        }
+
+        /* Universal overflow prevention */
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        body {
+            overflow-x: hidden;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            min-height: 100vh;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+        }
+        
+        .tab-container {
+            width: 90%;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .tab-nav {
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: 2px solid #334155;
+            margin-bottom: 30px;
+            gap: 5px;
+            background: rgba(30, 41, 59, 0.5);
+            border-radius: 12px 12px 0 0;
+            padding: 10px;
+        }
+        
+        .tab-button {
+            background: none;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            color: #94a3b8;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+        }
+        
+        .tab-button:hover {
+            color: #06b6d4;
+            background-color: rgba(6, 182, 212, 0.1);
+        }
+        
+        .tab-button.active {
+            color: #06b6d4;
+            border-bottom-color: #06b6d4;
+            background-color: rgba(6, 182, 212, 0.15);
+        }
+        
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.3s ease-in;
+            background: rgba(30, 41, 59, 0.3);
+            border-radius: 12px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(51, 65, 85, 0.3);
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .section-title {
+            color: #f1f5f9;
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #06b6d4;
+            padding-bottom: 15px;
+            background: linear-gradient(135deg, #f1f5f9 0%, #06b6d4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        table {
+            width: 100%;
+            max-width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: rgba(15, 23, 42, 0.6);
+            border-radius: 12px;
+            overflow: hidden;
+            table-layout: fixed;
+            word-wrap: break-word;
+        }
+
+        /* Specific fix for equipment table */
+        .table-wrapper table {
+            min-width: 0;
+        }
+
+        .table-wrapper td:nth-child(2) {
+            max-width: calc(60vw - 100px);
+            min-width: 0;
+        }
+        
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 20px 0;
+            width: 100%;
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+        
+        th, td {
+            border: 1px solid #334155;
+            padding: 15px;
+            text-align: left;
+            color: #ffffff !important;
+            background: rgba(15, 23, 42, 0.6) !important;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 1.5;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
+            max-width: 0;
+        }
+        
+        tr {
+            background: rgba(15, 23, 42, 0.6) !important;
+        }
+        
+        tbody tr {
+            background: rgba(15, 23, 42, 0.6) !important;
+        }
+        
+        th {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            font-weight: 600;
+            color: #06b6d4;
+        }
+        
+
+        
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .link-item {
+            padding: 20px;
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(51, 65, 85, 0.6) 100%);
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .link-item:hover {
+            transform: translateY(-5px);
+            border-color: #06b6d4;
+            box-shadow: 0 10px 25px rgba(6, 182, 212, 0.15);
+        }
+        
+        .metric-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            color: #0f172a;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(6, 182, 212, 0.2);
+        }
+        
+        .metric-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #06b6d4;
+            margin-bottom: 10px;
+        }
+        
+        .metric-label {
+            color: #475569;
+            font-weight: 500;
+        }
+        
+        /* Content styling */
+        p, li, div {
+            color: #ffffff !important;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        a {
+            color: #06b6d4;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 400;
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+        
+        a:hover {
+            color: #0891b2;
+        }
+        
+        .principles-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .principles-list li {
+            position: relative;
+            padding: 16px 20px;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.4) 0%, rgba(51, 65, 85, 0.2) 100%);
+            border-radius: 8px;
+            color: #ffffff !important;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.6;
+            transition: all 0.3s ease;
+        }
+        
+        .principles-list li:hover {
+            transform: translateX(8px);
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.6) 0%, rgba(51, 65, 85, 0.4) 100%);
+            box-shadow: 0 4px 12px rgba(6, 182, 212, 0.15);
+        }
+        
+        .sub-tab-nav {
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #334155;
+            margin-bottom: 20px;
+            gap: 5px;
+            background: rgba(51, 65, 85, 0.3);
+            border-radius: 8px;
+            padding: 8px;
+        }
+        
+        .sub-tab-button {
+            background: none;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            color: #94a3b8;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+            border-radius: 6px;
+        }
+        
+        .sub-tab-button:hover {
+            color: #06b6d4;
+            background-color: rgba(6, 182, 212, 0.1);
+        }
+        
+        .sub-tab-button.active {
+            color: #06b6d4;
+            border-bottom-color: #06b6d4;
+            background-color: rgba(6, 182, 212, 0.15);
+        }
+        
+        .sub-tab-content {
+            display: none;
+            animation: fadeIn 0.3s ease-in;
+        }
+        
+        .sub-tab-content.active {
+            display: block;
+        }
+        
+        .content-section {
+            margin-bottom: 30px;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .section-icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        
+        h3 {
+            color: #f1f5f9;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        }
+        
+        .hero-tagline {
+            font-size: 28px;
+            font-weight: 300;
+            color: #2c3e50;
+            text-align: center;
+            margin: 30px 0 50px 0;
+            padding: 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 0.5px;
+            line-height: 1.4;
+        }
+        
+        .content-section {
+            margin-bottom: 50px;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e8ecf3;
+        }
+        
+        .section-icon {
+            width: 32px;
+            height: 32px;
+            margin-right: 12px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .principles-icon {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+        
+        .preferences-icon {
+            background: linear-gradient(135deg, #ffecd2, #fcb69f);
+        }
+        
+        .section-header h3 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        
+        .context-link {
+            display: inline-flex;
+            align-items: center;
+            margin-left: 8px;
+            padding: 4px 8px;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 6px;
+            text-decoration: none;
+            color: #667eea;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .context-link:hover {
+            background: rgba(102, 126, 234, 0.2);
+            transform: scale(1.05);
+        }
+        
+        .context-link::before {
+            content: "🤓";
+            margin-right: 4px;
+        }
+        
+        @media (max-width: 768px) {
+            .tab-container {
+                width: 95%;
+                max-width: 100%;
+                padding: 10px;
+                margin: 0 auto;
+            }
+
+            .table-wrapper td:nth-child(2) {
+                max-width: calc(60vw - 60px);
+                min-width: 0;
+            }
+            
+            .tab-nav {
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            .tab-button {
+                text-align: left;
+                border-bottom: none;
+                border-left: 3px solid transparent;
+                padding: 15px 20px;
+                font-size: 18px;
+            }
+            
+            .tab-button.active {
+                border-left-color: #2196F3;
+                border-bottom-color: transparent;
+            }
+            
+            .section-title {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+            
+            .hero-tagline {
+                font-size: 20px;
+                margin: 20px 0 30px 0;
+                padding: 20px 15px;
+                letter-spacing: 0.3px;
+            }
+            
+            .content-section {
+                margin-bottom: 35px;
+            }
+            
+            .section-header {
+                margin-bottom: 20px;
+                padding-bottom: 12px;
+            }
+            
+            .section-icon {
+                width: 28px;
+                height: 28px;
+                margin-right: 10px;
+                font-size: 14px;
+            }
+            
+            .section-header h3 {
+                font-size: 20px;
+            }
+            
+            .principles-list li {
+                font-size: 15px;
+                margin-bottom: 6px;
+            }
+            
+            
+            .context-link {
+                font-size: 13px;
+                padding: 3px 6px;
+            }
+            
+            table {
+                font-size: 14px;
+                overflow-x: auto;
+                display: block;
+                white-space: nowrap;
+            }
+            
+            th, td {
+                padding: 8px;
+                min-width: 60px;
+                max-width: 0;
+                word-wrap: break-word;
+                word-break: break-word;
+                overflow-wrap: break-word;
+                white-space: normal;
+            }
+            
+            .links-grid {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                gap: 10px;
+            }
+            
+            .link-item {
+                padding: 8px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body class="homepage">
+    <!-- Hero Section -->
+    <section class="hero-gradient py-20 text-center" style="padding: 5rem 5%; box-sizing: border-box; width: 100%;">
+        <div class="max-w-4xl mx-auto" style="max-width: 100%; width: 100%; box-sizing: border-box;">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-cyan-400 bg-clip-text text-transparent">
+                Abhishesh Sharma
+            </h1>
+            <p class="text-xl text-slate-300 mb-4">
+                Chasing clicks 📷, caffeine ☕️, colognes 🧴, crisp sound 🎧, and constant jaunts ✈️ — while making data boringly reliable
+            </p>
+        </div>
+    </section>
+
+    <div class="tab-container">
+        <nav class="tab-nav">
+            <button class="tab-button active" onclick="showTab('about')">About</button>
+            <button class="tab-button" onclick="showTab('hobbies')">Hobbies</button>
+            <button class="tab-button" onclick="showTab('tech')">Tech & Projects</button>
+            <button class="tab-button" onclick="showTab('travel')">Travel</button>
+        </nav>
+
+        <div id="about" class="tab-content active">
+            <h2 class="section-title">In perpetual search for perfection</h2>
+            
+            <div class="content-section">
+                <ul class="principles-list principles">
+                    <li>no half measures</li>
+                    <li>be curious, not judgemental</li>
+                    <li>less but better</li>
+                    <li>keep it short and sweet</li>
+                    <li>skeuomorphism to neumorphism</li>
+                    <li>convergent thinker by day and divergent by night!</li>
+                    <li>I am the documentation <a href="https://www.youtube.com/watch?v=0RQtwftu92Y" class="context-link">context</a></li>
+                    <li>vim over emacs</li>
+                    <li><strong>*nix</strong> over windows</li>
+                    <li>expresso && chai</li>
+                    <li>DIY enthusiast</li>
+                    <li>flâneur - wander aimlessly through city</li>
+                    <li>SONY fanboy (guilty! rather anything made in Japan or designed in Japan)</li>
+                    <li>Ghibli Studio Fan <a href="https://www.imdb.com/list/ls561133549/" class="context-link">Movies</a></li>
+                    <li>🐶 person <a href="https://flickr.com/photos/abhishesh-sharma/albums/72177720312673306/" class="context-link">Penny's Hooman</a></li>
+                </ul>
+            </div>
+
+            <div class="flex justify-center space-x-4 mb-12" style="flex-wrap: wrap; gap: 1rem;">
+                <a href="https://www.linkedin.com/in/abhishesh/" class="bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-6 py-3 rounded-lg transition-colors">
+                    LinkedIn
+                </a>
+                <a href="https://github.com/abhishesh" class="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-slate-900 font-semibold px-6 py-3 rounded-lg transition-colors">
+                    GitHub
+                </a>
+                <a href="https://twitter.com/abhishesh" class="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-slate-900 font-semibold px-6 py-3 rounded-lg transition-colors">
+                    Twitter
+                </a>
+            </div>
+            
+    
+        </div>
+
+
+
+
+
+        <div id="hobbies" class="tab-content">
+            <h2 class="section-title">Hobbies</h2>
+            
+            <nav class="sub-tab-nav">
+                <button class="sub-tab-button active" onclick="showSubTab('photography')">Photography</button>
+                <button class="sub-tab-button" onclick="showSubTab('audio')">Audio</button>
+                <button class="sub-tab-button" onclick="showSubTab('watches')">Watches</button>
+                <button class="sub-tab-button" onclick="showSubTab('coffee')">Coffee</button>
+                <button class="sub-tab-button" onclick="showSubTab('keyboards')">Keyboards</button>
+                <button class="sub-tab-button" onclick="showSubTab('perfumes')">Perfumes</button>
+            </nav>
+
+            <div id="photography" class="sub-tab-content active">
+                <h3>Photography</h3>
+                <p>A picture is worth a thousand words. I have been learning photography since 2016 and I am very fond of manual lenses. Thanks to the short flange focal distance of mirrorless cameras and in-body optical image stabilization in Sony Cameras, I can use half-a-century-old lenses on modern digital cameras effectively and create some beautiful images full of character and microcontrast.</p>
+
+                <h4>Equipment</h4>
+                <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Tools</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Manual Lenses Adapted to Sony Mount</td>
+                            <td><a href="https://www.stenersenoutdoors.com/blog/pentacon-an-imperfect-jewel-according-to-my-taste-anyway">Pentacon 50mm f1.8</a>, <a href="https://mbphotox.wordpress.com/2015/09/19/helios-44-1-58mm-f2-zebra/">Helios 44-2 Zebra 58mm f2</a>, <a href="https://fourbillionyears.org/minolta-md-35-70mm-f-3-5-an-outstanding-lens/">Minolta 35-70 f3.5</a>, <a href="https://www.rokkorfiles.com/Battle%20of%2050s2.htm">Minolta MC ROKKOR PG 50mm f1.4</a>, <a href="https://www.pentaxforums.com/userreviews/vivitar-series-1-100-500mm-f5-6-8.html">Vivitar 100-500</a>, <a href="https://www.pentaxforums.com/lensreviews/S-M-C-Super-Takumar-135mm-F3.5.html">SuperTakumar 135mm f3.5</a>, <a href="https://northernwintersky.wordpress.com/2018/07/26/minolta-md-50mm-f-2-review/">Minolta 50mm f2</a>, <a href="https://kingjvpesphoto.com/blog/2018/12/28/minolta-rokkor-45mm-f2-the-best-minolta-lens">Minolta 45mm f2</a>, <a href="https://phillipreeve.net/blog/pentacon-auto-50-mm-f-1-8-multi-coating/">Pentacon 50mm f1.8 II</a>, <a href="https://minolta.su/minolta-mc-rokkor-qf-200mm-f3-5-mc2/">200mm f3.5</a>, <a href="https://foxfotoco.medium.com/vintage-lens-review-soviet-industar-50mm-f3-5-ca6dd3ef294e">Industar 50mm f3.5</a>, <a href="https://radojuva.com/en/2022/05/fujian-china-tv-lens-gds-35-f-35mm-1-7/">Fujian 35mm f1.7</a>, <a href="https://alikgriffin.com/helios-44-2-review-king-character/">Helios 44-4 58mm f2</a>, <a href="http://forum.mflenses.com/yashica-ml-50mm-f2-test-t84092.html">Yashica 50mm f2</a></td>
+                        </tr>
+                        <tr>
+                            <td>Sony Mount Manual Focus FF</td>
+                            <td><a href="https://dustinabbott.net/2020/04/voigtlander-nokton-40mm-f1-2-review/">Voigtlander Nokton 40mm f1.2</a>, <a href="https://phillipreeve.net/blog/review-voigtlander-12mm-5-6-aspherical-ultra-wide-heliar/">Voigtlander 12mm f5.6</a></td>
+                        </tr>
+                        <tr>
+                            <td>Nikon Manual Focus FF</td>
+                            <td><a href="https://www.stevehuffphoto.com/2016/12/22/voigtlander-nokton-58mm-f1-4-ii-lens-review-going-retro-by-craig-litten/">Voigtlander Nokton 58mm f1.4</a></td>
+                        </tr>
+                        <tr>
+                            <td>Canon Mount Automatic Focus FF</td>
+                            <td><a href="https://colesclassroom.com/tokina-100-mm-macro-lens-review-amazing-images-budget-price/">Tokina 100mm f2.8</a>, <a href="https://roynuesca.com/canon-40mm-f2-8-pancake-lens-review/">40mm f2.8</a>, <a href="https://www.kenrockwell.com/canon/lenses/50mm-f18.htm">50mm f1.8 II</a></td>
+                        </tr>
+                        <tr>
+                            <td>Canon Mount Manual Focus FF</td>
+                            <td><a href="https://www.lksamyang.com/en/product/product-view.php?seq=311">Samyang 85mm f1.4</a></td>
+                        </tr>
+                        <tr>
+                            <td>Sony Mount Automatic Focus FF</td>
+                            <td><a href="https://www.sony.com.sg/electronics/camera-lenses/sel100400gm">Sony 100-400 GM</a>, <a href="https://www.sony.com.sg/electronics/camera-lenses/sel28f20-series">28mm f2</a>, <a href="https://www.tamron.com/global/consumer/lenses/a036/">Tamron 28-75 f2.8</a></td>
+                        </tr>
+                        <tr>
+                            <td>Adapters/Extension Tubes</td>
+                            <td><a href="https://www.sigma-global.com/en/accessories/mc-11/">Sigma MC11</a>, <a href="https://www.sony.com.sg/electronics/camera-lenses/sel14tc">Sony 1.4TX Extender</a>, <a href="https://www.fotga.com/">Fotga adapters</a>, <a href="https://fotodioxpro.com/products/m42-mcr">Fotodiox Extension tubes</a></td>
+                        </tr>
+                        <tr>
+                            <td>Camera</td>
+                            <td><a href="https://www.sony.com.sg/microsite/promotions/product.html?series=7R%20V%2035mm%20full-frame%20camera%20with%2061.0MP&category=interchangeable_lens_cameras&sub_category=ilc_cameras&model=ILCE-7RM5&name=ILCE-7RM5">Sony A7RV</a>, <a href="https://www.dpreview.com/reviews/canon-eos-70d">Canon 70D</a>, <a href="https://en.wikipedia.org/wiki/Canon_EOS_5D">Canon 5D Mark I</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+
+                <h4>Portfolio Links</h4>
+                <div class="links-grid">
+                    <div class="link-item">
+                        <a href="https://flickr.com/photos/abhishesh-sharma/">Flickr</a>
+                    </div>
+                    <div class="link-item">
+                        <a href="https://500px.com/p/AbhisheshSharma">500px</a>
+                    </div>
+                    <div class="link-item">
+                        <a href="https://vsco.co/attaboyabhi/gallery">VSCO</a>
+                    </div>
+                </div>
+
+                <h4>Editing Tools</h4>
+                <ul>
+                    <li><a href="https://apps.apple.com/us/app/vsco-photo-video-editor/id588013838">VSCO</a></li>
+                    <li><a href="https://lightroom.adobe.com/">Adobe Lightroom Classic</a></li>
+                </ul>
+            </div>
+
+            <div id="audio" class="sub-tab-content">
+                <h3>Audiophile</h3>
+                <p>As a strong proponent of consuming anything in pure form, music cannot be any different. I try to get a similar sound stage and imaging at the home of what an artist intends in a recording studio. Also, while flying or in local transit, I love the quiet offered by the noise-canceling headphones.</p>
+
+                <h4>🎧 Audiophile Gear Setup</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Equipment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Active Speaker</td>
+                            <td><a href="https://www.whathifi.com/reviews/kef-lsx">KEF LSX</a></td>
+                        </tr>
+                        <tr>
+                            <td>In-Ear Headphones</td>
+                            <td><a href="https://www.sony.com.sg/headphones/products/wf-1000xm4">Sony WF-1000XM4</a>, <a href="https://store.sony.com.sg/products/wf-1000xm5">Sony WF-1000XM5</a>, <a href="https://sg.sennheiser-hearing.com/products/ie-300">Sennheiser IE300</a>, <a href="https://www.linsoul.com/products/kiwi-ears-x-crinacle-singolo">Kiwi Ears x Crinacle Singolo</a>, <a href="https://www.linsoul.com/products/tangzu-waner-sg2">TANGZU Waner SG2</a>, <a href="https://www.klipsch.com/intl/products/x4i-headphones">Klipsch X4i</a>, <a href="https://www.linsoul.com/products/moondrop-aria-2">Moondrop Aria 2</a></td>
+                        </tr>
+                        <tr>
+                            <td>Over-Ear (Closed Back)</td>
+                            <td><a href="https://www.audio-technica.com/en-eu/ath-m50x">Audio Technica ATH-M50X</a>, <a href="https://sg.sennheiser-hearing.com/products/momentum-4-wireless">Sennheiser MOMENTUM 4</a></td>
+                        </tr>
+                        <tr>
+                            <td>Over-Ear (Open Back)</td>
+                            <td><a href="https://vsco.co/attaboyabhi/media/63e531de32f88f1ff6000001">Meze 109 Pro</a></td>
+                        </tr>
+                        <tr>
+                            <td>USB-C DAC</td>
+                            <td><a href="https://vsco.co/attaboyabhi/media/63e531de32f88f1ff6000001">Cayin RU6</a> (R-2R resistor ladder), <a href="https://www.qudelix.com/products/qudelix-5k">Quedelix 5K</a>, <a href="https://hangout.audio/products/jcally-jm6-pro">Jcally JM6 Pro</a></td>
+                        </tr>
+                        <tr>
+                            <td>Portable Audio Player</td>
+                            <td><a href="https://vsco.co/attaboyabhi/video/8c276d2d-8c1c-4644-9c95-41fcaee8ef02">Sony NW-A306</a> <em>(gifted)</em></td>
+                        </tr>
+                        <tr>
+                            <td>Passive Speakers</td>
+                            <td><a href="https://www.elac.com/category-bookshelf-speakers-debut-reference-dbr-62">ELAC Debut Reference DBR62</a> powered by <a href="https://www.whathifi.com/reviews/bluesound-powernode-2i">Bluesound Powernode 2i</a></td>
+                        </tr>
+                        <tr>
+                            <td>Microphones</td>
+                            <td><a href="https://www.saramonic.com/product/vmic-pro">Saramonic VMIC</a>, <a href="https://shop.shure.com.sg/products/mv7-microphone">Shure MV7</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>📊 Headphone Sound Summary</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Headphone</th>
+                            <th>Bass</th>
+                            <th>Mids</th>
+                            <th>Treble</th>
+                            <th>Sound Signature</th>
+                            <th>FR Graph</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Momentum 4 Wireless</td>
+                            <td>Warm & Rich</td>
+                            <td>Clear</td>
+                            <td>Smooth</td>
+                            <td>Consumer-friendly</td>
+                            <td><a href="https://kuulokenurkka.squig.link/?share=Harman_2018_Target%2CMomentum_4_%28ANC_ON%29_%2A%2A">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>WF-1000XM5</td>
+                            <td>Punchy</td>
+                            <td>Recessed</td>
+                            <td>Smooth</td>
+                            <td>V-shaped</td>
+                            <td><a href="https://tgx78.squig.link/?share=Xm5">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>IE300</td>
+                            <td>Full-bodied</td>
+                            <td>Recessed</td>
+                            <td>Sparkly</td>
+                            <td>Warm with enhanced treble</td>
+                            <td><a href="https://squig.link/?share=Crinacle_Target%2CSennheiser_IE300">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Meze 109 Pro</td>
+                            <td>Neutral</td>
+                            <td>Natural</td>
+                            <td>Smooth</td>
+                            <td>Balanced and natural</td>
+                            <td><a href="https://kuulokenurkka.squig.link/?share=Harman_2018_Target%2C109_Pro">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Kiwi Ears Singolo</td>
+                            <td>Controlled</td>
+                            <td>Forward</td>
+                            <td>Refined</td>
+                            <td>Neutral reference tuning</td>
+                            <td><a href="https://squig.link/?share=Crinacle_Target%2CKiwi_Ears_Singolo">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>TANGZU Waner SG2</td>
+                            <td>Present</td>
+                            <td>Balanced</td>
+                            <td>Extended</td>
+                            <td>Slightly warm with good detail</td>
+                            <td><a href="https://squig.link/?share=Harman_Target%2CTANGZU_Waner_SG2">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Audio Technica ATH-M50x</td>
+                            <td>Punchy & Tight</td>
+                            <td>Slightly Recessed</td>
+                            <td>Bright</td>
+                            <td>Slight V-shape with energetic upper mids</td>
+                            <td><a href="https://squig.link/?share=Harman_2018_Target%2CAudio-Technica_ATH-M50x">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Klipsch X4i</td>
+                            <td>Tight & Controlled</td>
+                            <td>Forward</td>
+                            <td>Crisp</td>
+                            <td>Mildly bright with mid-forward clarity</td>
+                            <td>NA</td>
+                        </tr>
+                        <tr>
+                            <td>Moondrop Aria 2</td>
+                            <td>Sub-bass lean, clean</td>
+                            <td>Mildly forward</td>
+                            <td>Smoothly extended</td>
+                            <td>Harman-inspired with air & clarity</td>
+                            <td><a href="https://squig.link/?share=Harman_2018_Target%2CMoondrop_Aria_2">Link</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Resources</h4>
+                <ul>
+                    <li>Devoted follower of <a href="https://darko.audio/">Darko Audio</a></li>
+                    <li><a href="https://crinacle.com/">Crinacle</a> for Chi-Fi and general audio gear</li>
+                    <li>System-test reference tracks (courtesy of <a href="https://audiophilemusic.io/portfolio/top-10-samplers-for-test-high-end-system/">audiophile.io</a>)</li>
+                    <li>My Curated Playlists:
+                        <ul>
+                            <li><a href="https://tidal.com/playlist/9ce1405b-8422-40f8-8dcc-b0982a7a96d5">Tidal - Needle in the soul</a></li>
+                            <li><a href="https://tidal.com/playlist/1e4ccc65-8e0c-48a8-8c52-498764818672">Tidal - Bit-Perfect Bangers</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="watches" class="sub-tab-content">
+                <h3>Mechanical Watches</h3>
+                <p>Mechanical watches symbolize a blend of intricate craftsmanship, timeless design, and a nod to tradition. Their appeal lies not just in their functionality but also in the artistry and engineering behind their construction.</p>
+                <ul>
+                    <li>I have a Tudor Black Bay that I really love and goes well with casuals and formals alike</li>
+                    <li>Next on my to buy list is Rolex Explorer. I like the simplicity and elegance it carries.</li>
+                </ul>
+            </div>
+
+            <div id="coffee" class="sub-tab-content">
+                <h3>Coffee</h3>
+                <p>Love brewing espresso and have watched numerous <a href="https://www.jameshoffmann.co.uk/">James Hoffmann</a> YouTube videos during pandemic! Try to tweak my humble Delonghi coffee machine for the coarseness of grind and time to brew, whenever I lay my hands on a new variety of coffee beans.</p>
+            </div>
+
+            <div id="keyboards" class="sub-tab-content">
+                <h3>Mechanical Keyboards</h3>
+                <p>A mechanical keyboard is a must have productivity tool for someone who has to type for hours.</p>
+                <ul>
+                    <li><strong>Keychron K2</strong> - Brown switch, Bluetooth, <a href="https://soundcloud.com/abhishesh-sharma/keychron-red-switch-sound">how it sounds</a></li>
+                    <li><strong>Akko ACR Pro 75</strong> - Gasket Mount, Smooth like butter!</li>
+                </ul>
+            </div>
+
+            <div id="perfumes" class="sub-tab-content">
+                <h3>Perfumes</h3>
+                <p>Perhaps another pandemic-driven proclivity is love for perfumes. I tried and purchased many new fragrances that I never forayed into earlier. Aficionado of <a href="https://www.firmenich.com/fragrance/fine-fragrance/people/alberto-morillas">Alberto Morillas</a>. 40% of my blind buy perfumes in the past has been his perfumes.</p>
+                <p><a href="https://www.fragrantica.com/member/1459421">My profile on Fragrantica</a></p>
+            </div>
+        </div>
+
+        <div id="tech" class="tab-content">
+            <h2 class="section-title">Technology & Projects</h2>
+            
+            <p>I like solving complex technical problems (see LinkedIn :))</p>
+
+            <h3>Desk Setup</h3>
+            <ul>
+                <li>Omnidesk Pro WildWood - Pheasantwood</li>
+                <li>Dell U2720Q on Prism+ Arc Opus</li>
+                <li>Alienware Aurora R12 running Linux :)</li>
+                <li>Benq Screenbar</li>
+                <li>iPad Pro 1st Gen</li>
+                <li>MacBook Pro 2019 16"</li>
+            </ul>
+            
+            <div class="links-grid">
+                <div class="link-item">
+                    <a href="https://vsco.co/attaboyabhi/media/65c395b793559a0b87ef31b8">Desk Setup 1</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://vsco.co/attaboyabhi/media/66d892fdcb549a1437fac762">Desk Setup 2</a>
+                </div>
+            </div>
+
+            <h3>Hobby & Mentorship Projects</h3>
+            <div class="links-grid">
+                <div class="link-item">
+                    <a href="https://abhishesh.com/elections_india">Elections Data India</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://abhishesh.com/bytechor">Bytechor</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://abhishesh.com/air_quality">Air Quality Dataset</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://abhishesh.com/URA_SG_Dataset">URA SG Dataset</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://homebridge.io/">HomeBridge</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://duckdb.org/">DuckDB lover</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="travel" class="tab-content">
+            <h2 class="section-title">Travel</h2>
+            <p>I have travelled to the following countries apart from my home country India and my work home for the last decade, <a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72157671074602024/with/34523847754">Singapore</a>:</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 20px 0;">
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720327366393/">Malaysia</a></div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720322573168/">Indonesia</a></div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72157650306560376/">Cambodia</a></div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314042365/">Vietnam</a></div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/">Thailand</a></div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/">Macao</a></div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/">Hong Kong</a></div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720322536997/">Korea</a></div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314033207/">Japan</a></div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720327370819/">United Arab Emirates</a></div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720322557431/">Italy</a></div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720329015948/">Vatican City</a></div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72157652951357102/">Monaco</a></div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720322557197/">France</a></div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720327345765/">United Kingdom</a></div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720327345765/">Scotland</a></div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720327345765/">Portugal</a></div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72157651775379899/">United States of America</a></div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314033137/">Switzerland</a></div>
+                <div class="link-item"><a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314040692/">Finland</a></div>
+                <div class="link-item"><a href="https://flickr.com/photos/abhishesh-sharma/albums/72177720322538601/">Sweden</a></div>
+                <div class="link-item"><a href="https://flickr.com/photos/abhishesh-sharma/albums/72177720322539600">Estonia</a></div>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <h3>🔗 Links</h3>
+                <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin: 20px 0;">
+                    <a href="https://www.linkedin.com/in/abhishesh/">
+                        <img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white" alt="LinkedIn">
+                    </a>
+                    <a href="https://twitter.com/abhishesh">
+                        <img src="https://img.shields.io/twitter/follow/abhishesh" alt="X (formerly Twitter) Follow">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all buttons
+            const tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => button.classList.remove('active'));
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+
+        function showSubTab(subTabName) {
+            // Hide all sub-tab contents
+            const subTabContents = document.querySelectorAll('.sub-tab-content');
+            subTabContents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all sub-tab buttons
+            const subTabButtons = document.querySelectorAll('.sub-tab-button');
+            subTabButtons.forEach(button => button.classList.remove('active'));
+            
+            // Show selected sub-tab content
+            document.getElementById(subTabName).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Abhishesh</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Abhishesh</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
