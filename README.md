@@ -14,7 +14,7 @@ I am in perpetual search for perfection
 * Prefrences & Interests
   * vim over emacs
   * **nix** over windows
-  * expresso && chai
+  * espresso && chai
   * DIY enthusiast
   * flâneur - wander aimlessly through city
   * SONY fanboy (guilty! rather anything made in Japan or designed in Japan)
@@ -98,7 +98,7 @@ Mechanical watches symbolize a blend of intricate craftsmanship, timeless design
 * Next on my to buy list is Rolex Explorer. I like the simplicity and elegance it carries.
 
 **Coffee**
-love brewing expresso and have watched numerous [James Hoffmann](https://www.jameshoffmann.co.uk/) youtube videos during pandemic! Try to tweak my humble Delonghi coffee machine for the coarseness of grind and time to brew, whenever I lay my hands on a new variety of coffee beans.
+love brewing espresso and have watched numerous [James Hoffmann](https://www.jameshoffmann.co.uk/) youtube videos during pandemic! Try to tweak my humble Delonghi coffee machine for the coarseness of grind and time to brew, whenever I lay my hands on a new variety of coffee beans.
 
 
 **Mechanical Keyboard**
