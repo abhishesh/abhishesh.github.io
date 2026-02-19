@@ -10,5 +10,5 @@ gem "jekyll-seo-tag", "~> 2.6"
 gem "kramdown-parser-gfm"
 
 # Ensure compatibility with Ruby 2.6
-gem "nokogiri", "~> 1.10"
+gem "nokogiri", "~> 1.19"
 gem "ffi", "~> 1.12"
