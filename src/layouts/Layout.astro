@@ -271,6 +271,50 @@ const { title } = Astro.props;
             margin: 1.25rem 0;
         }
 
+        /* Stats row */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+        }
+        .stat-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem 0.5rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+        }
+        .stat-num { font-size: 1.5rem; font-weight: 700; color: var(--accent); }
+        .stat-label { font-size: 0.75rem; opacity: 0.6; margin-top: 0.25rem; }
+
+        /* Region blocks */
+        .region-block { margin-bottom: 2rem; }
+
+        /* Country chips */
+        .chip-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem; }
+        .chip {
+            display: inline-block;
+            padding: 0.3rem 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            font-size: 0.8rem;
+            text-decoration: none;
+            color: var(--fg);
+            transition: border-color 0.2s, color 0.2s;
+        }
+        .chip:hover { border-color: var(--accent); color: var(--accent); }
+
+        /* Pull quote */
+        .pull-quote {
+            border-left: 3px solid var(--accent);
+            margin: 2rem 0 0;
+            padding: 0.75rem 1.25rem;
+            font-style: italic;
+            opacity: 0.8;
+        }
+
         /* Footer */
         footer {
             max-width: 48rem;
@@ -289,6 +333,7 @@ const { title } = Astro.props;
             .tab-button { padding: 0.6rem 0.75rem; font-size: 0.8rem; }
             .links-grid { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
             th, td { padding: 0.4rem 0.5rem; font-size: 0.8rem; }
+            .stats-row { grid-template-columns: repeat(2, 1fr); }
         }
     </style>
 </head>
