@@ -162,31 +162,39 @@ import Layout from '../layouts/Layout.astro';
         <!-- TECH -->
         <div id="tech" class="tab-content">
             <h2 class="section-title">Technology & Projects</h2>
-            <p>I like solving complex technical problems (see LinkedIn :))</p>
+            <p>I believe in boring, reliable infrastructure — the kind that doesn't page you at 3 AM. CLI-first, Linux where possible, minimal tooling that does one thing well. Less moving parts, fewer surprises.</p>
 
             <h3>Desk Setup</h3>
-            <ul>
-                <li>Omnidesk Pro WildWood - Pheasantwood</li>
-                <li>Dell U2720Q on Prism+ Arc Opus</li>
-                <li>Alienware Aurora R12 running Linux :)</li>
-                <li>Benq Screenbar</li>
-                <li>iPad Pro 1st Gen</li>
-                <li>MacBook Pro 2019 16"</li>
-            </ul>
+            <div class="table-wrapper">
+            <table>
+                <thead><tr><th>Category</th><th>Equipment</th></tr></thead>
+                <tbody>
+                    <tr><td>Laptop</td><td>MacBook Pro M1 Pro</td></tr>
+                    <tr><td>Desktop</td><td>Alienware Aurora R12 running Linux</td></tr>
+                    <tr><td>Monitor</td><td>Dell U2720Q on Prism+ Arc Opus</td></tr>
+                    <tr><td>Desk</td><td>Omnidesk Pro WildWood — Pheasantwood</td></tr>
+                    <tr><td>Lighting</td><td>BenQ ScreenBar</td></tr>
+                </tbody>
+            </table>
+            </div>
             <div class="links-grid">
                 <div class="link-item"><a href="https://vsco.co/attaboyabhi/media/65c395b793559a0b87ef31b8">Desk Setup 1</a></div>
                 <div class="link-item"><a href="https://vsco.co/attaboyabhi/media/66d892fdcb549a1437fac762">Desk Setup 2</a></div>
             </div>
 
-            <h3>Hobby & Mentorship Projects</h3>
-            <div class="links-grid">
-                <div class="link-item"><a href="https://abhishesh.com/elections_india">Elections Data India</a></div>
-                <div class="link-item"><a href="https://abhishesh.com/bytechor">Bytechor</a></div>
-                <div class="link-item"><a href="https://abhishesh.com/air_quality">Air Quality Dataset</a></div>
-                <div class="link-item"><a href="https://abhishesh.com/URA_SG_Dataset">URA SG Dataset</a></div>
-                <div class="link-item"><a href="https://homebridge.io/">HomeBridge</a></div>
-                <div class="link-item"><a href="https://duckdb.org/">DuckDB lover</a></div>
-            </div>
+            <h3>Projects</h3>
+            <ul>
+                <li><a href="https://abhishesh.com/elections_india">Elections Data India</a> — visualizing Indian election data across states and years</li>
+                <li><a href="https://abhishesh.com/bytechor">Bytechor</a> — a data engineering mentorship project</li>
+                <li><a href="https://abhishesh.com/air_quality">Air Quality Dataset</a> — analysis of air quality metrics across regions</li>
+                <li><a href="https://abhishesh.com/URA_SG_Dataset">URA SG Dataset</a> — Singapore urban redevelopment authority property data</li>
+            </ul>
+
+            <h3>Tools & Technologies</h3>
+            <ul>
+                <li><a href="https://duckdb.org/">DuckDB</a> — my go-to for local analytical queries; fast, embedded, no infrastructure</li>
+                <li><a href="https://homebridge.io/">HomeBridge</a> — bridging non-HomeKit devices into Apple Home</li>
+            </ul>
         </div>
 
         <!-- TRAVEL -->
