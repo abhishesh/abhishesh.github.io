@@ -141,14 +141,17 @@ const { title } = Astro.props;
             border-bottom: 1px solid var(--border);
             color: var(--fg);
         }
-        .section-title + .section-subtitle {
-            margin-top: -0.25rem;
+        .section-title:has(+ .section-subtitle) {
+            border-bottom: none;
+            padding-bottom: 0;
         }
         .section-subtitle {
             font-size: 0.85rem;
             font-weight: 400;
             opacity: 0.6;
             margin-bottom: 1.25rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border);
         }
 
         /* Sub tabs */
