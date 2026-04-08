@@ -109,7 +109,7 @@ const { title } = Astro.props;
             color: var(--fg);
             opacity: 0.5;
             border-bottom: 2px solid transparent;
-            transition: all 0.2s;
+            transition: opacity 0.2s, color 0.2s, text-decoration-color 0.2s;
             font-family: inherit;
             letter-spacing: 0.02em;
         }
@@ -172,7 +172,7 @@ const { title } = Astro.props;
             color: var(--fg);
             opacity: 0.5;
             border-bottom: 2px solid transparent;
-            transition: all 0.2s;
+            transition: opacity 0.2s, color 0.2s;
             font-family: inherit;
         }
         .sub-tab-button:hover { opacity: 0.8; }
