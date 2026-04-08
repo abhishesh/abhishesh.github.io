@@ -10,15 +10,15 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <div class="tab-container">
-        <nav class="tab-nav">
-            <button class="tab-button active" onclick="showTab('about')">About</button>
-            <button class="tab-button" onclick="showTab('hobbies')">Hobbies</button>
-            <button class="tab-button" onclick="showTab('tech')">Tech & Projects</button>
-            <button class="tab-button" onclick="showTab('travel')">Travel</button>
-        </nav>
+        <div role="tablist" aria-label="Main navigation" class="tab-nav">
+            <button role="tab" id="tab-about" aria-selected="true" aria-controls="about" tabindex="0" class="tab-button active">About</button>
+            <button role="tab" id="tab-hobbies" aria-selected="false" aria-controls="hobbies" tabindex="-1" class="tab-button">Hobbies</button>
+            <button role="tab" id="tab-tech" aria-selected="false" aria-controls="tech" tabindex="-1" class="tab-button">Tech &amp; Projects</button>
+            <button role="tab" id="tab-travel" aria-selected="false" aria-controls="travel" tabindex="-1" class="tab-button">Travel</button>
+        </div>
 
         <!-- ABOUT -->
-        <div id="about" class="tab-content active">
+        <div id="about" role="tabpanel" aria-labelledby="tab-about" tabindex="0" class="tab-content active">
             <ul class="principles-list">
                 <li>no half measures</li>
                 <li>be curious, not judgemental</li>
@@ -44,18 +44,18 @@ import Layout from '../layouts/Layout.astro';
         </div>
 
         <!-- HOBBIES -->
-        <div id="hobbies" class="tab-content">
+        <div id="hobbies" role="tabpanel" aria-labelledby="tab-hobbies" tabindex="0" class="tab-content">
             <h2 class="section-title">Hobbies</h2>
             <p class="section-subtitle">In this world of hyper-stimulated junk food, hobbies are the nutritional meal.</p>
-            <nav class="sub-tab-nav">
-                <button class="sub-tab-button active" onclick="showSubTab('photography')">Photography</button>
-                <button class="sub-tab-button" onclick="showSubTab('audio')">Audio</button>
-                <button class="sub-tab-button" onclick="showSubTab('coffee')">Coffee</button>
-                <button class="sub-tab-button" onclick="showSubTab('perfumes')">Perfumes</button>
-            </nav>
+            <div role="tablist" aria-label="Hobbies" class="sub-tab-nav">
+                <button role="tab" id="subtab-photography" aria-selected="true" aria-controls="photography" tabindex="0" class="sub-tab-button active">Photography</button>
+                <button role="tab" id="subtab-audio" aria-selected="false" aria-controls="audio" tabindex="-1" class="sub-tab-button">Audio</button>
+                <button role="tab" id="subtab-coffee" aria-selected="false" aria-controls="coffee" tabindex="-1" class="sub-tab-button">Coffee</button>
+                <button role="tab" id="subtab-perfumes" aria-selected="false" aria-controls="perfumes" tabindex="-1" class="sub-tab-button">Perfumes</button>
+            </div>
 
             <!-- Photography -->
-            <div id="photography" class="sub-tab-content active">
+            <div id="photography" role="tabpanel" aria-labelledby="subtab-photography" tabindex="0" class="sub-tab-content active">
                 <h3>Photography</h3>
                 <p>A picture is worth a thousand words. I have been learning photography since 2016 and I am very fond of manual lenses. Thanks to the short flange focal distance of mirrorless cameras and in-body optical image stabilization in Sony Cameras, I can use half-a-century-old lenses on modern digital cameras effectively and create some beautiful images full of character and microcontrast.</p>
 
@@ -92,7 +92,7 @@ import Layout from '../layouts/Layout.astro';
             </div>
 
             <!-- Audio -->
-            <div id="audio" class="sub-tab-content">
+            <div id="audio" role="tabpanel" aria-labelledby="subtab-audio" tabindex="0" class="sub-tab-content">
                 <h3>Audiophile</h3>
                 <p>As a strong proponent of consuming anything in pure form, music cannot be any different. I try to get a similar sound stage and imaging at the home of what an artist intends in a recording studio. Also, while flying or in local transit, I love the quiet offered by the noise-canceling headphones.</p>
 
@@ -147,7 +147,7 @@ import Layout from '../layouts/Layout.astro';
             </div>
 
             <!-- Coffee -->
-            <div id="coffee" class="sub-tab-content">
+            <div id="coffee" role="tabpanel" aria-labelledby="subtab-coffee" tabindex="0" class="sub-tab-content">
                 <h3>Coffee — The Other Obsession</h3>
                 <p>Coffee, like perfume, rewards the obsessive. It's a pursuit where tiny variables — a finer grind, a degree of temperature, an extra ten seconds of bloom — separate a good cup from a memorable one. I've fallen deep into that rabbit hole, and I have no intention of climbing out.</p>
                 <p>My daily driver is a DeLonghi Magnifica S — a bean-to-cup machine I've refused to leave on autopilot. I dial in the grind size, water temperature, and drawdown time until the shot is exactly what I want that morning. It's an espresso machine that rewards curiosity.</p>
@@ -158,7 +158,7 @@ import Layout from '../layouts/Layout.astro';
             </div>
 
             <!-- Perfumes -->
-            <div id="perfumes" class="sub-tab-content">
+            <div id="perfumes" role="tabpanel" aria-labelledby="subtab-perfumes" tabindex="0" class="sub-tab-content">
                 <h3>Perfumes</h3>
                 <p>Perfume, for me, is memory made portable. A single spritz can transport you — to a rain-soaked street in Paris, a leather-lined library, a garden just after dusk. I've spent years chasing those moments through the work of perfumers who treat fragrance as a serious art form: the precision of Frédéric Malle, the quiet elegance of Acqua di Parma, the eccentric Britishness of Penhaligon's, the poetic Left Bank sensibility of Diptyque, the raw urban minimalism of Le Labo, the earthy botanics of Aesop, and the bold, unapologetic glamour of YSL. My collection isn't about owning bottles — it's about curating experiences across moods, seasons, and stories. Some days call for something quiet and considered; others demand something that announces itself. Every fragrance earns its place by telling a story worth wearing.</p>
                 <p><a href="https://www.parfumo.com/Users/abhishesh/Collection">My profile on Parfumo</a></p>
@@ -166,7 +166,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
 
         <!-- TECH -->
-        <div id="tech" class="tab-content">
+        <div id="tech" role="tabpanel" aria-labelledby="tab-tech" tabindex="0" class="tab-content">
             <h2 class="section-title">Technology & Projects</h2>
             <p>I believe in boring, reliable infrastructure — the kind that doesn't page you at 3 AM. CLI-first, Linux where possible, minimal tooling that does one thing well. Less moving parts, fewer surprises.</p>
 
@@ -204,7 +204,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
 
         <!-- TRAVEL -->
-        <div id="travel" class="tab-content">
+        <div id="travel" role="tabpanel" aria-labelledby="tab-travel" tabindex="0" class="tab-content">
             <h2 class="section-title">Around the world, one stamp at a time</h2>
             <p>I grew up in India and have spent the last decade calling <a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72157671074602024/with/34523847754" target="_blank" rel="noopener">Singapore</a> home. In between, the world has been generous enough to let me wander — through jungle heat and alpine cold, ancient temples and modernist icons, bustling night markets and quiet Nordic streets.</p>
 

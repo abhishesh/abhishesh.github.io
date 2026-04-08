@@ -16,6 +16,13 @@ const { title } = Astro.props;
             --accent: #006cac;
             --muted: #e6e6e6;
             --border: #ece9e9;
+            --space-xs: 0.25rem;
+            --space-sm: 0.5rem;
+            --space-md: 0.75rem;
+            --space-lg: 1.25rem;
+            --space-xl: 1.5rem;
+            --space-2xl: 2rem;
+            --space-3xl: 4rem;
         }
         [data-theme="dark"] {
             --bg: #212737;
@@ -73,7 +80,7 @@ const { title } = Astro.props;
         .hero {
             max-width: 48rem;
             margin: 0 auto;
-            padding: 4rem 1.5rem 2rem;
+            padding: var(--space-3xl) var(--space-xl) var(--space-2xl);
         }
         .hero-title {
             font-size: clamp(2rem, 4vw, 2.75rem);
@@ -101,14 +108,14 @@ const { title } = Astro.props;
         .tab-container {
             max-width: 48rem;
             margin: 0 auto;
-            padding: 0 1.5rem 4rem;
+            padding: 0 var(--space-xl) var(--space-3xl);
         }
         .tab-nav {
             display: flex;
             flex-wrap: wrap;
             gap: 0;
             border-bottom: 1px solid var(--border);
-            margin-bottom: 2rem;
+            margin-bottom: var(--space-2xl);
         }
         .tab-button {
             background: none;
@@ -151,8 +158,8 @@ const { title } = Astro.props;
         .section-title {
             font-size: 1.25rem;
             font-weight: 600;
-            margin-bottom: 0.25rem;
-            padding-bottom: 0.75rem;
+            margin-bottom: var(--space-xs);
+            padding-bottom: var(--space-md);
             border-bottom: 1px solid var(--border);
             color: var(--fg);
         }
@@ -164,8 +171,8 @@ const { title } = Astro.props;
             font-size: 0.85rem;
             font-weight: 400;
             opacity: 0.6;
-            margin-bottom: 1.25rem;
-            padding-bottom: 0.75rem;
+            margin-bottom: var(--space-lg);
+            padding-bottom: var(--space-md);
             border-bottom: 1px solid var(--border);
         }
 
@@ -175,7 +182,7 @@ const { title } = Astro.props;
             flex-wrap: wrap;
             gap: 0;
             border-bottom: 1px solid var(--border);
-            margin-bottom: 1.5rem;
+            margin-bottom: var(--space-xl);
         }
         .sub-tab-button {
             background: none;
@@ -203,11 +210,11 @@ const { title } = Astro.props;
         .sub-tab-content.active { display: block; }
 
         /* Tables */
-        .table-wrapper { overflow-x: auto; margin: 1.25rem 0; }
+        .table-wrapper { overflow-x: auto; margin: var(--space-lg) 0; }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 1.25rem 0;
+            margin: var(--space-lg) 0;
             font-size: 0.85rem;
         }
         th, td {
@@ -228,8 +235,8 @@ const { title } = Astro.props;
         .links-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-            gap: 0.75rem;
-            margin: 1.25rem 0;
+            gap: var(--space-md);
+            margin: var(--space-lg) 0;
         }
         .link-item {
             padding: 0.75rem 1rem;
@@ -251,10 +258,10 @@ const { title } = Astro.props;
             transition: color 0.2s;
         }
         a:hover { color: var(--accent); }
-        h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem; color: var(--fg); }
-        h4 { font-size: 0.95rem; font-weight: 600; margin: 1.25rem 0 0.5rem; color: var(--fg); }
-        ul { padding-left: 1.25rem; }
-        li { margin-bottom: 0.25rem; }
+        h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: var(--space-md); color: var(--fg); }
+        h4 { font-size: 0.85rem; font-weight: 600; margin: var(--space-lg) 0 var(--space-sm); color: var(--fg); letter-spacing: 0.06em; text-transform: uppercase; }
+        ul { padding-left: var(--space-lg); }
+        li { margin-bottom: var(--space-xs); }
         li::marker { color: var(--accent); }
 
         /* Principles list */
@@ -272,15 +279,15 @@ const { title } = Astro.props;
         /* Context link */
         .context-link {
             font-size: 0.8rem;
-            margin-left: 0.25rem;
+            margin-left: var(--space-xs);
         }
 
         /* Social links */
         .social-links {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.75rem;
-            margin: 1.5rem 0;
+            gap: var(--space-md);
+            margin: var(--space-xl) 0;
         }
         .social-links a {
             font-weight: 500;
@@ -320,8 +327,8 @@ const { title } = Astro.props;
         .stats-row {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 0.75rem;
-            margin: 1.5rem 0;
+            gap: var(--space-md);
+            margin: var(--space-xl) 0;
         }
         .stat-card {
             display: flex;
@@ -335,10 +342,10 @@ const { title } = Astro.props;
         .stat-label { font-size: 0.75rem; opacity: 0.6; margin-top: 0.25rem; }
 
         /* Region blocks */
-        .region-block { margin-bottom: 2rem; }
+        .region-block { margin-bottom: var(--space-2xl); }
 
         /* Country chips */
-        .chip-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem; }
+        .chip-row { display: flex; flex-wrap: wrap; gap: var(--space-sm); margin-bottom: var(--space-md); }
         .chip {
             display: inline-block;
             padding: 0.3rem 0.75rem;
@@ -354,8 +361,8 @@ const { title } = Astro.props;
         /* Pull quote */
         .pull-quote {
             border-left: 3px solid var(--accent);
-            margin: 2rem 0 0;
-            padding: 0.75rem 1.25rem;
+            margin: var(--space-2xl) 0 0;
+            padding: var(--space-md) var(--space-lg);
             font-style: italic;
             opacity: 0.8;
         }
@@ -364,7 +371,7 @@ const { title } = Astro.props;
         footer {
             max-width: 48rem;
             margin: auto auto 0;
-            padding: 2rem 1.5rem;
+            padding: var(--space-2xl) var(--space-xl);
             width: 100%;
             text-align: center;
             font-size: 0.75rem;
@@ -404,18 +411,38 @@ const { title } = Astro.props;
             document.documentElement.dataset.theme = saved;
             document.getElementById('theme-icon').textContent = saved === 'dark' ? '☀️' : '🌙';
         })();
-        function showTab(tabName) {
-            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-            document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
-            document.getElementById(tabName).classList.add('active');
-            event.target.classList.add('active');
+        function activateTab(tablist, targetId) {
+            tablist.querySelectorAll('[role="tab"]').forEach(function(tab) {
+                var active = tab.getAttribute('aria-controls') === targetId;
+                tab.setAttribute('aria-selected', active ? 'true' : 'false');
+                tab.tabIndex = active ? 0 : -1;
+                tab.classList.toggle('active', active);
+                var panel = document.getElementById(tab.getAttribute('aria-controls'));
+                if (panel) panel.classList.toggle('active', active);
+            });
         }
-        function showSubTab(name) {
-            document.querySelectorAll('.sub-tab-content').forEach(c => c.classList.remove('active'));
-            document.querySelectorAll('.sub-tab-button').forEach(b => b.classList.remove('active'));
-            document.getElementById(name).classList.add('active');
-            event.target.classList.add('active');
-        }
+        document.addEventListener('click', function(e) {
+            var tab = e.target.closest('[role="tab"]');
+            if (!tab) return;
+            activateTab(tab.closest('[role="tablist"]'), tab.getAttribute('aria-controls'));
+        });
+        document.addEventListener('keydown', function(e) {
+            var tab = e.target.closest('[role="tab"]');
+            if (!tab) return;
+            var tablist = tab.closest('[role="tablist"]');
+            var tabs = Array.from(tablist.querySelectorAll('[role="tab"]'));
+            var idx = tabs.indexOf(tab);
+            var next = -1;
+            if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next = (idx + 1) % tabs.length;
+            else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') next = (idx - 1 + tabs.length) % tabs.length;
+            else if (e.key === 'Home') next = 0;
+            else if (e.key === 'End') next = tabs.length - 1;
+            if (next >= 0) {
+                e.preventDefault();
+                activateTab(tablist, tabs[next].getAttribute('aria-controls'));
+                tabs[next].focus();
+            }
+        });
     </script>
 </body>
 </html>
