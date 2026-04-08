@@ -46,8 +46,8 @@ const { title } = Astro.props;
             background: var(--muted);
             border: 1px solid var(--border);
             border-radius: 50%;
-            width: 36px;
-            height: 36px;
+            width: 44px;
+            height: 44px;
             cursor: pointer;
             font-size: 16px;
             display: flex;
@@ -232,6 +232,7 @@ const { title } = Astro.props;
             text-decoration: underline;
             text-decoration-style: dashed;
             text-underline-offset: 4px;
+            padding-block: 3px;
             transition: color 0.2s;
         }
         a:hover { color: var(--accent); }
@@ -269,6 +270,9 @@ const { title } = Astro.props;
         .social-links a {
             font-weight: 500;
             padding: 0.5rem 1rem;
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
             border: 1px solid var(--border);
             border-radius: 4px;
             font-size: 0.85rem;
