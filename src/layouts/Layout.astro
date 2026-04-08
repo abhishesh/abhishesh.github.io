@@ -353,8 +353,8 @@ const { title } = Astro.props;
 
         /* Mobile */
         @media (max-width: 640px) {
-            .tab-nav, .sub-tab-nav { gap: 0; }
-            .tab-button { padding: 0.6rem 0.75rem; font-size: 0.8rem; }
+            .tab-nav, .sub-tab-nav { gap: 0; overflow-x: auto; flex-wrap: nowrap; }
+            .tab-button, .sub-tab-button { padding: 0.6rem 0.75rem; font-size: 0.8rem; white-space: nowrap; flex-shrink: 0; }
             .links-grid { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
             th, td { padding: 0.4rem 0.5rem; font-size: 0.8rem; }
             .stats-row { grid-template-columns: repeat(2, 1fr); }
