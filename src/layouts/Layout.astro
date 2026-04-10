@@ -31,6 +31,48 @@ const { title } = Astro.props;
             --muted: #343f60;
             --border: #4a5568;
         }
+        [data-theme="solarized"] {
+            --bg: #fdf6e3;
+            --fg: #586e75;
+            --accent: #2aa198;
+            --muted: #eee8d5;
+            --border: #d3cbb7;
+        }
+        [data-theme="dracula"] {
+            --bg: #282a36;
+            --fg: #f8f8f2;
+            --accent: #ff79c6;
+            --muted: #44475a;
+            --border: #6272a4;
+        }
+        [data-theme="nord"] {
+            --bg: #2e3440;
+            --fg: #eceff4;
+            --accent: #88c0d0;
+            --muted: #3b4252;
+            --border: #4c566a;
+        }
+        [data-theme="monokai"] {
+            --bg: #272822;
+            --fg: #f8f8f2;
+            --accent: #a6e22e;
+            --muted: #3e3d32;
+            --border: #75715e;
+        }
+        [data-theme="catppuccin"] {
+            --bg: #1e1e2e;
+            --fg: #cdd6f4;
+            --accent: #cba6f7;
+            --muted: #313244;
+            --border: #45475a;
+        }
+        [data-theme="retro"] {
+            --bg: #0a0a0a;
+            --fg: #33ff33;
+            --accent: #33ff33;
+            --muted: #1a1a1a;
+            --border: #2a2a2a;
+        }
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         html { overflow-y: scroll; scroll-behavior: smooth; }
         body {
@@ -45,26 +87,24 @@ const { title } = Astro.props;
         }
         ::selection { background: var(--accent); color: var(--bg); }
 
-        /* Theme toggle */
-        .theme-toggle {
+        /* Theme switcher */
+        .theme-switcher {
             position: fixed;
             top: 1rem;
             right: 1rem;
-            background: var(--muted);
-            border: 1px solid var(--border);
-            border-radius: 50%;
-            width: 44px;
-            height: 44px;
-            cursor: pointer;
-            font-size: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             z-index: 100;
-            transition: opacity 0.2s;
         }
-        .theme-toggle:hover { opacity: 0.7; }
-        .theme-toggle:focus-visible {
+        .theme-switcher select {
+            background: var(--muted);
+            color: var(--fg);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 0.4rem 0.6rem;
+            font-family: inherit;
+            font-size: 0.8rem;
+            cursor: pointer;
+        }
+        .theme-switcher select:focus-visible {
             outline: 2px solid var(--accent);
             outline-offset: 2px;
         }
@@ -306,12 +346,22 @@ const { title } = Astro.props;
             border-color: var(--accent);
         }
         .btn-primary:hover { opacity: 0.85; color: var(--bg); }
-        [data-theme="dark"] .btn-primary {
+        [data-theme="dark"] .btn-primary,
+        [data-theme="dracula"] .btn-primary,
+        [data-theme="nord"] .btn-primary,
+        [data-theme="monokai"] .btn-primary,
+        [data-theme="catppuccin"] .btn-primary,
+        [data-theme="retro"] .btn-primary {
             background: transparent;
             color: var(--accent);
             border-color: var(--accent);
         }
-        [data-theme="dark"] .btn-primary:hover { background: var(--accent); color: var(--bg); }
+        [data-theme="dark"] .btn-primary:hover,
+        [data-theme="dracula"] .btn-primary:hover,
+        [data-theme="nord"] .btn-primary:hover,
+        [data-theme="monokai"] .btn-primary:hover,
+        [data-theme="catppuccin"] .btn-primary:hover,
+        [data-theme="retro"] .btn-primary:hover { background: var(--accent); color: var(--bg); }
         .btn-outline { color: var(--fg); }
         .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
 
@@ -390,26 +440,32 @@ const { title } = Astro.props;
     </style>
 </head>
 <body>
-    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-        <span id="theme-icon">🌙</span>
-    </button>
+    <div class="theme-switcher">
+        <select id="theme-select" aria-label="Choose theme" onchange="setTheme(this.value)">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+            <option value="solarized">Solarized</option>
+            <option value="dracula">Dracula</option>
+            <option value="nord">Nord</option>
+            <option value="monokai">Monokai</option>
+            <option value="catppuccin">Catppuccin</option>
+            <option value="retro">Retro</option>
+        </select>
+    </div>
     <slot />
     <footer>
         Copyright &copy; {new Date().getFullYear()} | All rights reserved.
     </footer>
     <script is:inline>
-        function toggleTheme() {
-            const html = document.documentElement;
-            const next = html.dataset.theme === 'dark' ? 'light' : 'dark';
-            html.dataset.theme = next;
-            localStorage.setItem('theme', next);
-            document.getElementById('theme-icon').textContent = next === 'dark' ? '☀️' : '🌙';
+        function setTheme(t) {
+            document.documentElement.dataset.theme = t;
+            localStorage.setItem('theme', t);
         }
         (function() {
-            const saved = localStorage.getItem('theme') ||
+            var saved = localStorage.getItem('theme') ||
                 (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
             document.documentElement.dataset.theme = saved;
-            document.getElementById('theme-icon').textContent = saved === 'dark' ? '☀️' : '🌙';
+            document.getElementById('theme-select').value = saved;
         })();
         function activateTab(tablist, targetId) {
             tablist.querySelectorAll('[role="tab"]').forEach(function(tab) {
