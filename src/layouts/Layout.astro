@@ -329,41 +329,19 @@ const { title } = Astro.props;
             gap: var(--space-md);
             margin: var(--space-xl) 0;
         }
-        .social-links a {
-            font-weight: 500;
-            padding: 0.5rem 1rem;
-            min-height: 44px;
+        .social-icon {
             display: inline-flex;
             align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
             border: 1px solid var(--border);
             border-radius: 4px;
-            font-size: 0.85rem;
+            color: var(--fg);
             text-decoration: none;
+            transition: border-color 0.2s, color 0.2s;
         }
-        .btn-primary {
-            background: var(--accent);
-            color: var(--bg);
-            border-color: var(--accent);
-        }
-        .btn-primary:hover { opacity: 0.85; color: var(--bg); }
-        [data-theme="dark"] .btn-primary,
-        [data-theme="dracula"] .btn-primary,
-        [data-theme="nord"] .btn-primary,
-        [data-theme="monokai"] .btn-primary,
-        [data-theme="catppuccin"] .btn-primary,
-        [data-theme="retro"] .btn-primary {
-            background: transparent;
-            color: var(--accent);
-            border-color: var(--accent);
-        }
-        [data-theme="dark"] .btn-primary:hover,
-        [data-theme="dracula"] .btn-primary:hover,
-        [data-theme="nord"] .btn-primary:hover,
-        [data-theme="monokai"] .btn-primary:hover,
-        [data-theme="catppuccin"] .btn-primary:hover,
-        [data-theme="retro"] .btn-primary:hover { background: var(--accent); color: var(--bg); }
-        .btn-outline { color: var(--fg); }
-        .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+        .social-icon:hover { border-color: var(--accent); color: var(--accent); }
 
         /* Travel grid */
         .travel-grid {
