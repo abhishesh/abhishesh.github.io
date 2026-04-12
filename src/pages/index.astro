@@ -13,7 +13,7 @@ import Layout from '../layouts/Layout.astro';
         <div role="tablist" aria-label="Main navigation" class="tab-nav">
             <button role="tab" id="tab-about" aria-selected="true" aria-controls="about" tabindex="0" class="tab-button active">About</button>
             <button role="tab" id="tab-hobbies" aria-selected="false" aria-controls="hobbies" tabindex="-1" class="tab-button">Hobbies</button>
-            <button role="tab" id="tab-tech" aria-selected="false" aria-controls="tech" tabindex="-1" class="tab-button">Tech &amp; Projects</button>
+            <button role="tab" id="tab-tech" aria-selected="false" aria-controls="tech" tabindex="-1" class="tab-button">Desk Setup</button>
             <button role="tab" id="tab-travel" aria-selected="false" aria-controls="travel" tabindex="-1" class="tab-button">Travel</button>
         </div>
 
@@ -197,12 +197,9 @@ import Layout from '../layouts/Layout.astro';
             </div>
         </div>
 
-        <!-- TECH -->
+        <!-- DESK SETUP -->
         <div id="tech" role="tabpanel" aria-labelledby="tab-tech" tabindex="0" class="tab-content">
-            <h2 class="section-title">Technology & Projects</h2>
-            <p>I believe in boring, reliable infrastructure — the kind that doesn't page you at 3 AM. CLI-first, Linux where possible, minimal tooling that does one thing well. Less moving parts, fewer surprises.</p>
-
-            <h3>Desk Setup</h3>
+            <h2 class="section-title">Desk Setup</h2>
             <div class="table-wrapper">
             <table>
                 <thead><tr><th>Category</th><th>Equipment</th></tr></thead>
@@ -219,20 +216,6 @@ import Layout from '../layouts/Layout.astro';
                 <div class="link-item"><a href="https://vsco.co/attaboyabhi/media/65c395b793559a0b87ef31b8">Desk Setup 1</a></div>
                 <div class="link-item"><a href="https://vsco.co/attaboyabhi/media/66d892fdcb549a1437fac762">Desk Setup 2</a></div>
             </div>
-
-            <h3>Projects</h3>
-            <ul>
-                <li><a href="https://abhishesh.com/elections_india">Elections Data India</a> — visualizing Indian election data across states and years</li>
-                <li><a href="https://abhishesh.com/bytechor">Bytechor</a> — a data engineering mentorship project</li>
-                <li><a href="https://abhishesh.com/air_quality">Air Quality Dataset</a> — analysis of air quality metrics across regions</li>
-                <li><a href="https://abhishesh.com/URA_SG_Dataset">URA SG Dataset</a> — Singapore urban redevelopment authority property data</li>
-            </ul>
-
-            <h3>Tools & Technologies</h3>
-            <ul>
-                <li><a href="https://duckdb.org/">DuckDB</a> — my go-to for local analytical queries; fast, embedded, no infrastructure</li>
-                <li><a href="https://homebridge.io/">HomeBridge</a> — bridging non-HomeKit devices into Apple Home</li>
-            </ul>
         </div>
 
         <!-- TRAVEL -->
