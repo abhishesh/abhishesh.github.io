@@ -469,20 +469,12 @@ const { title } = Astro.props;
         function setTheme(t) {
             document.documentElement.dataset.theme = t;
             localStorage.setItem('theme', t);
-            var twitterWidget = document.querySelector('a.twitter-timeline');
-            if (twitterWidget) {
-                twitterWidget.dataset.theme = darkThemes.includes(t) ? 'dark' : 'light';
-            }
         }
         (function() {
             var saved = localStorage.getItem('theme') ||
                 (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
             document.documentElement.dataset.theme = saved;
             document.getElementById('theme-select').value = saved;
-            var twitterWidget = document.querySelector('a.twitter-timeline');
-            if (twitterWidget) {
-                twitterWidget.dataset.theme = darkThemes.includes(saved) ? 'dark' : 'light';
-            }
         })();
         function activateTab(tablist, targetId) {
             tablist.querySelectorAll('[role="tab"]').forEach(function(tab) {
@@ -493,8 +485,14 @@ const { title } = Astro.props;
                 var panel = document.getElementById(tab.getAttribute('aria-controls'));
                 if (panel) panel.classList.toggle('active', active);
             });
-            if (targetId === 'tweets' && window.twttr && window.twttr.widgets) {
-                window.twttr.widgets.load(document.getElementById('tweets'));
+            if (targetId === 'tweets' && !window._tweetsLoaded && window.twttr && window.twttr.widgets) {
+                window._tweetsLoaded = true;
+                var theme = darkThemes.includes(document.documentElement.dataset.theme) ? 'dark' : 'light';
+                window.twttr.widgets.createTimeline(
+                    { sourceType: 'profile', screenName: 'abhishesh' },
+                    document.getElementById('tweets-embed-container'),
+                    { tweetLimit: 10, chrome: 'noheader nofooter noborders', theme: theme }
+                );
             }
         }
         document.addEventListener('click', function(e) {

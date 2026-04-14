@@ -299,15 +299,7 @@ import Layout from '../layouts/Layout.astro';
         <!-- TWEETS -->
         <div id="tweets" role="tabpanel" aria-labelledby="tab-tweets" tabindex="0" class="tab-content">
             <h2 class="section-title">Tweets</h2>
-            <div class="tweets-embed">
-                <a class="twitter-timeline"
-                   href="https://twitter.com/abhishesh"
-                   data-tweet-limit="10"
-                   data-chrome="noheader nofooter noborders"
-                   data-theme="light">
-                    Tweets by @abhishesh
-                </a>
-            </div>
+            <div class="tweets-embed" id="tweets-embed-container"></div>
         </div>
     </div>
 </Layout>
