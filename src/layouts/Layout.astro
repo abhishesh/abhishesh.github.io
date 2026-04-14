@@ -488,11 +488,17 @@ const { title } = Astro.props;
             if (targetId === 'tweets' && !window._tweetsLoaded && window.twttr && window.twttr.widgets) {
                 window._tweetsLoaded = true;
                 var theme = darkThemes.includes(document.documentElement.dataset.theme) ? 'dark' : 'light';
-                window.twttr.widgets.createTimeline(
-                    { sourceType: 'profile', screenName: 'abhishesh' },
-                    document.getElementById('tweets-embed-container'),
-                    { tweetLimit: 10, chrome: 'noheader nofooter noborders', theme: theme }
-                );
+                var container = document.getElementById('tweets-embed-container');
+                var tweetIds = [
+                    '1905413737498329098',
+                    '1904893543579316416',
+                    '1904893543579316416'
+                ];
+                tweetIds.forEach(function(id) {
+                    var div = document.createElement('div');
+                    container.appendChild(div);
+                    window.twttr.widgets.createTweet(id, div, { theme: theme, conversation: 'none' });
+                });
             }
         }
         document.addEventListener('click', function(e) {
