@@ -15,6 +15,7 @@ import Layout from '../layouts/Layout.astro';
             <button role="tab" id="tab-hobbies" aria-selected="false" aria-controls="hobbies" tabindex="-1" class="tab-button">Hobbies</button>
             <button role="tab" id="tab-tech" aria-selected="false" aria-controls="tech" tabindex="-1" class="tab-button">Desk Setup</button>
             <button role="tab" id="tab-travel" aria-selected="false" aria-controls="travel" tabindex="-1" class="tab-button">Travel</button>
+            <button role="tab" id="tab-tweets" aria-selected="false" aria-controls="tweets" tabindex="-1" class="tab-button">Tweets</button>
         </div>
 
         <!-- ABOUT -->
@@ -292,6 +293,21 @@ import Layout from '../layouts/Layout.astro';
                     <a class="chip" href="https://www.flickr.com/photos/abhishesh-sharma/albums/72157651775379899/" target="_blank" rel="noopener">United States of America</a>
                 </div>
                 <p>The US is less a country than a collection of very distinct places that happen to share a flag. It demands more than one visit to even scratch the surface.</p>
+            </div>
+        </div>
+
+        <!-- TWEETS -->
+        <div id="tweets" role="tabpanel" aria-labelledby="tab-tweets" tabindex="0" class="tab-content">
+            <h2 class="section-title">Tweets</h2>
+            <div class="tweets-embed">
+                <a class="twitter-timeline"
+                   href="https://twitter.com/abhishesh"
+                   data-tweet-limit="10"
+                   data-chrome="noheader nofooter noborders"
+                   data-theme="light">
+                    Tweets by @abhishesh
+                </a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
     </div>

@@ -414,6 +414,16 @@ const { title } = Astro.props;
             opacity: 0.8;
         }
 
+        /* Tweets embed */
+        .tweets-embed {
+            margin-top: var(--space-lg);
+        }
+        .tweets-embed iframe {
+            border-radius: 4px;
+            border: 1px solid var(--border) !important;
+            width: 100% !important;
+        }
+
         /* Footer */
         footer {
             max-width: 48rem;
@@ -454,15 +464,24 @@ const { title } = Astro.props;
         Copyright &copy; {new Date().getFullYear()} | All rights reserved.
     </footer>
     <script is:inline>
+        var darkThemes = ['dark', 'dracula', 'nord', 'monokai', 'catppuccin', 'retro'];
         function setTheme(t) {
             document.documentElement.dataset.theme = t;
             localStorage.setItem('theme', t);
+            var twitterWidget = document.querySelector('a.twitter-timeline');
+            if (twitterWidget) {
+                twitterWidget.dataset.theme = darkThemes.includes(t) ? 'dark' : 'light';
+            }
         }
         (function() {
             var saved = localStorage.getItem('theme') ||
                 (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
             document.documentElement.dataset.theme = saved;
             document.getElementById('theme-select').value = saved;
+            var twitterWidget = document.querySelector('a.twitter-timeline');
+            if (twitterWidget) {
+                twitterWidget.dataset.theme = darkThemes.includes(saved) ? 'dark' : 'light';
+            }
         })();
         function activateTab(tablist, targetId) {
             tablist.querySelectorAll('[role="tab"]').forEach(function(tab) {
