@@ -433,6 +433,12 @@ const { title } = Astro.props;
             .tab-button, .sub-tab-button { padding: 0.6rem 0.75rem; font-size: 0.8rem; white-space: nowrap; flex-shrink: 0; }
             .links-grid { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
             th, td { padding: 0.4rem 0.5rem; font-size: 0.8rem; }
+            .sound-summary thead { display: none; }
+            .sound-summary tr { display: block; margin-bottom: var(--space-md); border: 1px solid var(--border); border-radius: 4px; padding: 0.5rem; }
+            .sound-summary td { display: block; border: none; padding: 0.2rem 0.5rem; white-space: normal; }
+            .sound-summary td:first-child { font-weight: 600; padding-bottom: 0.3rem; border-bottom: 1px solid var(--border); margin-bottom: 0.3rem; }
+            .sound-summary td::before { content: attr(data-label) ": "; font-weight: 600; }
+            .sound-summary td:first-child::before { content: ""; }
             .stats-row { grid-template-columns: repeat(2, 1fr); }
         }
     </style>
