@@ -1,5 +1,43 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+
+const aboutBlocks = await getCollection('about-blocks');
+const socialLinks = await getCollection('social');
+const photoEquipment = await getCollection('photography-equipment');
+const photoResources = await getCollection('photography-resources');
+const audioGear = await getCollection('audio-gear');
+const soundProfiles = await getCollection('sound-profiles');
+const audioResources = await getCollection('audio-resources');
+const deskEquipment = await getCollection('desk-equipment');
+const travelRegions = await getCollection('travel-regions');
+const hobbiesProse = await getCollection('hobbies-prose');
+
+const principles = aboutBlocks.find(e => e.id === 'principles')?.data;
+const tech = aboutBlocks.find(e => e.id === 'tech')?.data;
+const life = aboutBlocks.find(e => e.id === 'life')?.data;
+const fandoms = aboutBlocks.find(e => e.id === 'fandoms')?.data;
+
+const socialByLabel = Object.fromEntries(socialLinks.map(e => [e.data.label, e.data.href]));
+
+const photoByCategory = Object.fromEntries(photoEquipment.map(e => [e.data.category, e.data.items]));
+const photoPortfolio = photoResources.filter(r => r.data.type === 'portfolio');
+const photoEditing = photoResources.filter(r => r.data.type === 'editing');
+
+const audioGearSorted = [...audioGear]; // keep original collection order
+const soundProfilesSorted = [...soundProfiles];
+
+const audioBlogs = audioResources.filter(r => r.data.type === 'blog');
+const audioPlaylists = audioResources.filter(r => r.data.type === 'playlist');
+
+const deskItems = deskEquipment;
+
+const travelSorted = [...travelRegions];
+
+const coffeeEntry = hobbiesProse.find(e => e.id === 'coffee');
+const perfumesEntry = hobbiesProse.find(e => e.id === 'perfumes');
+const coffeeContent = coffeeEntry ? await render(coffeeEntry) : null;
+const perfumesContent = perfumesEntry ? await render(perfumesEntry) : null;
 ---
 <Layout title="Abhishesh Sharma - Data & Analytics">
     <!-- Hero -->
@@ -21,55 +59,54 @@ import Layout from '../layouts/Layout.astro';
         <!-- ABOUT -->
         <div id="about" role="tabpanel" aria-labelledby="tab-about" tabindex="0" class="tab-content active">
             <div class="about-grid">
+                {principles && (
                 <div class="about-group">
-                    <h3 class="about-group-title">Principles</h3>
+                    <h3 class="about-group-title">{principles.title}</h3>
                     <ul class="principles-list">
-                        <li>no half measures</li>
-                        <li>be curious, not judgemental</li>
-                        <li>less but better</li>
-                        <li>keep it short and sweet</li>
-                        <li>convergent thinker by day and divergent by night!</li>
+                        {principles.items.map(item => <li>{item}</li>)}
                     </ul>
                 </div>
+                )}
+                {tech && (
                 <div class="about-group">
-                    <h3 class="about-group-title">Tech & Craft</h3>
+                    <h3 class="about-group-title">{tech.title}</h3>
                     <ul class="principles-list">
-                        <li>vim over emacs</li>
-                        <li><strong>*nix</strong> over windows</li>
-                        <li>skeuomorphism to neumorphism</li>
-                        <li>I am the documentation <a href="https://www.youtube.com/watch?v=0RQtwftu92Y" class="context-link">context</a></li>
-                        <li>like discussing math & data <a href="/pringles.html" class="context-link">exhibit A</a></li>
+                        {tech.items.map((item, i) => (
+                            <li set:html={i === 3 ? `${item} <a href="https://www.youtube.com/watch?v=0RQtwftu92Y" class="context-link">context</a>` : i === 4 ? `${item} <a href="/pringles.html" class="context-link">exhibit A</a>` : item}></li>
+                        ))}
                     </ul>
                 </div>
+                )}
+                {life && (
                 <div class="about-group">
-                    <h3 class="about-group-title">Life & Identity</h3>
+                    <h3 class="about-group-title">{life.title}</h3>
                     <ul class="principles-list">
-                        <li>protean personality — naturally evolving with the zeitgeist of every decade</li>
-                        <li>flâneur — wander aimlessly through city</li>
-                        <li>DIY enthusiast</li>
-                        <li>espresso && chai</li>
+                        {life.items.map(item => <li>{item}</li>)}
                     </ul>
                 </div>
+                )}
+                {fandoms && (
                 <div class="about-group">
-                    <h3 class="about-group-title">Fandoms & Loyalties</h3>
+                    <h3 class="about-group-title">{fandoms.title}</h3>
                     <ul class="principles-list">
-                        <li>SONY fanboy (guilty! rather anything made in Japan or designed in Japan)</li>
-                        <li>Ghibli Studio Fan <a href="https://www.imdb.com/list/ls561133549/" class="context-link">Movies</a></li>
-                        <li>🐶 person <a href="https://flickr.com/photos/abhishesh-sharma/albums/72177720312673306/" class="context-link">Penny's Hooman</a></li>
+                        {fandoms.items.map((item, i) => (
+                            <li set:html={i === 1 ? `${item} <a href="https://www.imdb.com/list/ls561133549/" class="context-link">Movies</a>` : i === 2 ? `${item} <a href="https://flickr.com/photos/abhishesh-sharma/albums/72177720312673306/" class="context-link">Penny's Hooman</a>` : item}></li>
+                        ))}
                     </ul>
                 </div>
+                )}
             </div>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/abhishesh/" class="social-icon" aria-label="LinkedIn">
+                <a href={socialByLabel['LinkedIn'] || '#'} class="social-icon" aria-label="LinkedIn">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                 </a>
-                <a href="https://github.com/abhishesh" class="social-icon" aria-label="GitHub">
+                <a href={socialByLabel['GitHub'] || '#'} class="social-icon" aria-label="GitHub">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
                 </a>
-                <a href="https://twitter.com/abhishesh" class="social-icon" aria-label="Twitter">
+                <a href={socialByLabel['Twitter'] || '#'} class="social-icon" aria-label="Twitter">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                 </a>
-                <a href="https://medium.com/@abhishesh" class="social-icon" aria-label="Medium">
+                <a href={socialByLabel['Medium'] || '#'} class="social-icon" aria-label="Medium">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
                 </a>
             </div>
@@ -133,14 +170,12 @@ import Layout from '../layouts/Layout.astro';
                 <table>
                     <thead><tr><th>Category</th><th>Equipment</th></tr></thead>
                     <tbody>
-                        <tr><td>Active Speaker</td><td><a href="https://www.whathifi.com/reviews/kef-lsx">KEF LSX</a></td></tr>
-                        <tr><td>In-Ear Headphones</td><td><a href="https://www.sony.com.sg/headphones/products/wf-1000xm4">Sony WF-1000XM4</a>, <a href="https://store.sony.com.sg/products/wf-1000xm5">Sony WF-1000XM5</a>, <a href="https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wf1000xm6-s">Sony WF-1000XM6</a>, <a href="https://sg.sennheiser-hearing.com/products/ie-300">Sennheiser IE300</a>, <a href="https://www.linsoul.com/products/kiwi-ears-x-crinacle-singolo">Kiwi Ears x Crinacle Singolo</a>, <a href="https://www.linsoul.com/products/tangzu-waner-sg2">TANGZU Waner SG2</a>, <a href="https://www.klipsch.com/intl/products/x4i-headphones">Klipsch X4i</a>, <a href="https://www.linsoul.com/products/moondrop-aria-2">Moondrop Aria 2</a></td></tr>
-                        <tr><td>Over-Ear (Closed Back)</td><td><a href="https://www.audio-technica.com/en-eu/ath-m50x">Audio Technica ATH-M50X</a>, <a href="https://sg.sennheiser-hearing.com/products/momentum-4-wireless">Sennheiser MOMENTUM 4</a></td></tr>
-                        <tr><td>Over-Ear (Open Back)</td><td><a href="https://vsco.co/attaboyabhi/media/63e531de32f88f1ff6000001">Meze 109 Pro</a></td></tr>
-                        <tr><td>USB-C DAC</td><td><a href="https://vsco.co/attaboyabhi/media/63e531de32f88f1ff6000001">Cayin RU6</a> (R-2R resistor ladder), <a href="https://www.qudelix.com/products/qudelix-5k">Quedelix 5K</a>, <a href="https://hangout.audio/products/jcally-jm6-pro">Jcally JM6 Pro</a></td></tr>
-                        <tr><td>Portable Audio Player</td><td><a href="https://vsco.co/attaboyabhi/video/8c276d2d-8c1c-4644-9c95-41fcaee8ef02">Sony NW-A306</a> <em>(gifted)</em></td></tr>
-                        <tr><td>Passive Speakers</td><td><a href="https://www.elac.com/category-bookshelf-speakers-debut-reference-dbr-62">ELAC Debut Reference DBR62</a> powered by <a href="https://www.whathifi.com/reviews/bluesound-powernode-2i">Bluesound Powernode 2i</a></td></tr>
-                        <tr><td>Microphones</td><td><a href="https://www.saramonic.com/product/vmic-pro">Saramonic VMIC</a>, <a href="https://shop.shure.com.sg/products/mv7-microphone">Shure MV7</a></td></tr>
+                        {audioGearSorted.map(row => (
+                            <tr>
+                                <td>{row.data.category}</td>
+                                <td set:html={row.data.equipment}></td>
+                            </tr>
+                        ))}
                     </tbody>
                 </table>
                 </div>
@@ -150,36 +185,30 @@ import Layout from '../layouts/Layout.astro';
                 <table class="sound-summary">
                     <thead><tr><th>Headphone</th><th>Bass</th><th>Mids</th><th>Treble</th><th>Sound Signature</th><th>FR Graph</th></tr></thead>
                     <tbody>
-                        <tr><td>Momentum 4 Wireless</td><td data-label="Bass">Warm & Rich</td><td data-label="Mids">Clear</td><td data-label="Treble">Smooth</td><td data-label="Sound Signature">Consumer-friendly</td><td data-label="FR Graph"><a href="https://kuulokenurkka.squig.link/?share=Harman_2018_Target%2CMomentum_4_%28ANC_ON%29_%2A%2A">Link</a></td></tr>
-                        <tr><td>WF-1000XM5</td><td data-label="Bass">Punchy</td><td data-label="Mids">Recessed</td><td data-label="Treble">Smooth</td><td data-label="Sound Signature">V-shaped</td><td data-label="FR Graph"><a href="https://tgx78.squig.link/?share=Xm5">Link</a></td></tr>
-                        <tr><td>WF-1000XM6</td><td data-label="Bass">Deep & Controlled</td><td data-label="Mids">Forward</td><td data-label="Treble">Crisp</td><td data-label="Sound Signature">Balanced with sub-bass emphasis</td><td data-label="FR Graph"><a href="https://earphonesarchive.squig.link/?share=5128_DF_Target,SONY_WF-1000XM6_(ANC)">Link</a></td></tr>
-                        <tr><td>IE300</td><td data-label="Bass">Full-bodied</td><td data-label="Mids">Recessed</td><td data-label="Treble">Sparkly</td><td data-label="Sound Signature">Warm with enhanced treble</td><td data-label="FR Graph"><a href="https://squig.link/?share=Crinacle_Target%2CSennheiser_IE300">Link</a></td></tr>
-                        <tr><td>Meze 109 Pro</td><td data-label="Bass">Neutral</td><td data-label="Mids">Natural</td><td data-label="Treble">Smooth</td><td data-label="Sound Signature">Balanced and natural</td><td data-label="FR Graph"><a href="https://kuulokenurkka.squig.link/?share=Harman_2018_Target%2C109_Pro">Link</a></td></tr>
-                        <tr><td>Kiwi Ears Singolo</td><td data-label="Bass">Controlled</td><td data-label="Mids">Forward</td><td data-label="Treble">Refined</td><td data-label="Sound Signature">Neutral reference tuning</td><td data-label="FR Graph"><a href="https://squig.link/?share=Crinacle_Target%2CKiwi_Ears_Singolo">Link</a></td></tr>
-                        <tr><td>TANGZU Waner SG2</td><td data-label="Bass">Present</td><td data-label="Mids">Balanced</td><td data-label="Treble">Extended</td><td data-label="Sound Signature">Slightly warm with good detail</td><td data-label="FR Graph"><a href="https://squig.link/?share=Harman_Target%2CTANGZU_Waner_SG2">Link</a></td></tr>
-                        <tr><td>Audio Technica ATH-M50x</td><td data-label="Bass">Punchy & Tight</td><td data-label="Mids">Slightly Recessed</td><td data-label="Treble">Bright</td><td data-label="Sound Signature">Slight V-shape with energetic upper mids</td><td data-label="FR Graph"><a href="https://squig.link/?share=Harman_2018_Target%2CAudio-Technica_ATH-M50x">Link</a></td></tr>
-                        <tr><td>Klipsch X4i</td><td data-label="Bass">Tight & Controlled</td><td data-label="Mids">Forward</td><td data-label="Treble">Crisp</td><td data-label="Sound Signature">Mildly bright with mid-forward clarity</td><td data-label="FR Graph">NA</td></tr>
-                        <tr><td>Moondrop Aria 2</td><td data-label="Bass">Sub-bass lean, clean</td><td data-label="Mids">Mildly forward</td><td data-label="Treble">Smoothly extended</td><td data-label="Sound Signature">Harman-inspired with air & clarity</td><td data-label="FR Graph"><a href="https://squig.link/?share=Harman_2018_Target%2CMoondrop_Aria_2">Link</a></td></tr>
+                        {soundProfilesSorted.map(p => (
+                            <tr>
+                                <td>{p.data.model}</td>
+                                <td data-label="Bass">{p.data.bass}</td>
+                                <td data-label="Mids">{p.data.mids}</td>
+                                <td data-label="Treble">{p.data.treble}</td>
+                                <td data-label="Sound Signature">{p.data.signature}</td>
+                                <td data-label="FR Graph">{p.data.frGraph && p.data.frGraph !== 'NA' ? <a href={p.data.frGraph}>Link</a> : p.data.frGraph}</td>
+                            </tr>
+                        ))}
                     </tbody>
                 </table>
                 </div>
 
                 <h4>Resources</h4>
                 <ul>
-                    <li>Devoted follower of <a href="https://darko.audio/">Darko Audio</a></li>
-                    <li><a href="https://crinacle.com/">Crinacle</a> for Chi-Fi and general audio gear</li>
-                    <li>System-test reference tracks (courtesy of <a href="https://audiophilemusic.io/portfolio/top-10-samplers-for-test-high-end-system/">audiophile.io</a>)</li>
+                    {audioBlogs.map(b => (
+                        <li>{b.data.note ? `${b.data.note} ` : ''}<a href={b.data.href}>{b.data.label}</a></li>
+                    ))}
                     <li>My Curated Playlists:
                         <ul>
-                            <li><a href="https://tidal.com/playlist/9ce1405b-8422-40f8-8dcc-b0982a7a96d5">Tidal - Needle in the soul</a></li>
-                            <li><a href="https://tidal.com/playlist/1e4ccc65-8e0c-48a8-8c52-498764818672">Tidal - Bit-Perfect Bangers</a></li>
-                            <li><a href="https://tidal.com/playlist/09fd0868-046b-42e4-91bd-9e0be08cfbdd">Tidal - Jakarta Junction</a></li>
-                            <li><a href="https://tidal.com/playlist/e42a1106-f26d-4ced-a765-a57b68927334">Tidal - Trap te Thumbi</a></li>
-                            <li><a href="https://tidal.com/playlist/30590a78-3c85-4cfa-9c51-09ebdad6dadb">Tidal - Bollywood Bangers</a></li>
-                            <li><a href="https://tidal.com/playlist/44feeab7-7b6f-4756-b90d-228ffb2bda99">Tidal - DHRME Test Songs</a></li>
-                            <li><a href="https://tidal.com/playlist/b02a0856-fd95-4b99-9edc-9b1b56454e22">Tidal - DrakoAudio Test Tracks</a></li>
-                            <li><a href="https://tidal.com/playlist/6c220ac6-9602-4d53-b370-42a7426ea54f">Tidal - South Sync</a></li>
-                            <li><a href="https://tidal.com/playlist/c2735597-80d3-45c4-9aec-a1b15a423362">Tidal - Cocktail Club Jakarta</a></li>
+                            {audioPlaylists.map(pl => (
+                                <li><a href={pl.data.href}>{pl.data.label}</a></li>
+                            ))}
                         </ul>
                     </li>
                 </ul>
@@ -187,20 +216,12 @@ import Layout from '../layouts/Layout.astro';
 
             <!-- Coffee -->
             <div id="coffee" role="tabpanel" aria-labelledby="subtab-coffee" tabindex="0" class="sub-tab-content">
-                <h3>Coffee — The Other Obsession</h3>
-                <p>Coffee, like perfume, rewards the obsessive. It's a pursuit where tiny variables — a finer grind, a degree of temperature, an extra ten seconds of bloom — separate a good cup from a memorable one. I've fallen deep into that rabbit hole, and I have no intention of climbing out.</p>
-                <p>My daily driver is a DeLonghi Magnifica S — a bean-to-cup machine I've refused to leave on autopilot. I dial in the grind size, water temperature, and drawdown time until the shot is exactly what I want that morning. It's an espresso machine that rewards curiosity.</p>
-                <p>For slower mornings, I turn to the V60. My setup is deliberate: a Timemore Whirly 01S electric grinder for consistent, on-demand grinding, a Timemore Fish Smart kettle for gooseneck-precision pouring at the exact temperature I want, a Timemore Basic 2.0 scale to track flow rate and yield to the second, and a Hario V60 Drip Master paired with a Hario glass server. Every pour is a small ritual — bloom, patience, concentric circles, and the quiet reward of watching a clean, bright cup come together.</p>
-                <p>I lean toward the third wave — light roasts, single origins, naturally processed beans that arrive with tasting notes that sound almost implausible until you actually taste them. That brightness people sometimes mistake for sourness? That's acidity done right — a lively, structured quality that makes an Ethiopian Yirgacheffe taste of blueberry and jasmine, or a Colombian washed of stone fruit and brown sugar. It's the difference between coffee as commodity and coffee as something worth slowing down for.</p>
-                <p>The French press is for weekends when I want something slower, fuller, and a little more forgiving of life.</p>
-                <p>I track every bag I buy — origin, roaster, tasting notes, brew method. It's a habit that started casually and is now well past a hundred cups. The log keeps growing. So does the curiosity.</p>
+                {coffeeContent && <coffeeContent.Content />}
             </div>
 
             <!-- Perfumes -->
             <div id="perfumes" role="tabpanel" aria-labelledby="subtab-perfumes" tabindex="0" class="sub-tab-content">
-                <h3>Perfumes</h3>
-                <p>Perfume, for me, is memory made portable. A single spritz can transport you — to a rain-soaked street in Paris, a leather-lined library, a garden just after dusk. I've spent years chasing those moments through the work of perfumers who treat fragrance as a serious art form: the precision of Frédéric Malle, the quiet elegance of Acqua di Parma, the eccentric Britishness of Penhaligon's, the poetic Left Bank sensibility of Diptyque, the raw urban minimalism of Le Labo, the earthy botanics of Aesop, and the bold, unapologetic glamour of YSL. My collection isn't about owning bottles — it's about curating experiences across moods, seasons, and stories. Some days call for something quiet and considered; others demand something that announces itself. Every fragrance earns its place by telling a story worth wearing.</p>
-                <p><a href="https://www.parfumo.com/Users/abhishesh/Collection">My profile on Parfumo</a></p>
+                {perfumesContent && <perfumesContent.Content />}
             </div>
         </div>
 
@@ -211,11 +232,9 @@ import Layout from '../layouts/Layout.astro';
             <table>
                 <thead><tr><th>Category</th><th>Equipment</th></tr></thead>
                 <tbody>
-                    <tr><td>Laptop</td><td>MacBook Pro M1 Pro</td></tr>
-                    <tr><td>Desktop</td><td>Alienware Aurora R12 running Linux</td></tr>
-                    <tr><td>Monitor</td><td>Dell U2720Q on Prism+ Arc Opus</td></tr>
-                    <tr><td>Desk</td><td>Omnidesk Pro WildWood — Pheasantwood</td></tr>
-                    <tr><td>Lighting</td><td>BenQ ScreenBar</td></tr>
+                    {deskItems.map(row => (
+                        <tr><td>{row.data.category}</td><td>{row.data.equipment}</td></tr>
+                    ))}
                 </tbody>
             </table>
             </div>
@@ -237,69 +256,18 @@ import Layout from '../layouts/Layout.astro';
                 <div class="stat-card"><span class="stat-num">2</span><span class="stat-label">Home bases</span></div>
             </div>
 
+            {travelSorted.map(region => (
             <div class="region-block">
-                <h4>Southeast Asia</h4>
+                <h4>{region.data.region}</h4>
                 <div class="chip-row">
-                    <a class="chip" href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720327366393/" target="_blank" rel="noopener">Malaysia</a>
-                    <a class="chip" href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720322573168/" target="_blank" rel="noopener">Indonesia</a>
-                    <a class="chip" href="https://www.flickr.com/photos/abhishesh-sharma/albums/72157650306560376/" target="_blank" rel="noopener">Cambodia</a>
-                    <a class="chip" href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314042365/" target="_blank" rel="noopener">Vietnam</a>
-                    <a class="chip" href="https://www.flickr.com/photos/abhishesh-sharma/albums/" target="_blank" rel="noopener">Thailand</a>
+                    {region.data.countries.map(c => (
+                        <a class="chip" href={c.albumUrl} target="_blank" rel="noopener">{c.name}</a>
+                    ))}
                 </div>
-                <p>Living in Singapore makes Southeast Asia feel like an extended backyard — and it's a backyard worth exploring slowly. Weekend escapes to Malaysia, rice terraces and temple silence in Indonesia, the staggering weight of history at Angkor Wat, the chaotic energy of Vietnamese street food at 7am, and the warmth of Thailand every single time.</p>
+                <p>{region.data.description}</p>
             </div>
+            ))}
 
-            <div class="region-block">
-                <h4>East Asia</h4>
-                <div class="chip-row">
-                    <a class="chip" href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314033207/" target="_blank" rel="noopener">Japan</a>
-                    <a class="chip" href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720322536997/" target="_blank" rel="noopener">Korea</a>
-                    <a class="chip" href="https://www.flickr.com/photos/abhishesh-sharma/albums/" target="_blank" rel="noopener">Hong Kong</a>
-                    <a class="chip" href="https://www.flickr.com/photos/abhishesh-sharma/albums/" target="_blank" rel="noopener">Macao</a>
-                </div>
-                <p>East Asia runs on a different frequency. Japan has a way of stopping time — whether you're standing in a Kyoto garden or navigating the chaos of Shinjuku. Korea's got a relentless creative energy. Hong Kong remains one of the great urban spectacles on earth, and Macao is a peculiar collision of Portuguese nostalgia and casino grandeur that somehow works.</p>
-            </div>
-
-            <div class="region-block">
-                <h4>Middle East</h4>
-                <div class="chip-row">
-                    <a class="chip" href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720327370819/" target="_blank" rel="noopener">United Arab Emirates</a>
-                </div>
-                <p>The UAE is a place of extremes done with intention — scale, ambition, and a surprising warmth beneath the gleaming surface.</p>
-            </div>
-
-            <div class="region-block">
-                <h4>Western & Southern Europe</h4>
-                <div class="chip-row">
-                    <a class="chip" href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720322557431/" target="_blank" rel="noopener">Italy</a>
-                    <a class="chip" href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720329015948/" target="_blank" rel="noopener">Vatican City</a>
-                    <a class="chip" href="https://www.flickr.com/photos/abhishesh-sharma/albums/72157652951357102/" target="_blank" rel="noopener">Monaco</a>
-                    <a class="chip" href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720322557197/" target="_blank" rel="noopener">France</a>
-                    <a class="chip" href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720327345765/" target="_blank" rel="noopener">United Kingdom</a>
-                    <a class="chip" href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720327345765/" target="_blank" rel="noopener">Scotland</a>
-                    <a class="chip" href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720327345765/" target="_blank" rel="noopener">Portugal</a>
-                    <a class="chip" href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314033137/" target="_blank" rel="noopener">Switzerland</a>
-                </div>
-                <p>Europe never quite gets old. Italy for the art and food, Vatican City for the cinematic weight of it, Monaco for the theatre, France for the obvious reasons, the UK and Scotland for landscape made literary, Portugal for Lisbon's light, Switzerland for the mountains.</p>
-            </div>
-
-            <div class="region-block">
-                <h4>Northern Europe</h4>
-                <div class="chip-row">
-                    <a class="chip" href="https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314040692/" target="_blank" rel="noopener">Finland</a>
-                    <a class="chip" href="https://flickr.com/photos/abhishesh-sharma/albums/72177720322538601/" target="_blank" rel="noopener">Sweden</a>
-                    <a class="chip" href="https://flickr.com/photos/abhishesh-sharma/albums/72177720322539600" target="_blank" rel="noopener">Estonia</a>
-                </div>
-                <p>The Nordics rewired something. Finland and Sweden for the quiet grandeur and coffee culture taken seriously. Tallinn for being one of Europe's best-kept secrets: a medieval old town wrapped in Baltic air.</p>
-            </div>
-
-            <div class="region-block">
-                <h4>North America</h4>
-                <div class="chip-row">
-                    <a class="chip" href="https://www.flickr.com/photos/abhishesh-sharma/albums/72157651775379899/" target="_blank" rel="noopener">United States of America</a>
-                </div>
-                <p>The US is less a country than a collection of very distinct places that happen to share a flag. It demands more than one visit to even scratch the surface.</p>
-            </div>
         </div>
 
     </div>

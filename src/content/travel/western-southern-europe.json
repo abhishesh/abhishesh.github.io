@@ -1,0 +1,14 @@
+{
+  "region": "Western & Southern Europe",
+  "description": "Europe never quite gets old. Italy for the art and food, Vatican City for the cinematic weight of it, Monaco for the theatre, France for the obvious reasons, the UK and Scotland for landscape made literary, Portugal for Lisbon's light, Switzerland for the mountains.",
+  "countries": [
+    { "name": "Italy", "albumUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720322557431/" },
+    { "name": "Vatican City", "albumUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720329015948/" },
+    { "name": "Monaco", "albumUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72157652951357102/" },
+    { "name": "France", "albumUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720322557197/" },
+    { "name": "United Kingdom", "albumUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720327345765/" },
+    { "name": "Scotland", "albumUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720327345765/" },
+    { "name": "Portugal", "albumUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720327345765/" },
+    { "name": "Switzerland", "albumUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314033137/" }
+  ]
+}

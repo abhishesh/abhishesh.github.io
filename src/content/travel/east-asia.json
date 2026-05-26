@@ -1,0 +1,10 @@
+{
+  "region": "East Asia",
+  "description": "East Asia runs on a different frequency. Japan has a way of stopping time — whether you're standing in a Kyoto garden or navigating the chaos of Shinjuku. Korea's got a relentless creative energy. Hong Kong remains one of the great urban spectacles on earth, and Macao is a peculiar collision of Portuguese nostalgia and casino grandeur that somehow works.",
+  "countries": [
+    { "name": "Japan", "albumUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314033207/" },
+    { "name": "Korea", "albumUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720322536997/" },
+    { "name": "Hong Kong", "albumUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/" },
+    { "name": "Macao", "albumUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/" }
+  ]
+}

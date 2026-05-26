@@ -1,0 +1,9 @@
+{
+  "region": "Northern Europe",
+  "description": "The Nordics rewired something. Finland and Sweden for the quiet grandeur and coffee culture taken seriously. Tallinn for being one of Europe's best-kept secrets: a medieval old town wrapped in Baltic air.",
+  "countries": [
+    { "name": "Finland", "albumUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314040692/" },
+    { "name": "Sweden", "albumUrl": "https://flickr.com/photos/abhishesh-sharma/albums/72177720322538601/" },
+    { "name": "Estonia", "albumUrl": "https://flickr.com/photos/abhishesh-sharma/albums/72177720322539600" }
+  ]
+}

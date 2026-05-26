@@ -1,0 +1,11 @@
+{
+  "region": "Southeast Asia",
+  "description": "Living in Singapore makes Southeast Asia feel like an extended backyard — and it's a backyard worth exploring slowly. Weekend escapes to Malaysia, rice terraces and temple silence in Indonesia, the staggering weight of history at Angkor Wat, the chaotic energy of Vietnamese street food at 7am, and the warmth of Thailand every single time.",
+  "countries": [
+    { "name": "Malaysia", "albumUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720327366393/" },
+    { "name": "Indonesia", "albumUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720322573168/" },
+    { "name": "Cambodia", "albumUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72157650306560376/" },
+    { "name": "Vietnam", "albumUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314042365/" },
+    { "name": "Thailand", "albumUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/" }
+  ]
+}
