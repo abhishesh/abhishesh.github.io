@@ -4,7 +4,13 @@
     "vim over emacs",
     "*nix over windows",
     "skeuomorphism to neumorphism",
-    "I am the documentation",
-    "like discussing math & data"
+    {
+      "text": "I am the documentation",
+      "link": { "label": "context", "href": "https://www.youtube.com/watch?v=0RQtwftu92Y" }
+    },
+    {
+      "text": "like discussing math & data",
+      "link": { "label": "exhibit A", "href": "/pringles.html" }
+    }
   ]
 }

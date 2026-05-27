@@ -2,37 +2,59 @@
 import Layout from '../layouts/Layout.astro';
 import { getCollection, render } from 'astro:content';
 
-const aboutBlocks = await getCollection('about-blocks');
-const socialLinks = await getCollection('social');
-const photoEquipment = await getCollection('photography-equipment');
-const photoResources = await getCollection('photography-resources');
-const audioGear = await getCollection('audio-gear');
-const soundProfiles = await getCollection('sound-profiles');
-const audioResources = await getCollection('audio-resources');
-const deskEquipment = await getCollection('desk-equipment');
-const travelRegions = await getCollection('travel-regions');
-const hobbiesProse = await getCollection('hobbies-prose');
+const [
+    aboutBlocks,
+    socialLinks,
+    photoEquipment,
+    photoResources,
+    audioGear,
+    soundProfiles,
+    audioResources,
+    deskEquipment,
+    travelRegions,
+    hobbiesProse,
+] = await Promise.all([
+    getCollection('about-blocks'),
+    getCollection('social'),
+    getCollection('photography-equipment'),
+    getCollection('photography-resources'),
+    getCollection('audio-gear'),
+    getCollection('sound-profiles'),
+    getCollection('audio-resources'),
+    getCollection('desk-equipment'),
+    getCollection('travel-regions'),
+    getCollection('hobbies-prose'),
+]);
 
-const principles = aboutBlocks.find(e => e.id === 'principles')?.data;
-const tech = aboutBlocks.find(e => e.id === 'tech')?.data;
-const life = aboutBlocks.find(e => e.id === 'life')?.data;
-const fandoms = aboutBlocks.find(e => e.id === 'fandoms')?.data;
+const aboutById = (id: string) => aboutBlocks.find(e => e.id === id)?.data;
+const principles = aboutById('principles');
+const tech = aboutById('tech');
+const life = aboutById('life');
+const fandoms = aboutById('fandoms');
+const aboutGroups = [principles, tech, life, fandoms].filter(<T,>(g: T | undefined): g is T => g !== undefined);
 
 const socialByLabel = Object.fromEntries(socialLinks.map(e => [e.data.label, e.data.href]));
+const socialIconPaths: Record<string, string> = {
+    LinkedIn: 'M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z',
+    GitHub: 'M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12',
+    Twitter: 'M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z',
+    Medium: 'M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z',
+};
+const socialOrder = ['LinkedIn', 'GitHub', 'Twitter', 'Medium'];
 
-const photoByCategory = Object.fromEntries(photoEquipment.map(e => [e.data.category, e.data.items]));
-const photoPortfolio = photoResources.filter(r => r.data.type === 'portfolio');
-const photoEditing = photoResources.filter(r => r.data.type === 'editing');
-
-const audioGearSorted = [...audioGear]; // keep original collection order
-const soundProfilesSorted = [...soundProfiles];
+const photoEquipmentSorted = [...photoEquipment].sort((a, b) => a.data.order - b.data.order);
+const photoPortfolio = photoResources
+    .filter(r => r.data.type === 'portfolio')
+    .sort((a, b) => a.data.order - b.data.order);
+const photoEditing = photoResources
+    .filter(r => r.data.type === 'editing')
+    .sort((a, b) => a.data.order - b.data.order);
 
 const audioBlogs = audioResources.filter(r => r.data.type === 'blog');
 const audioPlaylists = audioResources.filter(r => r.data.type === 'playlist');
 
-const deskItems = deskEquipment;
-
-const travelSorted = [...travelRegions];
+const totalCountries = travelRegions.reduce((sum, r) => sum + r.data.countries.length, 0);
+const totalRegions = travelRegions.length;
 
 const coffeeEntry = hobbiesProse.find(e => e.id === 'coffee');
 const perfumesEntry = hobbiesProse.find(e => e.id === 'perfumes');
@@ -59,56 +81,27 @@ const perfumesContent = perfumesEntry ? await render(perfumesEntry) : null;
         <!-- ABOUT -->
         <div id="about" role="tabpanel" aria-labelledby="tab-about" tabindex="0" class="tab-content active">
             <div class="about-grid">
-                {principles && (
+                {aboutGroups.map(group => (
                 <div class="about-group">
-                    <h3 class="about-group-title">{principles.title}</h3>
+                    <h3 class="about-group-title">{group.title}</h3>
                     <ul class="principles-list">
-                        {principles.items.map(item => <li>{item}</li>)}
-                    </ul>
-                </div>
-                )}
-                {tech && (
-                <div class="about-group">
-                    <h3 class="about-group-title">{tech.title}</h3>
-                    <ul class="principles-list">
-                        {tech.items.map((item, i) => (
-                            <li set:html={i === 3 ? `${item} <a href="https://www.youtube.com/watch?v=0RQtwftu92Y" class="context-link">context</a>` : i === 4 ? `${item} <a href="/pringles.html" class="context-link">exhibit A</a>` : item}></li>
+                        {group.items.map(item => (
+                            <li>
+                                {typeof item === 'string' ? item : (
+                                    <Fragment>{item.text} <a href={item.link.href} class="context-link">{item.link.label}</a></Fragment>
+                                )}
+                            </li>
                         ))}
                     </ul>
                 </div>
-                )}
-                {life && (
-                <div class="about-group">
-                    <h3 class="about-group-title">{life.title}</h3>
-                    <ul class="principles-list">
-                        {life.items.map(item => <li>{item}</li>)}
-                    </ul>
-                </div>
-                )}
-                {fandoms && (
-                <div class="about-group">
-                    <h3 class="about-group-title">{fandoms.title}</h3>
-                    <ul class="principles-list">
-                        {fandoms.items.map((item, i) => (
-                            <li set:html={i === 1 ? `${item} <a href="https://www.imdb.com/list/ls561133549/" class="context-link">Movies</a>` : i === 2 ? `${item} <a href="https://flickr.com/photos/abhishesh-sharma/albums/72177720312673306/" class="context-link">Penny's Hooman</a>` : item}></li>
-                        ))}
-                    </ul>
-                </div>
-                )}
+                ))}
             </div>
             <div class="social-links">
-                <a href={socialByLabel['LinkedIn'] || '#'} class="social-icon" aria-label="LinkedIn">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                </a>
-                <a href={socialByLabel['GitHub'] || '#'} class="social-icon" aria-label="GitHub">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                </a>
-                <a href={socialByLabel['Twitter'] || '#'} class="social-icon" aria-label="Twitter">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                </a>
-                <a href={socialByLabel['Medium'] || '#'} class="social-icon" aria-label="Medium">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
-                </a>
+                {socialOrder.map(label => (
+                    <a href={socialByLabel[label] || '#'} class="social-icon" aria-label={label}>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d={socialIconPaths[label]}/></svg>
+                    </a>
+                ))}
             </div>
         </div>
 
@@ -133,30 +126,35 @@ const perfumesContent = perfumesEntry ? await render(perfumesEntry) : null;
                 <table class="photo-equipment">
                     <thead><tr><th>Category</th><th>Tools</th></tr></thead>
                     <tbody>
-                        <tr><td>Manual Lenses Adapted to Sony Mount</td><td data-label="Tools"><a href="https://www.stenersenoutdoors.com/blog/pentacon-an-imperfect-jewel-according-to-my-taste-anyway">Pentacon 50mm f1.8</a>, <a href="https://mbphotox.wordpress.com/2015/09/19/helios-44-1-58mm-f2-zebra/">Helios 44-2 Zebra 58mm f2</a>, <a href="https://fourbillionyears.org/minolta-md-35-70mm-f-3-5-an-outstanding-lens/">Minolta 35-70 f3.5</a>, <a href="https://www.rokkorfiles.com/Battle%20of%2050s2.htm">Minolta MC ROKKOR PG 50mm f1.4</a>, <a href="https://www.pentaxforums.com/userreviews/vivitar-series-1-100-500mm-f5-6-8.html">Vivitar 100-500</a>, <a href="https://www.pentaxforums.com/lensreviews/S-M-C-Super-Takumar-135mm-F3.5.html">SuperTakumar 135mm f3.5</a>, <a href="https://northernwintersky.wordpress.com/2018/07/26/minolta-md-50mm-f-2-review/">Minolta 50mm f2</a>, <a href="https://kingjvpesphoto.com/blog/2018/12/28/minolta-rokkor-45mm-f2-the-best-minolta-lens">Minolta 45mm f2</a>, <a href="https://phillipreeve.net/blog/pentacon-auto-50-mm-f-1-8-multi-coating/">Pentacon 50mm f1.8 II</a>, <a href="https://minolta.su/minolta-mc-rokkor-qf-200mm-f3-5-mc2/">200mm f3.5</a>, <a href="https://foxfotoco.medium.com/vintage-lens-review-soviet-industar-50mm-f3-5-ca6dd3ef294e">Industar 50mm f3.5</a>, <a href="https://radojuva.com/en/2022/05/fujian-china-tv-lens-gds-35-f-35mm-1-7/">Fujian 35mm f1.7</a>, <a href="https://alikgriffin.com/helios-44-2-review-king-character/">Helios 44-4 58mm f2</a>, <a href="http://forum.mflenses.com/yashica-ml-50mm-f2-test-t84092.html">Yashica 50mm f2</a></td></tr>
-                        <tr><td>Sony Mount Manual Focus FF</td><td data-label="Tools"><a href="https://dustinabbott.net/2020/04/voigtlander-nokton-40mm-f1-2-review/">Voigtlander Nokton 40mm f1.2</a>, <a href="https://phillipreeve.net/blog/review-voigtlander-12mm-5-6-aspherical-ultra-wide-heliar/">Voigtlander 12mm f5.6</a></td></tr>
-                        <tr><td>Nikon Manual Focus FF</td><td data-label="Tools"><a href="https://www.stevehuffphoto.com/2016/12/22/voigtlander-nokton-58mm-f1-4-ii-lens-review-going-retro-by-craig-litten/">Voigtlander Nokton 58mm f1.4</a></td></tr>
-                        <tr><td>Canon Mount Automatic Focus FF</td><td data-label="Tools"><a href="https://colesclassroom.com/tokina-100-mm-macro-lens-review-amazing-images-budget-price/">Tokina 100mm f2.8</a>, <a href="https://roynuesca.com/canon-40mm-f2-8-pancake-lens-review/">40mm f2.8</a>, <a href="https://www.kenrockwell.com/canon/lenses/50mm-f18.htm">50mm f1.8 II</a></td></tr>
-                        <tr><td>Canon Mount Manual Focus FF</td><td data-label="Tools"><a href="https://www.lksamyang.com/en/product/product-view.php?seq=311">Samyang 85mm f1.4</a></td></tr>
-                        <tr><td>Sony Mount Automatic Focus FF</td><td data-label="Tools"><a href="https://www.sony.com.sg/electronics/camera-lenses/sel100400gm">Sony 100-400 GM</a>, <a href="https://www.sony.com.sg/electronics/camera-lenses/sel28f20-series">28mm f2</a>, <a href="https://www.tamron.com/global/consumer/lenses/a036/">Tamron 28-75 f2.8</a></td></tr>
-                        <tr><td>Adapters/Extension Tubes</td><td data-label="Tools"><a href="https://www.sigma-global.com/en/accessories/mc-11/">Sigma MC11</a>, <a href="https://www.sony.com.sg/electronics/camera-lenses/sel14tc">Sony 1.4TX Extender</a>, <a href="https://www.fotga.com/">Fotga adapters</a>, <a href="https://fotodioxpro.com/products/m42-mcr">Fotodiox Extension tubes</a></td></tr>
-                        <tr><td>Camera</td><td data-label="Tools"><a href="https://www.sony.com.sg/microsite/promotions/product.html?series=7R%20V%2035mm%20full-frame%20camera%20with%2061.0MP&category=interchangeable_lens_cameras&sub_category=ilc_cameras&model=ILCE-7RM5&name=ILCE-7RM5">Sony A7RV</a>, <a href="https://www.dpreview.com/reviews/canon-eos-70d">Canon 70D</a>, <a href="https://en.wikipedia.org/wiki/Canon_EOS_5D">Canon 5D Mark I</a></td></tr>
+                        {photoEquipmentSorted.map(row => (
+                            <tr>
+                                <td>{row.data.category}</td>
+                                <td data-label="Tools">
+                                    {row.data.items.map((item, i) => (
+                                        <Fragment>
+                                            {i > 0 && ', '}
+                                            {item.url ? <a href={item.url}>{item.name}</a> : item.name}
+                                        </Fragment>
+                                    ))}
+                                </td>
+                            </tr>
+                        ))}
                     </tbody>
                 </table>
                 </div>
 
                 <h4>Portfolio Links</h4>
                 <div class="links-grid">
-                    <div class="link-item"><a href="https://flickr.com/photos/abhishesh-sharma/">Flickr</a></div>
-                    <div class="link-item"><a href="https://500px.com/p/AbhisheshSharma">500px</a></div>
-                    <div class="link-item"><a href="https://vsco.co/attaboyabhi/gallery">VSCO</a></div>
-                    <div class="link-item"><a href="https://attaboyabhi.vsco.site">VSCO Site</a></div>
+                    {photoPortfolio.map(p => (
+                        <div class="link-item"><a href={p.data.href}>{p.data.label}</a></div>
+                    ))}
                 </div>
 
                 <h4>Editing Tools</h4>
                 <ul>
-                    <li><a href="https://apps.apple.com/us/app/vsco-photo-video-editor/id588013838">VSCO</a></li>
-                    <li><a href="https://lightroom.adobe.com/">Adobe Lightroom Classic</a></li>
+                    {photoEditing.map(p => (
+                        <li><a href={p.data.href}>{p.data.label}</a></li>
+                    ))}
                 </ul>
             </div>
 
@@ -170,10 +168,10 @@ const perfumesContent = perfumesEntry ? await render(perfumesEntry) : null;
                 <table>
                     <thead><tr><th>Category</th><th>Equipment</th></tr></thead>
                     <tbody>
-                        {audioGearSorted.map(row => (
+                        {audioGear.map(row => (
                             <tr>
                                 <td>{row.data.category}</td>
-                                <td set:html={row.data.equipment}></td>
+                                <td>{row.data.equipment.join(', ')}</td>
                             </tr>
                         ))}
                     </tbody>
@@ -185,7 +183,7 @@ const perfumesContent = perfumesEntry ? await render(perfumesEntry) : null;
                 <table class="sound-summary">
                     <thead><tr><th>Headphone</th><th>Bass</th><th>Mids</th><th>Treble</th><th>Sound Signature</th><th>FR Graph</th></tr></thead>
                     <tbody>
-                        {soundProfilesSorted.map(p => (
+                        {soundProfiles.map(p => (
                             <tr>
                                 <td>{p.data.model}</td>
                                 <td data-label="Bass">{p.data.bass}</td>
@@ -232,7 +230,7 @@ const perfumesContent = perfumesEntry ? await render(perfumesEntry) : null;
             <table>
                 <thead><tr><th>Category</th><th>Equipment</th></tr></thead>
                 <tbody>
-                    {deskItems.map(row => (
+                    {deskEquipment.map(row => (
                         <tr><td>{row.data.category}</td><td>{row.data.equipment}</td></tr>
                     ))}
                 </tbody>
@@ -250,13 +248,13 @@ const perfumesContent = perfumesEntry ? await render(perfumesEntry) : null;
             <p>I grew up in India and have spent the last decade calling <a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72157671074602024/with/34523847754" target="_blank" rel="noopener">Singapore</a> home. In between, the world has been generous enough to let me wander — through jungle heat and alpine cold, ancient temples and modernist icons, bustling night markets and quiet Nordic streets.</p>
 
             <div class="stats-row">
-                <div class="stat-card"><span class="stat-num">22</span><span class="stat-label">Countries</span></div>
+                <div class="stat-card"><span class="stat-num">{totalCountries}</span><span class="stat-label">Countries</span></div>
                 <div class="stat-card"><span class="stat-num">4</span><span class="stat-label">Continents</span></div>
-                <div class="stat-card"><span class="stat-num">5</span><span class="stat-label">Regions</span></div>
+                <div class="stat-card"><span class="stat-num">{totalRegions}</span><span class="stat-label">Regions</span></div>
                 <div class="stat-card"><span class="stat-num">2</span><span class="stat-label">Home bases</span></div>
             </div>
 
-            {travelSorted.map(region => (
+            {travelRegions.map(region => (
             <div class="region-block">
                 <h4>{region.data.region}</h4>
                 <div class="chip-row">

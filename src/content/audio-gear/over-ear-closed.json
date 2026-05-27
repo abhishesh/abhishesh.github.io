@@ -1,4 +1,4 @@
 {
   "category": "Over-Ear (Closed Back)",
-  "equipment": "Audio Technica ATH-M50X, Sennheiser MOMENTUM 4"
+  "equipment": ["Audio Technica ATH-M50X", "Sennheiser MOMENTUM 4"]
 }

@@ -1,4 +1,4 @@
 {
   "category": "USB-C DAC",
-  "equipment": "Cayin RU6 (R-2R resistor ladder), Qudelix 5K, Jcally JM6 Pro"
+  "equipment": ["Cayin RU6 (R-2R resistor ladder)", "Qudelix 5K", "Jcally JM6 Pro"]
 }

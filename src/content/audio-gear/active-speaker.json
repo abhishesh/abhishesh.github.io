@@ -1,4 +1,4 @@
 {
   "category": "Active Speaker",
-  "equipment": "KEF LSX"
+  "equipment": ["KEF LSX"]
 }

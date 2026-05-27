@@ -6,7 +6,18 @@ const aboutBlocks = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/about-blocks' }),
   schema: z.object({
     title: z.string(),
-    items: z.array(z.string()),
+    items: z.array(
+      z.union([
+        z.string(),
+        z.object({
+          text: z.string(),
+          link: z.object({
+            label: z.string(),
+            href: z.string(),
+          }),
+        }),
+      ])
+    ),
   }),
 });
 
@@ -21,8 +32,9 @@ const socialLinks = defineCollection({
 
 // Photography equipment rows
 const photographyEquipment = defineCollection({
-  loader: glob({ pattern: '**/*.json', base: './src/content/photography' }),
+  loader: glob({ pattern: '**/*.json', base: './src/content/photography-equipment' }),
   schema: z.object({
+    order: z.number(),
     category: z.string(),
     items: z.array(
       z.object({
@@ -38,8 +50,9 @@ const photographyResources = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/photography-resources' }),
   schema: z.object({
     type: z.enum(['portfolio', 'editing']),
+    order: z.number(),
     label: z.string(),
-    href: z.string().url().optional(),
+    href: z.string().url(),
   }),
 });
 
@@ -48,7 +61,7 @@ const audioGear = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/audio-gear' }),
   schema: z.object({
     category: z.string(),
-    equipment: z.string(),
+    equipment: z.array(z.string()),
   }),
 });
 
@@ -87,7 +100,7 @@ const deskEquipment = defineCollection({
 
 // Travel regions
 const travelRegions = defineCollection({
-  loader: glob({ pattern: '**/*.json', base: './src/content/travel' }),
+  loader: glob({ pattern: '**/*.json', base: './src/content/travel-regions' }),
   schema: z.object({
     region: z.string(),
     description: z.string(),

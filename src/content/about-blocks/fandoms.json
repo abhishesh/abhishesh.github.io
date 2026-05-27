@@ -2,7 +2,13 @@
   "title": "Fandoms & Loyalties",
   "items": [
     "SONY fanboy (guilty! rather anything made in Japan or designed in Japan)",
-    "Ghibli Studio Fan",
-    "🐶 person"
+    {
+      "text": "Ghibli Studio Fan",
+      "link": { "label": "Movies", "href": "https://www.imdb.com/list/ls561133549/" }
+    },
+    {
+      "text": "🐶 person",
+      "link": { "label": "Penny's Hooman", "href": "https://flickr.com/photos/abhishesh-sharma/albums/72177720312673306/" }
+    }
   ]
 }

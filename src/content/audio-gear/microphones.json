@@ -1,4 +1,4 @@
 {
   "category": "Microphones",
-  "equipment": "Saramonic VMIC, Shure MV7"
+  "equipment": ["Saramonic VMIC", "Shure MV7"]
 }

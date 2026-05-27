@@ -1,5 +1,6 @@
 {
   "type": "editing",
+  "order": 2,
   "label": "Adobe Lightroom Classic",
   "href": "https://lightroom.adobe.com/"
 }
