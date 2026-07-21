@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/abhishesh/abhishesh.github.io#readme",
   "dependencies": {
-    "astro": "^6.1.10"
+    "astro": "^7.1.0"
   }
 }
