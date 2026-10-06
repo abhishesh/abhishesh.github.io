@@ -305,6 +305,15 @@ const { title } = Astro.props;
         li { margin-bottom: var(--space-xs); }
         li::marker { color: var(--accent); }
 
+        /* HomeOffice */
+        .homeoffice-section + .homeoffice-section {
+            margin-top: var(--space-2xl);
+            padding-top: var(--space-2xl);
+            border-top: 1px solid var(--border);
+        }
+        .homeoffice-section p { max-width: 72ch; }
+        .homeoffice-section p + p { margin-top: var(--space-lg); }
+
         /* About grid */
         .about-grid {
             display: grid;
