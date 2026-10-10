@@ -1,0 +1,26 @@
+---
+import About from './sections/About.astro';
+import Photography from './sections/Photography.astro';
+import Audiophile from './sections/Audiophile.astro';
+import Coffee from './sections/Coffee.astro';
+import Perfumes from './sections/Perfumes.astro';
+import DeskSetup from './sections/DeskSetup.astro';
+import Travel from './sections/Travel.astro';
+import Projects from './sections/Projects.astro';
+const components = {
+  about: About,
+  photography: Photography,
+  audiophile: Audiophile,
+  coffee: Coffee,
+  perfumes: Perfumes,
+  'desk-setup': DeskSetup,
+  travel: Travel,
+  projects: Projects,
+};
+interface Props {
+  slug: keyof typeof components;
+}
+const Content = components[Astro.props.slug];
+---
+
+<Content />

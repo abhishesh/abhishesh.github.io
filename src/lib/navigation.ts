@@ -1,0 +1,58 @@
+export const sections = [
+  {
+    slug: 'about',
+    id: 'about',
+    title: 'About',
+    mark: '01',
+    description: 'Principles, technology, life, and fandoms.',
+  },
+  {
+    slug: 'photography',
+    id: 'photography',
+    title: 'Photography',
+    mark: '02',
+    description: 'Manual lenses. Modern cameras. A different perspective.',
+  },
+  {
+    slug: 'audiophile',
+    id: 'audio',
+    title: 'Audiophile',
+    mark: '03',
+    description: 'The pursuit of a recording as the artist intended.',
+  },
+  {
+    slug: 'coffee',
+    id: 'coffee',
+    title: 'Coffee',
+    mark: '04',
+    description: 'Coffee rewards obsession.',
+  },
+  {
+    slug: 'perfumes',
+    id: 'perfumes',
+    title: 'Perfumes',
+    mark: '05',
+    description: 'Memory made portable.',
+  },
+  {
+    slug: 'desk-setup',
+    id: 'tech',
+    title: 'Desk Setup',
+    mark: '06',
+    description: 'HomeOffice, UniFi, and Synology NAS.',
+  },
+  {
+    slug: 'travel',
+    id: 'travel',
+    title: 'Travel',
+    mark: '07',
+    description: 'Around the world, one stamp at a time.',
+  },
+  {
+    slug: 'projects',
+    id: 'projects',
+    title: 'Projects',
+    mark: '08',
+    description: 'Experiments in code and curiosity.',
+  },
+] as const;

@@ -1,518 +1,138 @@
 ---
-interface Props { title: string; }
-const { title } = Astro.props;
+import '@fontsource-variable/fustat';
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+import { socialLinks } from '../lib/content';
+interface Props {
+  title: string;
+  description?: string;
+  noindex?: boolean;
+}
+const {
+  title,
+  description = 'Chasing clicks, caffeine, colognes, crisp sound, and constant jaunts — while making data boringly reliable. The personal website of Abhishesh Sharma.',
+  noindex = false,
+} = Astro.props;
+const canonical = new URL(noindex ? '/404.html' : Astro.url.pathname, Astro.site);
 ---
-<!DOCTYPE html>
-<html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <style is:global>
-        :root {
-            --bg: #fdfdfd;
-            --fg: #282728;
-            --accent: #006cac;
-            --muted: #e6e6e6;
-            --border: #ece9e9;
-            --space-xs: 0.25rem;
-            --space-sm: 0.5rem;
-            --space-md: 0.75rem;
-            --space-lg: 1.25rem;
-            --space-xl: 1.5rem;
-            --space-2xl: 2rem;
-            --space-3xl: 4rem;
-        }
-        [data-theme="dark"] {
-            --bg: #212737;
-            --fg: #eaedf3;
-            --accent: #ff6b01;
-            --muted: #343f60;
-            --border: #4a5568;
-        }
-        [data-theme="solarized"] {
-            --bg: #fdf6e3;
-            --fg: #586e75;
-            --accent: #2aa198;
-            --muted: #eee8d5;
-            --border: #d3cbb7;
-        }
-        [data-theme="dracula"] {
-            --bg: #282a36;
-            --fg: #f8f8f2;
-            --accent: #ff79c6;
-            --muted: #44475a;
-            --border: #6272a4;
-        }
-        [data-theme="nord"] {
-            --bg: #2e3440;
-            --fg: #eceff4;
-            --accent: #88c0d0;
-            --muted: #3b4252;
-            --border: #4c566a;
-        }
-        [data-theme="monokai"] {
-            --bg: #272822;
-            --fg: #f8f8f2;
-            --accent: #a6e22e;
-            --muted: #3e3d32;
-            --border: #75715e;
-        }
-        [data-theme="catppuccin"] {
-            --bg: #1e1e2e;
-            --fg: #cdd6f4;
-            --accent: #cba6f7;
-            --muted: #313244;
-            --border: #45475a;
-        }
-        [data-theme="retro"] {
-            --bg: #0a0a0a;
-            --fg: #33ff33;
-            --accent: #33ff33;
-            --muted: #1a1a1a;
-            --border: #2a2a2a;
-        }
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        html { overflow-y: scroll; scroll-behavior: smooth; }
-        body {
-            background: var(--bg);
-            color: var(--fg);
-            font-family: 'IBM Plex Mono', monospace;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            line-height: 1.7;
-            font-size: 16px;
-        }
-        ::selection { background: var(--accent); color: var(--bg); }
-
-        /* Theme switcher */
-        .theme-switcher {
-            position: fixed;
-            top: 1rem;
-            right: 1rem;
-            z-index: 100;
-        }
-        .theme-switcher select {
-            background: var(--muted);
-            color: var(--fg);
-            border: 1px solid var(--border);
-            border-radius: 4px;
-            padding: 0.4rem 0.6rem;
-            font-family: inherit;
-            font-size: 0.8rem;
-            cursor: pointer;
-        }
-        .theme-switcher select:focus-visible {
-            outline: 2px solid var(--accent);
-            outline-offset: 2px;
-        }
-
-        /* Focus visible — global */
-        :focus-visible {
-            outline: 2px solid var(--accent);
-            outline-offset: 2px;
-            border-radius: 2px;
-        }
-
-        /* Header / Hero */
-        .hero {
-            max-width: 48rem;
-            margin: 0 auto;
-            padding: var(--space-3xl) var(--space-xl) var(--space-2xl);
-        }
-        .hero-title {
-            font-size: clamp(2rem, 4vw, 2.75rem);
-            font-weight: 700;
-            color: var(--fg);
-            margin-bottom: 0;
-            letter-spacing: -0.02em;
-        }
-        .hero-subtitle {
-            font-size: 0.9rem;
-            font-weight: 400;
-            opacity: 0.6;
-            letter-spacing: 0.02em;
-            margin-top: -0.5rem;
-            margin-bottom: 0.75rem;
-        }
-        .hero-tagline {
-            color: var(--fg);
-            opacity: 0.7;
-            font-size: 0.9rem;
-            line-height: 1.6;
-        }
-
-        /* Tab container */
-        .tab-container {
-            max-width: 48rem;
-            margin: 0 auto;
-            padding: 0 var(--space-xl) var(--space-3xl);
-        }
-        .tab-nav {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: var(--space-2xl);
-        }
-        .tab-button {
-            background: none;
-            border: none;
-            padding: 0.75rem 1.25rem;
-            cursor: pointer;
-            font-size: 0.85rem;
-            font-weight: 500;
-            color: var(--fg);
-            opacity: 0.65;
-            border-bottom: 2px solid transparent;
-            transition: opacity 0.2s, color 0.2s, text-decoration-color 0.2s;
-            font-family: inherit;
-            letter-spacing: 0.02em;
-        }
-        .tab-button:hover { opacity: 0.8; }
-        .tab-button.active {
-            opacity: 1;
-            color: var(--accent);
-            text-decoration: underline;
-            text-decoration-style: wavy;
-            text-underline-offset: 8px;
-            text-decoration-thickness: 2px;
-            border-bottom-color: transparent;
-        }
-
-        /* Tab content */
-        .tab-content { display: none; animation: fadeIn 0.2s ease-in; }
-        .tab-content.active { display: block; }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @media (prefers-reduced-motion: reduce) {
-            .tab-content { animation: none; }
-            .theme-toggle, .tab-button, .sub-tab-button, a { transition: none; }
-        }
-
-        /* Section titles */
-        .section-title {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: var(--space-xs);
-            padding-bottom: var(--space-md);
-            border-bottom: 1px solid var(--border);
-            color: var(--fg);
-        }
-        .section-title:has(+ .section-subtitle) {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-        .section-subtitle {
-            font-size: 0.85rem;
-            font-weight: 400;
-            opacity: 0.6;
-            margin-bottom: var(--space-lg);
-            padding-bottom: var(--space-md);
-            border-bottom: 1px solid var(--border);
-        }
-
-        /* Sub tabs */
-        .sub-tab-nav {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: var(--space-xl);
-        }
-        .sub-tab-button {
-            background: none;
-            border: none;
-            padding: 0.5rem 1rem;
-            cursor: pointer;
-            font-size: 0.8rem;
-            font-weight: 500;
-            color: var(--fg);
-            opacity: 0.65;
-            border-bottom: 2px solid transparent;
-            transition: opacity 0.2s, color 0.2s;
-            font-family: inherit;
-        }
-        .sub-tab-button:hover { opacity: 0.8; }
-        .sub-tab-button.active {
-            opacity: 1;
-            color: var(--accent);
-            text-decoration: underline;
-            text-decoration-style: wavy;
-            text-underline-offset: 6px;
-            text-decoration-thickness: 1.5px;
-        }
-        .sub-tab-content { display: none; animation: fadeIn 0.2s ease-in; }
-        .sub-tab-content.active { display: block; }
-
-        /* Tables */
-        .table-wrapper { overflow-x: auto; margin: var(--space-lg) 0; }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: var(--space-lg) 0;
-            font-size: 0.85rem;
-        }
-        th, td {
-            border: 1px solid var(--border);
-            padding: 0.5rem 0.75rem;
-            text-align: left;
-            color: var(--fg);
-            line-height: 1.5;
-            word-break: break-word;
-        }
-        th {
-            font-weight: 600;
-            background: var(--muted);
-        }
-        td:first-child { white-space: nowrap; }
-
-        /* Links grid */
-        .links-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-            gap: var(--space-md);
-            margin: var(--space-lg) 0;
-        }
-        .link-item {
-            padding: 0.75rem 1rem;
-            border: 1px solid var(--border);
-            border-radius: 4px;
-            text-align: center;
-            transition: border-color 0.2s;
-        }
-        .link-item:hover { border-color: var(--accent); }
-
-        /* Typography */
-        p, li, div { color: var(--fg); font-size: 0.9rem; line-height: 1.7; }
-        a {
-            color: var(--fg);
-            text-decoration: underline;
-            text-decoration-style: dashed;
-            text-underline-offset: 4px;
-            padding-block: 3px;
-            transition: color 0.2s;
-        }
-        a:hover { color: var(--accent); }
-        h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: var(--space-md); color: var(--fg); }
-        h4 { font-size: 0.85rem; font-weight: 600; margin: var(--space-lg) 0 var(--space-sm); color: var(--fg); letter-spacing: 0.06em; text-transform: uppercase; }
-        ul { padding-left: var(--space-lg); }
-        li { margin-bottom: var(--space-xs); }
-        li::marker { color: var(--accent); }
-
-        /* HomeOffice */
-        .homeoffice-section + .homeoffice-section {
-            margin-top: var(--space-2xl);
-            padding-top: var(--space-2xl);
-            border-top: 1px solid var(--border);
-        }
-        .homeoffice-section p { max-width: 72ch; }
-        .homeoffice-section p + p { margin-top: var(--space-lg); }
-
-        /* About grid */
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--space-xl);
-        }
-        @media (max-width: 600px) {
-            .about-grid { grid-template-columns: 1fr; }
-        }
-        .about-group-title {
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: var(--accent);
-            margin: 0 0 var(--space-sm) 0;
-        }
-
-        /* Principles list */
-        .principles-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .principles-list li {
-            padding: 0.6rem 0;
-            border-bottom: 1px solid var(--border);
-            font-size: 0.9rem;
-        }
-        .principles-list li:last-child { border-bottom: none; }
-
-        /* Context link */
-        .context-link {
-            font-size: 0.8rem;
-            margin-left: var(--space-xs);
-        }
-
-        /* Social links */
-        .social-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: var(--space-md);
-            margin: var(--space-xl) 0;
-        }
-        .social-icon {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 44px;
-            height: 44px;
-            border: 1px solid var(--border);
-            border-radius: 4px;
-            color: var(--fg);
-            text-decoration: none;
-            transition: border-color 0.2s, color 0.2s;
-        }
-        .social-icon:hover { border-color: var(--accent); color: var(--accent); }
-
-        /* Travel grid */
-        .travel-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 0.5rem;
-            margin: 1.25rem 0;
-        }
-
-        /* Stats row */
-        .stats-row {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: var(--space-md);
-            margin: var(--space-xl) 0;
-        }
-        .stat-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 1rem 0.5rem;
-            border: 1px solid var(--border);
-            border-radius: 4px;
-        }
-        .stat-num { font-size: 1.5rem; font-weight: 700; color: var(--accent); }
-        .stat-label { font-size: 0.75rem; opacity: 0.6; margin-top: 0.25rem; }
-
-        /* Region blocks */
-        .region-block { margin-bottom: var(--space-2xl); }
-
-        /* Country chips */
-        .chip-row { display: flex; flex-wrap: wrap; gap: var(--space-sm); margin-bottom: var(--space-md); }
-        .chip {
-            display: inline-block;
-            padding: 0.3rem 0.75rem;
-            border: 1px solid var(--border);
-            border-radius: 999px;
-            font-size: 0.8rem;
-            text-decoration: none;
-            color: var(--fg);
-            transition: border-color 0.2s, color 0.2s;
-        }
-        .chip:hover { border-color: var(--accent); color: var(--accent); }
-
-        /* Pull quote */
-        .pull-quote {
-            border-left: 3px solid var(--accent);
-            margin: var(--space-2xl) 0 0;
-            padding: var(--space-md) var(--space-lg);
-            font-style: italic;
-            opacity: 0.8;
-        }
-
-        /* Footer */
-        footer {
-            max-width: 48rem;
-            margin: auto auto 0;
-            padding: var(--space-2xl) var(--space-xl);
-            width: 100%;
-            text-align: center;
-            font-size: 0.75rem;
-            opacity: 0.5;
-            border-top: 1px solid var(--border);
-        }
-
-        /* Mobile */
-        @media (max-width: 640px) {
-            .tab-nav, .sub-tab-nav { gap: 0; overflow-x: auto; flex-wrap: nowrap; }
-            .tab-button, .sub-tab-button { padding: 0.6rem 0.75rem; font-size: 0.8rem; white-space: nowrap; flex-shrink: 0; }
-            .links-grid { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
-            th, td { padding: 0.4rem 0.5rem; font-size: 0.8rem; }
-            .sound-summary thead, .photo-equipment thead { display: none; }
-            .sound-summary tr, .photo-equipment tr { display: block; margin-bottom: var(--space-md); border: 1px solid var(--border); border-radius: 4px; padding: 0.5rem; }
-            .sound-summary td, .photo-equipment td { display: block; border: none; padding: 0.2rem 0.5rem; white-space: normal; }
-            .sound-summary td:first-child, .photo-equipment td:first-child { font-weight: 600; padding-bottom: 0.3rem; border-bottom: 1px solid var(--border); margin-bottom: 0.3rem; }
-            .sound-summary td::before, .photo-equipment td::before { content: attr(data-label) ": "; font-weight: 600; }
-            .sound-summary td:first-child::before, .photo-equipment td:first-child::before { content: ""; }
-            .stats-row { grid-template-columns: repeat(2, 1fr); }
-        }
-    </style>
-</head>
-<body>
-    <div class="theme-switcher">
-        <select id="theme-select" aria-label="Choose theme" onchange="setTheme(this.value)">
-            <option value="light">Light</option>
-            <option value="dark">Dark</option>
-            <option value="solarized">Solarized</option>
-            <option value="dracula">Dracula</option>
-            <option value="nord">Nord</option>
-            <option value="monokai">Monokai</option>
-            <option value="catppuccin">Catppuccin</option>
-            <option value="retro">Retro</option>
-        </select>
-    </div>
-    <slot />
-    <footer>
-        Copyright &copy; {new Date().getFullYear()} | All rights reserved.
-    </footer>
+    <meta name="description" content={description} />
+    <meta name="author" content="Abhishesh Sharma" />
+    <meta name="theme-color" content="#090b0c" />
+    {noindex && <meta name="robots" content="noindex" />}
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Abhishesh Sharma" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
     <script is:inline>
-        var darkThemes = ['dark', 'dracula', 'nord', 'monokai', 'catppuccin', 'retro'];
-        function setTheme(t) {
-            document.documentElement.dataset.theme = t;
-            localStorage.setItem('theme', t);
-        }
-        (function() {
-            var saved = localStorage.getItem('theme') ||
-                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      (() => {
+        try {
+          const saved = localStorage.getItem('theme');
+          if (
+            [
+              'light',
+              'dark',
+              'solarized',
+              'dracula',
+              'nord',
+              'monokai',
+              'catppuccin',
+              'retro',
+            ].includes(saved)
+          )
             document.documentElement.dataset.theme = saved;
-            document.getElementById('theme-select').value = saved;
-        })();
-        function activateTab(tablist, targetId) {
-            tablist.querySelectorAll('[role="tab"]').forEach(function(tab) {
-                var active = tab.getAttribute('aria-controls') === targetId;
-                tab.setAttribute('aria-selected', active ? 'true' : 'false');
-                tab.tabIndex = active ? 0 : -1;
-                tab.classList.toggle('active', active);
-                var panel = document.getElementById(tab.getAttribute('aria-controls'));
-                if (panel) panel.classList.toggle('active', active);
-            });
+        } catch {
+          /* The default theme also works when storage is unavailable. */
         }
-        document.addEventListener('click', function(e) {
-            var tab = e.target.closest('[role="tab"]');
-            if (!tab) return;
-            activateTab(tab.closest('[role="tablist"]'), tab.getAttribute('aria-controls'));
-        });
-        document.addEventListener('keydown', function(e) {
-            var tab = e.target.closest('[role="tab"]');
-            if (!tab) return;
-            var tablist = tab.closest('[role="tablist"]');
-            var tabs = Array.from(tablist.querySelectorAll('[role="tab"]'));
-            var idx = tabs.indexOf(tab);
-            var next = -1;
-            if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next = (idx + 1) % tabs.length;
-            else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') next = (idx - 1 + tabs.length) % tabs.length;
-            else if (e.key === 'Home') next = 0;
-            else if (e.key === 'End') next = tabs.length - 1;
-            if (next >= 0) {
-                e.preventDefault();
-                activateTab(tablist, tabs[next].getAttribute('aria-controls'));
-                tabs[next].focus();
-            }
-        });
+      })();
     </script>
-</body>
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        name: 'Abhishesh Sharma',
+        url: 'https://abhishesh.com',
+        sameAs: socialLinks.map((s) => s.data.href),
+      })}
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      Skip to content
+    </a>
+    <header class="site-header shell">
+      <a class="wordmark" href="/">
+        abhishesh<span class="accent">.</span>
+      </a>
+      <div class="theme-switcher">
+        <label for="theme-select">Appearance</label>
+        <select id="theme-select" aria-label="Choose theme">
+          {[
+            'dark',
+            'light',
+            'solarized',
+            'dracula',
+            'nord',
+            'monokai',
+            'catppuccin',
+            'retro',
+          ].map((theme) => (
+            <option value={theme}>
+              {theme[0].toUpperCase() + theme.slice(1)}
+            </option>
+          ))}
+        </select>
+      </div>
+    </header>
+    <main id="main" class="shell" tabindex="-1">
+      <slot />
+    </main>
+    <footer class="site-footer shell">
+      <div>
+        <a class="wordmark" href="/">
+          Abhishesh Sharma<span class="accent">.</span>
+        </a>
+        <p>In perpetual search for perfection</p>
+      </div>
+      <nav class="footer-socials" aria-label="Social links">
+        {socialLinks.map((s) => (
+          <a href={s.data.href}>
+            {s.data.label} <span aria-hidden="true">↗</span>
+          </a>
+        ))}
+      </nav>
+      <p class="copyright">
+        Copyright &copy; {new Date().getFullYear()} | All rights reserved.
+      </p>
+    </footer>
+    <Navigation />
+    <script>
+      const select = document.querySelector<HTMLSelectElement>('#theme-select');
+      if (select) {
+        select.value = document.documentElement.dataset.theme || 'dark';
+        select.addEventListener('change', () => {
+          document.documentElement.dataset.theme = select.value;
+          try {
+            localStorage.setItem('theme', select.value);
+          } catch {
+            /* Keep the current choice for this page. */
+          }
+        });
+      }
+    </script>
+  </body>
 </html>

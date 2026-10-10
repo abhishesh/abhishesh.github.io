@@ -1,285 +1,93 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getCollection, render } from 'astro:content';
-
-const [
-    aboutBlocks,
-    socialLinks,
-    photoEquipment,
-    photoResources,
-    audioGear,
-    soundProfiles,
-    audioResources,
-    deskEquipment,
-    travelRegions,
-    hobbiesProse,
-] = await Promise.all([
-    getCollection('about-blocks'),
-    getCollection('social'),
-    getCollection('photography-equipment'),
-    getCollection('photography-resources'),
-    getCollection('audio-gear'),
-    getCollection('sound-profiles'),
-    getCollection('audio-resources'),
-    getCollection('desk-equipment'),
-    getCollection('travel-regions'),
-    getCollection('hobbies-prose'),
-]);
-
-const aboutById = (id: string) => aboutBlocks.find(e => e.id === id)?.data;
-const principles = aboutById('principles');
-const tech = aboutById('tech');
-const life = aboutById('life');
-const fandoms = aboutById('fandoms');
-const aboutGroups = [principles, tech, life, fandoms].filter(<T,>(g: T | undefined): g is T => g !== undefined);
-
-const socialByLabel = Object.fromEntries(socialLinks.map(e => [e.data.label, e.data.href]));
-const socialIconPaths: Record<string, string> = {
-    LinkedIn: 'M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z',
-    GitHub: 'M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12',
-    Twitter: 'M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z',
-    Medium: 'M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z',
-};
-const socialOrder = ['LinkedIn', 'GitHub', 'Twitter', 'Medium'];
-
-const photoEquipmentSorted = [...photoEquipment].sort((a, b) => a.data.order - b.data.order);
-const photoPortfolio = photoResources
-    .filter(r => r.data.type === 'portfolio')
-    .sort((a, b) => a.data.order - b.data.order);
-const photoEditing = photoResources
-    .filter(r => r.data.type === 'editing')
-    .sort((a, b) => a.data.order - b.data.order);
-
-const audioBlogs = audioResources.filter(r => r.data.type === 'blog');
-const audioPlaylists = audioResources.filter(r => r.data.type === 'playlist');
-
-const totalCountries = travelRegions.reduce((sum, r) => sum + r.data.countries.length, 0);
-const totalRegions = travelRegions.length;
-
-const coffeeEntry = hobbiesProse.find(e => e.id === 'coffee');
-const perfumesEntry = hobbiesProse.find(e => e.id === 'perfumes');
-const coffeeContent = coffeeEntry ? await render(coffeeEntry) : null;
-const perfumesContent = perfumesEntry ? await render(perfumesEntry) : null;
+import SectionContent from '../components/SectionContent.astro';
+import { sections } from '../lib/navigation';
+import { socialOrder, socialByLabel, socialIconPaths } from '../lib/content';
 ---
+
 <Layout title="Abhishesh Sharma - Data & Analytics">
-    <!-- Hero -->
-    <section class="hero">
-        <h1 class="hero-title">Abhishesh Sharma</h1>
-        <p class="hero-subtitle">In perpetual search for perfection</p>
-        <p class="hero-tagline">Chasing clicks 📷, caffeine ☕️, colognes 🧴, crisp sound 🎧, and constant jaunts ✈️ — while making data boringly reliable</p>
-    </section>
-
-    <div class="tab-container">
-        <div role="tablist" aria-label="Main navigation" class="tab-nav">
-            <button role="tab" id="tab-about" aria-selected="true" aria-controls="about" tabindex="0" class="tab-button active">About</button>
-            <button role="tab" id="tab-hobbies" aria-selected="false" aria-controls="hobbies" tabindex="-1" class="tab-button">Hobbies</button>
-            <button role="tab" id="tab-tech" aria-selected="false" aria-controls="tech" tabindex="-1" class="tab-button">HomeOffice</button>
-            <button role="tab" id="tab-travel" aria-selected="false" aria-controls="travel" tabindex="-1" class="tab-button">Travel</button>
-
-        </div>
-
-        <!-- ABOUT -->
-        <div id="about" role="tabpanel" aria-labelledby="tab-about" tabindex="0" class="tab-content active">
-            <div class="about-grid">
-                {aboutGroups.map(group => (
-                <div class="about-group">
-                    <h3 class="about-group-title">{group.title}</h3>
-                    <ul class="principles-list">
-                        {group.items.map(item => (
-                            <li>
-                                {typeof item === 'string' ? item : (
-                                    <Fragment>{item.text} <a href={item.link.href} class="context-link">{item.link.label}</a></Fragment>
-                                )}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-                ))}
-            </div>
-            <div class="social-links">
-                {socialOrder.map(label => (
-                    <a href={socialByLabel[label] || '#'} class="social-icon" aria-label={label}>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d={socialIconPaths[label]}/></svg>
-                    </a>
-                ))}
-            </div>
-        </div>
-
-        <!-- HOBBIES -->
-        <div id="hobbies" role="tabpanel" aria-labelledby="tab-hobbies" tabindex="0" class="tab-content">
-            <h2 class="section-title">Hobbies</h2>
-            <p class="section-subtitle">In this world of hyper-stimulated junk food, hobbies are the nutritional meal.</p>
-            <div role="tablist" aria-label="Hobbies" class="sub-tab-nav">
-                <button role="tab" id="subtab-photography" aria-selected="true" aria-controls="photography" tabindex="0" class="sub-tab-button active">Photography</button>
-                <button role="tab" id="subtab-audio" aria-selected="false" aria-controls="audio" tabindex="-1" class="sub-tab-button">Audio</button>
-                <button role="tab" id="subtab-coffee" aria-selected="false" aria-controls="coffee" tabindex="-1" class="sub-tab-button">Coffee</button>
-                <button role="tab" id="subtab-perfumes" aria-selected="false" aria-controls="perfumes" tabindex="-1" class="sub-tab-button">Perfumes</button>
-            </div>
-
-            <!-- Photography -->
-            <div id="photography" role="tabpanel" aria-labelledby="subtab-photography" tabindex="0" class="sub-tab-content active">
-                <h3>Photography</h3>
-                <p>A picture is worth a thousand words. I have been learning photography since 2016 and I am very fond of manual lenses. Thanks to the short flange focal distance of mirrorless cameras and in-body optical image stabilization in Sony Cameras, I can use half-a-century-old lenses on modern digital cameras effectively and create some beautiful images full of character and microcontrast.</p>
-
-                <h4>Equipment</h4>
-                <div class="table-wrapper">
-                <table class="photo-equipment">
-                    <thead><tr><th>Category</th><th>Tools</th></tr></thead>
-                    <tbody>
-                        {photoEquipmentSorted.map(row => (
-                            <tr>
-                                <td>{row.data.category}</td>
-                                <td data-label="Tools">
-                                    {row.data.items.map((item, i) => (
-                                        <Fragment>
-                                            {i > 0 && ', '}
-                                            {item.url ? <a href={item.url}>{item.name}</a> : item.name}
-                                        </Fragment>
-                                    ))}
-                                </td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-                </div>
-
-                <h4>Portfolio Links</h4>
-                <div class="links-grid">
-                    {photoPortfolio.map(p => (
-                        <div class="link-item"><a href={p.data.href}>{p.data.label}</a></div>
-                    ))}
-                </div>
-
-                <h4>Editing Tools</h4>
-                <ul>
-                    {photoEditing.map(p => (
-                        <li><a href={p.data.href}>{p.data.label}</a></li>
-                    ))}
-                </ul>
-            </div>
-
-            <!-- Audio -->
-            <div id="audio" role="tabpanel" aria-labelledby="subtab-audio" tabindex="0" class="sub-tab-content">
-                <h3>Audiophile</h3>
-                <p>As a strong proponent of consuming anything in pure form, music cannot be any different. I try to get a similar sound stage and imaging at the home of what an artist intends in a recording studio. Also, while flying or in local transit, I love the quiet offered by the noise-canceling headphones.</p>
-
-                <h4>Audiophile Gear Setup</h4>
-                <div class="table-wrapper">
-                <table>
-                    <thead><tr><th>Category</th><th>Equipment</th></tr></thead>
-                    <tbody>
-                        {audioGear.map(row => (
-                            <tr>
-                                <td>{row.data.category}</td>
-                                <td>{row.data.equipment.join(', ')}</td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-                </div>
-
-                <h4>Headphone Sound Summary</h4>
-                <div class="table-wrapper">
-                <table class="sound-summary">
-                    <thead><tr><th>Headphone</th><th>Bass</th><th>Mids</th><th>Treble</th><th>Sound Signature</th><th>FR Graph</th></tr></thead>
-                    <tbody>
-                        {soundProfiles.map(p => (
-                            <tr>
-                                <td>{p.data.model}</td>
-                                <td data-label="Bass">{p.data.bass}</td>
-                                <td data-label="Mids">{p.data.mids}</td>
-                                <td data-label="Treble">{p.data.treble}</td>
-                                <td data-label="Sound Signature">{p.data.signature}</td>
-                                <td data-label="FR Graph">{p.data.frGraph && p.data.frGraph !== 'NA' ? <a href={p.data.frGraph}>Link</a> : p.data.frGraph}</td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-                </div>
-
-                <h4>Resources</h4>
-                <ul>
-                    {audioBlogs.map(b => (
-                        <li>{b.data.note ? `${b.data.note} ` : ''}<a href={b.data.href}>{b.data.label}</a></li>
-                    ))}
-                    <li>My Curated Playlists:
-                        <ul>
-                            {audioPlaylists.map(pl => (
-                                <li><a href={pl.data.href}>{pl.data.label}</a></li>
-                            ))}
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Coffee -->
-            <div id="coffee" role="tabpanel" aria-labelledby="subtab-coffee" tabindex="0" class="sub-tab-content">
-                {coffeeContent && <coffeeContent.Content />}
-            </div>
-
-            <!-- Perfumes -->
-            <div id="perfumes" role="tabpanel" aria-labelledby="subtab-perfumes" tabindex="0" class="sub-tab-content">
-                {perfumesContent && <perfumesContent.Content />}
-            </div>
-        </div>
-
-        <!-- HOME OFFICE -->
-        <div id="tech" role="tabpanel" aria-labelledby="tab-tech" tabindex="0" class="tab-content">
-            <h2 class="section-title">HomeOffice</h2>
-            <section class="homeoffice-section" aria-labelledby="desk-setup-heading">
-            <h3 id="desk-setup-heading">Desk Setup</h3>
-            <div class="table-wrapper">
-            <table>
-                <thead><tr><th>Category</th><th>Equipment</th></tr></thead>
-                <tbody>
-                    {deskEquipment.map(row => (
-                        <tr><td>{row.data.category}</td><td>{row.data.equipment}</td></tr>
-                    ))}
-                </tbody>
-            </table>
-            </div>
-            <div class="links-grid">
-                <div class="link-item"><a href="https://vsco.co/attaboyabhi/media/65c395b793559a0b87ef31b8">Desk Setup 1</a></div>
-                <div class="link-item"><a href="https://vsco.co/attaboyabhi/media/66d892fdcb549a1437fac762">Desk Setup 2</a></div>
-            </div>
-            </section>
-            <section class="homeoffice-section" aria-labelledby="unifi-heading">
-                <h3 id="unifi-heading">UniFi</h3>
-                <p>A <strong>UniFi Cloud Gateway Fiber</strong> handles routing, security, and centralised network management. My <strong>U7 Pro XGS</strong> access point provides Wi-Fi 7 coverage across approximately 1,650 sq ft, positioned centrally to reach through concrete internal walls and powered by a dedicated 90W PoE injector.</p>
-                <p>UniFi brings client, traffic, and Wi-Fi monitoring into one place, with remote administration and Teleport VPN access when away. There is room to add UniFi Protect cameras and more PoE devices.</p>
-            </section>
-            <section class="homeoffice-section" aria-labelledby="synology-nas-heading">
-                <h3 id="synology-nas-heading">Synology NAS Setup</h3>
-                <p>My <strong>Synology DiskStation DS1621+</strong> doubles as an always-on home server. This 6-bay NAS runs on an AMD Ryzen V1500B, with roughly <strong>31 TB of storage</strong> across multiple pools, disk redundancy, and <strong>10GbE networking</strong>.</p>
-                <p>Alongside centralised storage and backups, it has hosted Homebridge, Synology Drive, and containers through Synology Container Manager, with SSH for administration. It also serves as a platform for experimenting with data-engineering workloads, including evaluating Airbyte in containers or virtual machines.</p>
-            </section>
-        </div>
-
-        <!-- TRAVEL -->
-        <div id="travel" role="tabpanel" aria-labelledby="tab-travel" tabindex="0" class="tab-content">
-            <h2 class="section-title">Around the world, one stamp at a time</h2>
-            <p>I grew up in India and have spent the last decade calling <a href="https://www.flickr.com/photos/abhishesh-sharma/albums/72157671074602024/with/34523847754" target="_blank" rel="noopener">Singapore</a> home. In between, the world has been generous enough to let me wander — through jungle heat and alpine cold, ancient temples and modernist icons, bustling night markets and quiet Nordic streets.</p>
-
-            <div class="stats-row">
-                <div class="stat-card"><span class="stat-num">{totalCountries}</span><span class="stat-label">Countries</span></div>
-                <div class="stat-card"><span class="stat-num">4</span><span class="stat-label">Continents</span></div>
-                <div class="stat-card"><span class="stat-num">{totalRegions}</span><span class="stat-label">Regions</span></div>
-                <div class="stat-card"><span class="stat-num">2</span><span class="stat-label">Home bases</span></div>
-            </div>
-
-            {travelRegions.map(region => (
-            <div class="region-block">
-                <h4>{region.data.region}</h4>
-                <div class="chip-row">
-                    {region.data.countries.map(c => (
-                        <a class="chip" href={c.albumUrl} target="_blank" rel="noopener">{c.name}</a>
-                    ))}
-                </div>
-                <p>{region.data.description}</p>
-            </div>
-            ))}
-
-        </div>
-
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <p class="badge">
+      <span aria-hidden="true"></span>Data &amp; Analytics · Singapore
+    </p>
+    <h1 id="hero-title">
+      Abhishesh Sharma<span class="accent">.</span>
+    </h1>
+    <p class="hero-subtitle">
+      In perpetual search
+      <br />
+      for <span>perfection</span>
+    </p>
+    <p class="hero-tagline">
+      Chasing clicks 📷, caffeine ☕️, colognes 🧴, crisp sound 🎧, and constant
+      jaunts ✈️ — while making data boringly reliable
+    </p>
+    <div class="hero-keys">
+      {socialOrder.map((label) => (
+        <a class="keycap" href={socialByLabel[label]} aria-label={label}>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path d={socialIconPaths[label]} />
+          </svg>
+        </a>
+      ))}
+      <a class="keycap explore-key" href="#explore">
+        Explore my world <span aria-hidden="true">↓</span>
+      </a>
     </div>
+  </section>
+  <section id="explore" class="explore-section" aria-labelledby="explore-title">
+    <p class="eyebrow">A little bit of everything</p>
+    <h2 id="explore-title">
+      Curiosity, in all its forms<span class="accent">.</span>
+    </h2>
+    <div class="bento-grid">
+      {sections.map((section) => (
+        <a
+          class={`bento-card bento-${section.slug}`}
+          href={`/${section.slug}/`}
+        >
+          <span class="card-top">
+            <span class="eyebrow">{section.mark}</span>
+            <span class="card-arrow" aria-hidden="true">
+              ↗
+            </span>
+          </span>
+          <h3>{section.title}</h3>
+          <p>{section.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+  <div class="home-content">
+    <SectionContent slug="about" />
+    <section id="hobbies" aria-labelledby="hobbies-title">
+      <span id="tab-hobbies" aria-hidden="true"></span>
+      <p class="eyebrow">Off the clock</p>
+      <h2 id="hobbies-title">Hobbies</h2>
+      <p class="section-subtitle">
+        In this world of hyper-stimulated junk food, hobbies are the nutritional
+        meal.
+      </p>
+      <nav class="section-nav" aria-label="Hobbies">
+        <a href="#photography">Photography</a>
+        <a href="#audio">Audio</a>
+        <a href="#coffee">Coffee</a>
+        <a href="#perfumes">Perfumes</a>
+      </nav>
+      <SectionContent slug="photography" />
+      <SectionContent slug="audiophile" />
+      <SectionContent slug="coffee" />
+      <SectionContent slug="perfumes" />
+    </section>
+    <SectionContent slug="desk-setup" />
+    <SectionContent slug="travel" />
+    <SectionContent slug="projects" />
+  </div>
 </Layout>

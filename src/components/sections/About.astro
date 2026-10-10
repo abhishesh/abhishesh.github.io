@@ -1,0 +1,55 @@
+---
+import {
+  aboutGroups,
+  socialOrder,
+  socialByLabel,
+  socialIconPaths,
+} from '../../lib/content';
+---
+
+<div id="about" class="content-section">
+  <span id="tab-about" aria-hidden="true"></span>
+  <h2 class="section-title">About</h2>
+  <div class="about-grid">
+    {aboutGroups.map((group) => (
+      <div class="about-group">
+        <h3 class="about-group-title">{group.title}</h3>
+        <ul class="principles-list">
+          {group.items.map((item) => (
+            <li>
+              {typeof item === 'string' ? (
+                item
+              ) : (
+                <Fragment>
+                  {item.text}{' '}
+                  <a href={item.link.href} class="context-link">
+                    {item.link.label}
+                  </a>
+                </Fragment>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+  <div class="social-links">
+    {socialOrder.map((label) => (
+      <a
+        href={socialByLabel[label] || '#'}
+        class="social-icon"
+        aria-label={label}
+      >
+        <svg
+          aria-hidden="true"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path d={socialIconPaths[label]} />
+        </svg>
+      </a>
+    ))}
+  </div>
+</div>

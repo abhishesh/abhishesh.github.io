@@ -1,12 +1,14 @@
 {
   "name": "abhishesh.github.io",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Abhishesh Sharma’s personal website, built with Astro.",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview"
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "validate": "node scripts/validate.mjs",
+    "format": "prettier --write src/components src/layouts src/pages src/lib src/styles scripts astro.config.mjs"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,18 @@
   },
   "homepage": "https://github.com/abhishesh/abhishesh.github.io#readme",
   "dependencies": {
-    "astro": "^6.1.10"
+    "@astrojs/sitemap": "^3.7.4",
+    "@fontsource-variable/fustat": "^5.3.0",
+    "astro": "^7.3.8"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "linkedom": "^0.18.13",
+    "prettier": "^3.9.10",
+    "prettier-plugin-astro": "^1.1.1",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   }
 }

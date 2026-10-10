@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SectionContent from '../components/SectionContent.astro';
+import { sections } from '../lib/navigation';
+export function getStaticPaths() {
+  return sections.map((section) => ({
+    params: { section: section.slug },
+    props: { section },
+  }));
+}
+const { section } = Astro.props;
+---
+
+<Layout
+  title={`${section.title} | Abhishesh Sharma`}
+  description={`${section.description} ${section.title} on Abhishesh Sharma’s personal website.`}
+>
+  <header class="page-heading">
+    <a class="back-link" href="/">
+      ← Home
+    </a>
+    <p class="eyebrow">{section.mark} / Abhishesh Sharma</p>
+    <h1>
+      {section.title}
+      <span class="accent">.</span>
+    </h1>
+    <p>{section.description}</p>
+  </header>
+  <SectionContent slug={section.slug} />
+  <nav class="section-nav more-sections" aria-label="Explore other sections">
+    {sections
+      .filter((s) => s.slug !== section.slug)
+      .map((s) => (
+        <a href={`/${s.slug}/`}>{s.title} ↗</a>
+      ))}
+  </nav>
+</Layout>

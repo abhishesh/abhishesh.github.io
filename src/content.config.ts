@@ -1,4 +1,5 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
 
 // About section blocks (Principles, Tech, Life, Fandoms)
@@ -26,7 +27,7 @@ const socialLinks = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/social' }),
   schema: z.object({
     label: z.string(),
-    href: z.string().url(),
+    href: z.url(),
   }),
 });
 
@@ -39,7 +40,7 @@ const photographyEquipment = defineCollection({
     items: z.array(
       z.object({
         name: z.string(),
-        url: z.string().url().optional(),
+        url: z.url().optional(),
       })
     ),
   }),
@@ -52,7 +53,7 @@ const photographyResources = defineCollection({
     type: z.enum(['portfolio', 'editing']),
     order: z.number(),
     label: z.string(),
-    href: z.string().url(),
+    href: z.url(),
   }),
 });
 
@@ -84,7 +85,7 @@ const audioResources = defineCollection({
   schema: z.object({
     type: z.enum(['blog', 'playlist']),
     label: z.string(),
-    href: z.string().url(),
+    href: z.url(),
     note: z.string().optional(),
   }),
 });
@@ -107,7 +108,7 @@ const travelRegions = defineCollection({
     countries: z.array(
       z.object({
         name: z.string(),
-        albumUrl: z.string().url().optional(),
+        albumUrl: z.url().optional(),
       })
     ),
   }),

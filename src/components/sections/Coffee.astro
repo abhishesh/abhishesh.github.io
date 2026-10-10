@@ -1,0 +1,9 @@
+---
+import { coffeeContent } from '../../lib/content';
+---
+
+<div id="coffee" class="content-section">
+  <span id="subtab-coffee" aria-hidden="true"></span>
+  <h2 class="section-title">Coffee — The Other Obsession</h2>
+  {coffeeContent && <coffeeContent.Content />}
+</div>

@@ -1,0 +1,65 @@
+---
+import {
+  photoEquipmentSorted,
+  photoPortfolio,
+  photoEditing,
+} from '../../lib/content';
+---
+
+<div id="photography" class="content-section">
+  <span id="subtab-photography" aria-hidden="true"></span>
+  <h2 class="section-title">Photography</h2>
+  <p>
+    A picture is worth a thousand words. I have been learning photography since
+    2016 and I am very fond of manual lenses. Thanks to the short flange focal
+    distance of mirrorless cameras and in-body optical image stabilization in
+    Sony Cameras, I can use half-a-century-old lenses on modern digital cameras
+    effectively and create some beautiful images full of character and
+    microcontrast.
+  </p>
+
+  <h4>Equipment</h4>
+  <div class="table-wrapper">
+    <table class="photo-equipment">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Tools</th>
+        </tr>
+      </thead>
+      <tbody>
+        {photoEquipmentSorted.map((row) => (
+          <tr>
+            <td>{row.data.category}</td>
+            <td data-label="Tools">
+              {row.data.items.map((item, i) => (
+                <Fragment>
+                  {i > 0 && ', '}
+                  {item.url ? <a href={item.url}>{item.name}</a> : item.name}
+                </Fragment>
+              ))}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h4>Portfolio Links</h4>
+  <div class="links-grid">
+    {photoPortfolio.map((p) => (
+      <div class="link-item">
+        <a href={p.data.href}>{p.data.label}</a>
+      </div>
+    ))}
+  </div>
+
+  <h4>Editing Tools</h4>
+  <ul>
+    {photoEditing.map((p) => (
+      <li>
+        <a href={p.data.href}>{p.data.label}</a>
+      </li>
+    ))}
+  </ul>
+</div>

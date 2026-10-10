@@ -1,0 +1,58 @@
+---
+import { travelRegions, totalCountries, totalRegions } from '../../lib/content';
+---
+
+<div id="travel" class="content-section">
+  <span id="tab-travel" aria-hidden="true"></span>
+  <h2 class="section-title">Around the world, one stamp at a time</h2>
+  <p>
+    I grew up in India and have spent the last decade calling{' '}
+    <a
+      href="https://www.flickr.com/photos/abhishesh-sharma/albums/72157671074602024/with/34523847754"
+      target="_blank"
+      rel="noopener"
+    >
+      Singapore
+    </a>{' '}
+    home. In between, the world has been generous enough to let me wander —
+    through jungle heat and alpine cold, ancient temples and modernist icons,
+    bustling night markets and quiet Nordic streets.
+  </p>
+
+  <div class="stats-row">
+    <div class="stat-card">
+      <span class="stat-num">{totalCountries}</span>
+      <span class="stat-label">Countries</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">4</span>
+      <span class="stat-label">Continents</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">{totalRegions}</span>
+      <span class="stat-label">Regions</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">2</span>
+      <span class="stat-label">Home bases</span>
+    </div>
+  </div>
+
+  {travelRegions.map((region) => (
+    <div class="region-block">
+      <h4>{region.data.region}</h4>
+      <div class="chip-row">
+        {region.data.countries.map((c) =>
+          c.albumUrl ? (
+            <a class="chip" href={c.albumUrl} target="_blank" rel="noopener">
+              {c.name}
+            </a>
+          ) : (
+            <span class="chip">{c.name}</span>
+          ),
+        )}
+      </div>
+      <p>{region.data.description}</p>
+    </div>
+  ))}
+</div>

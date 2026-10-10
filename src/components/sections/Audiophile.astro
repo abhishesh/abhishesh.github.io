@@ -1,0 +1,93 @@
+---
+import {
+  audioGear,
+  soundProfiles,
+  audioBlogs,
+  audioPlaylists,
+} from '../../lib/content';
+---
+
+<div id="audio" class="content-section">
+  <span id="subtab-audio" aria-hidden="true"></span>
+  <h2 class="section-title">Audiophile</h2>
+  <p>
+    As a strong proponent of consuming anything in pure form, music cannot be
+    any different. I try to get a similar sound stage and imaging at the home of
+    what an artist intends in a recording studio. Also, while flying or in local
+    transit, I love the quiet offered by the noise-canceling headphones.
+  </p>
+
+  <h4>Audiophile Gear Setup</h4>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Equipment</th>
+        </tr>
+      </thead>
+      <tbody>
+        {audioGear.map((row) => (
+          <tr>
+            <td>{row.data.category}</td>
+            <td>{row.data.equipment.join(', ')}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h4>Headphone Sound Summary</h4>
+  <div class="table-wrapper">
+    <table class="sound-summary">
+      <thead>
+        <tr>
+          <th>Headphone</th>
+          <th>Bass</th>
+          <th>Mids</th>
+          <th>Treble</th>
+          <th>Sound Signature</th>
+          <th>FR Graph</th>
+        </tr>
+      </thead>
+      <tbody>
+        {soundProfiles.map((p) => (
+          <tr>
+            <td>{p.data.model}</td>
+            <td data-label="Bass">{p.data.bass}</td>
+            <td data-label="Mids">{p.data.mids}</td>
+            <td data-label="Treble">{p.data.treble}</td>
+            <td data-label="Sound Signature">{p.data.signature}</td>
+            <td data-label="FR Graph">
+              {p.data.frGraph && p.data.frGraph !== 'NA' ? (
+                <a href={p.data.frGraph}>Link</a>
+              ) : (
+                p.data.frGraph
+              )}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h4>Resources</h4>
+  <ul>
+    {audioBlogs.map((b) => (
+      <li>
+        {b.data.note ? `${b.data.note} ` : ''}
+        <a href={b.data.href}>{b.data.label}</a>
+      </li>
+    ))}
+    <li>
+      My Curated Playlists:
+      <ul>
+        {audioPlaylists.map((pl) => (
+          <li>
+            <a href={pl.data.href}>{pl.data.label}</a>
+          </li>
+        ))}
+      </ul>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,25 @@
+---
+import { sections } from '../lib/navigation';
+const path = Astro.url.pathname;
+---
+
+<nav class="dock" aria-label="Main navigation">
+  <a
+    class="dock-home"
+    href="/"
+    aria-label="Home"
+    aria-current={path === '/' ? 'page' : undefined}
+  >
+    AS<span class="accent">.</span>
+  </a>
+  <div class="dock-links">
+    {sections.map((section) => (
+      <a
+        href={`/${section.slug}/`}
+        aria-current={path === `/${section.slug}/` ? 'page' : undefined}
+      >
+        {section.title}
+      </a>
+    ))}
+  </div>
+</nav>

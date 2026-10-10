@@ -1,0 +1,9 @@
+---
+import { perfumesContent } from '../../lib/content';
+---
+
+<div id="perfumes" class="content-section">
+  <span id="subtab-perfumes" aria-hidden="true"></span>
+  <h2 class="section-title">Perfumes</h2>
+  {perfumesContent && <perfumesContent.Content />}
+</div>
