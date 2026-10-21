@@ -5,6 +5,21 @@ import {
   audioBlogs,
   audioPlaylists,
 } from '../../lib/content';
+
+const gearOrder = [
+  'active-speaker',
+  'desktop-dac',
+  'usb-dac',
+  'in-ear',
+  'microphones',
+  'over-ear-closed',
+  'over-ear-open',
+  'passive-speakers',
+  'portable-player',
+];
+const sortedAudioGear = [...audioGear].sort(
+  (a, b) => gearOrder.indexOf(a.id) - gearOrder.indexOf(b.id),
+);
 ---
 
 <div id="audio" class="content-section">
@@ -27,7 +42,7 @@ import {
         </tr>
       </thead>
       <tbody>
-        {audioGear.map((row) => (
+        {sortedAudioGear.map((row) => (
           <tr>
             <td>{row.data.category}</td>
             <td>{row.data.equipment.join(', ')}</td>
