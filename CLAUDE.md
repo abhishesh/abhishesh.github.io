@@ -41,7 +41,7 @@ This is a personal portfolio website built with Astro:
 
 ### Technology Stack
 
-- **Framework**: Astro 6.x
+- **Framework**: Astro 7.x
 - **Build Tool**: Vite (included with Astro)
 - **Output**: Static HTML/CSS/JS
 - **Deployment**: GitHub Pages with custom domain (abhishesh.com)
@@ -59,3 +59,5 @@ This is a personal portfolio website built with Astro:
 - Static site generation provides excellent performance
 - Modern build tooling with hot module replacement during development
 - Optimized for GitHub Pages deployment with custom domain support
+
+Migration architecture, validation, and deployment requirements: see `docs/MIGRATION.md` and `README.md`. Section components live in `src/components/sections/`; the homepage and dedicated pages share them.

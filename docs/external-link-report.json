@@ -1,0 +1,514 @@
+{
+  "checkedAt": "2026-10-10T14:20:19.843Z",
+  "results": [
+    {
+      "url": "https://500px.com/p/AbhisheshSharma",
+      "status": 200,
+      "finalUrl": "https://500px.com/p/AbhisheshSharma",
+      "result": "ok"
+    },
+    {
+      "url": "https://alikgriffin.com/helios-44-2-review-king-character/",
+      "status": 200,
+      "finalUrl": "https://alikgriffin.com/helios-44-2-review-king-character/",
+      "result": "ok"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/vsco-photo-video-editor/id588013838",
+      "status": 200,
+      "finalUrl": "https://apps.apple.com/us/app/vsco-photo-video-editor/id588013838",
+      "result": "ok"
+    },
+    {
+      "url": "https://attaboyabhi.vsco.site",
+      "status": 200,
+      "finalUrl": "https://attaboyabhi.vsco.site/",
+      "result": "ok"
+    },
+    {
+      "url": "https://audiophilemusic.io/portfolio/top-10-samplers-for-test-high-end-system/",
+      "status": 200,
+      "finalUrl": "https://audiophilemusic.io/portfolio/top-10-samplers-for-test-high-end-system/",
+      "result": "ok"
+    },
+    {
+      "url": "https://colesclassroom.com/tokina-100-mm-macro-lens-review-amazing-images-budget-price/",
+      "status": 403,
+      "finalUrl": "https://colesclassroom.com/tokina-100-mm-macro-lens-review-amazing-images-budget-price/",
+      "result": "restricted"
+    },
+    {
+      "url": "https://crinacle.com/",
+      "status": 200,
+      "finalUrl": "https://crinacle.com/",
+      "result": "ok"
+    },
+    {
+      "url": "https://darko.audio/",
+      "status": 403,
+      "finalUrl": "https://darko.audio/",
+      "result": "restricted"
+    },
+    {
+      "url": "https://dustinabbott.net/2020/04/voigtlander-nokton-40mm-f1-2-review/",
+      "status": 307,
+      "finalUrl": "https://dustinabbott.net/2020/04/voigtlander-nokton-40mm-f1-2-review/",
+      "result": "needs-review"
+    },
+    {
+      "url": "https://earphonesarchive.squig.link/?share=5128_DF_Target,SONY_WF-1000XM6_(ANC)",
+      "status": 200,
+      "finalUrl": "https://earphonesarchive.squig.link/?share=5128_DF_Target,SONY_WF-1000XM6_(ANC)",
+      "result": "ok"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Canon_EOS_5D",
+      "status": 200,
+      "finalUrl": "https://en.wikipedia.org/wiki/Canon_EOS_5D",
+      "result": "ok"
+    },
+    {
+      "url": "https://flickr.com/photos/abhishesh-sharma/",
+      "status": 200,
+      "finalUrl": "https://flickr.com/photos/abhishesh-sharma/",
+      "result": "ok"
+    },
+    {
+      "url": "https://flickr.com/photos/abhishesh-sharma/albums/72177720312673306/",
+      "status": 200,
+      "finalUrl": "https://flickr.com/photos/abhishesh-sharma/albums/72177720312673306/",
+      "result": "ok"
+    },
+    {
+      "url": "https://flickr.com/photos/abhishesh-sharma/albums/72177720322538601/",
+      "status": 200,
+      "finalUrl": "https://flickr.com/photos/abhishesh-sharma/albums/72177720322538601/",
+      "result": "ok"
+    },
+    {
+      "url": "https://flickr.com/photos/abhishesh-sharma/albums/72177720322539600",
+      "status": 200,
+      "finalUrl": "https://flickr.com/photos/abhishesh-sharma/albums/72177720322539600",
+      "result": "ok"
+    },
+    {
+      "url": "https://fotodioxpro.com/products/m42-mcr",
+      "status": 200,
+      "finalUrl": "https://fotodioxpro.com/products/m42-mcr",
+      "result": "ok"
+    },
+    {
+      "url": "https://fourbillionyears.org/minolta-md-35-70mm-f-3-5-an-outstanding-lens/",
+      "result": "unverified",
+      "reason": "ENOTFOUND"
+    },
+    {
+      "url": "https://foxfotoco.medium.com/vintage-lens-review-soviet-industar-50mm-f3-5-ca6dd3ef294e",
+      "status": 403,
+      "finalUrl": "https://foxfotoco.medium.com/vintage-lens-review-soviet-industar-50mm-f3-5-ca6dd3ef294e",
+      "result": "restricted"
+    },
+    {
+      "url": "https://github.com/abhishesh",
+      "status": 200,
+      "finalUrl": "https://github.com/abhishesh",
+      "result": "ok"
+    },
+    {
+      "url": "https://kingjvpesphoto.com/blog/2018/12/28/minolta-rokkor-45mm-f2-the-best-minolta-lens",
+      "status": 200,
+      "finalUrl": "https://kingjvpesphoto.com/blog/2018/12/28/minolta-rokkor-45mm-f2-the-best-minolta-lens",
+      "result": "ok"
+    },
+    {
+      "url": "https://kuulokenurkka.squig.link/?share=Harman_2018_Target%2C109_Pro",
+      "status": 200,
+      "finalUrl": "https://kuulokenurkka.squig.link/?share=Harman_2018_Target%2C109_Pro",
+      "result": "ok"
+    },
+    {
+      "url": "https://kuulokenurkka.squig.link/?share=Harman_2018_Target%2CMomentum_4_%28ANC_ON%29_%2A%2A",
+      "status": 200,
+      "finalUrl": "https://kuulokenurkka.squig.link/?share=Harman_2018_Target%2CMomentum_4_%28ANC_ON%29_%2A%2A",
+      "result": "ok"
+    },
+    {
+      "url": "https://lightroom.adobe.com/",
+      "status": 200,
+      "finalUrl": "https://lightroom.adobe.com/",
+      "result": "ok"
+    },
+    {
+      "url": "https://mbphotox.wordpress.com/2015/09/19/helios-44-1-58mm-f2-zebra/",
+      "status": 200,
+      "finalUrl": "https://mbphotox.wordpress.com/2015/09/19/helios-44-1-58mm-f2-zebra/",
+      "result": "ok"
+    },
+    {
+      "url": "https://medium.com/@abhishesh",
+      "status": 403,
+      "finalUrl": "https://medium.com/@abhishesh",
+      "result": "restricted"
+    },
+    {
+      "url": "https://minolta.su/minolta-mc-rokkor-qf-200mm-f3-5-mc2/",
+      "status": 200,
+      "finalUrl": "https://minolta.su/minolta-mc-rokkor-qf-200mm-f3-5-mc2/",
+      "result": "ok"
+    },
+    {
+      "url": "https://northernwintersky.wordpress.com/2018/07/26/minolta-md-50mm-f-2-review/",
+      "status": 200,
+      "finalUrl": "https://northernwintersky.wordpress.com/2018/07/26/minolta-md-50mm-f-2-review/",
+      "result": "ok"
+    },
+    {
+      "url": "https://phillipreeve.net/blog/pentacon-auto-50-mm-f-1-8-multi-coating/",
+      "status": 200,
+      "finalUrl": "https://phillipreeve.net/blog/pentacon-auto-50-mm-f-1-8-multi-coating/",
+      "result": "ok"
+    },
+    {
+      "url": "https://phillipreeve.net/blog/review-voigtlander-12mm-5-6-aspherical-ultra-wide-heliar/",
+      "status": 200,
+      "finalUrl": "https://phillipreeve.net/blog/review-voigtlander-12mm-5-6-aspherical-ultra-wide-heliar/",
+      "result": "ok"
+    },
+    {
+      "url": "https://radojuva.com/en/2022/05/fujian-china-tv-lens-gds-35-f-35mm-1-7/",
+      "status": 200,
+      "finalUrl": "https://radojuva.com/en/2022/05/fujian-china-tv-lens-gds-35-f-35mm-1-7/",
+      "result": "ok"
+    },
+    {
+      "url": "https://roynuesca.com/canon-40mm-f2-8-pancake-lens-review/",
+      "status": 403,
+      "finalUrl": "https://roynuesca.com/canon-40mm-f2-8-pancake-lens-review/",
+      "result": "restricted"
+    },
+    {
+      "url": "https://squig.link/?share=Crinacle_Target%2CKiwi_Ears_Singolo",
+      "status": 200,
+      "finalUrl": "https://squig.link/?share=Crinacle_Target%2CKiwi_Ears_Singolo",
+      "result": "ok"
+    },
+    {
+      "url": "https://squig.link/?share=Crinacle_Target%2CSennheiser_IE300",
+      "status": 200,
+      "finalUrl": "https://squig.link/?share=Crinacle_Target%2CSennheiser_IE300",
+      "result": "ok"
+    },
+    {
+      "url": "https://squig.link/?share=Harman_2018_Target%2CAudio-Technica_ATH-M50x",
+      "status": 200,
+      "finalUrl": "https://squig.link/?share=Harman_2018_Target%2CAudio-Technica_ATH-M50x",
+      "result": "ok"
+    },
+    {
+      "url": "https://squig.link/?share=Harman_2018_Target%2CMoondrop_Aria_2",
+      "status": 200,
+      "finalUrl": "https://squig.link/?share=Harman_2018_Target%2CMoondrop_Aria_2",
+      "result": "ok"
+    },
+    {
+      "url": "https://squig.link/?share=Harman_Target%2CTANGZU_Waner_SG2",
+      "status": 200,
+      "finalUrl": "https://squig.link/?share=Harman_Target%2CTANGZU_Waner_SG2",
+      "result": "ok"
+    },
+    {
+      "url": "https://tidal.com/playlist/09fd0868-046b-42e4-91bd-9e0be08cfbdd",
+      "status": 200,
+      "finalUrl": "https://tidal.com/playlist/09fd0868-046b-42e4-91bd-9e0be08cfbdd",
+      "result": "ok"
+    },
+    {
+      "url": "https://tidal.com/playlist/1e4ccc65-8e0c-48a8-8c52-498764818672",
+      "status": 200,
+      "finalUrl": "https://tidal.com/playlist/1e4ccc65-8e0c-48a8-8c52-498764818672",
+      "result": "ok"
+    },
+    {
+      "url": "https://tidal.com/playlist/30590a78-3c85-4cfa-9c51-09ebdad6dadb",
+      "status": 200,
+      "finalUrl": "https://tidal.com/playlist/30590a78-3c85-4cfa-9c51-09ebdad6dadb",
+      "result": "ok"
+    },
+    {
+      "url": "https://tidal.com/playlist/44feeab7-7b6f-4756-b90d-228ffb2bda99",
+      "status": 200,
+      "finalUrl": "https://tidal.com/playlist/44feeab7-7b6f-4756-b90d-228ffb2bda99",
+      "result": "ok"
+    },
+    {
+      "url": "https://tidal.com/playlist/6c220ac6-9602-4d53-b370-42a7426ea54f",
+      "status": 200,
+      "finalUrl": "https://tidal.com/playlist/6c220ac6-9602-4d53-b370-42a7426ea54f",
+      "result": "ok"
+    },
+    {
+      "url": "https://tidal.com/playlist/9ce1405b-8422-40f8-8dcc-b0982a7a96d5",
+      "status": 200,
+      "finalUrl": "https://tidal.com/playlist/9ce1405b-8422-40f8-8dcc-b0982a7a96d5",
+      "result": "ok"
+    },
+    {
+      "url": "https://tidal.com/playlist/b02a0856-fd95-4b99-9edc-9b1b56454e22",
+      "status": 200,
+      "finalUrl": "https://tidal.com/playlist/b02a0856-fd95-4b99-9edc-9b1b56454e22",
+      "result": "ok"
+    },
+    {
+      "url": "https://tidal.com/playlist/c2735597-80d3-45c4-9aec-a1b15a423362",
+      "status": 200,
+      "finalUrl": "https://tidal.com/playlist/c2735597-80d3-45c4-9aec-a1b15a423362",
+      "result": "ok"
+    },
+    {
+      "url": "https://tidal.com/playlist/e42a1106-f26d-4ced-a765-a57b68927334",
+      "status": 200,
+      "finalUrl": "https://tidal.com/playlist/e42a1106-f26d-4ced-a765-a57b68927334",
+      "result": "ok"
+    },
+    {
+      "url": "https://twitter.com/abhishesh",
+      "status": 200,
+      "finalUrl": "https://x.com/abhishesh",
+      "result": "ok"
+    },
+    {
+      "url": "https://vsco.co/attaboyabhi/gallery",
+      "status": 403,
+      "finalUrl": "https://vsco.co/attaboyabhi/gallery",
+      "result": "restricted"
+    },
+    {
+      "url": "https://vsco.co/attaboyabhi/media/65c395b793559a0b87ef31b8",
+      "status": 403,
+      "finalUrl": "https://vsco.co/attaboyabhi/media/65c395b793559a0b87ef31b8",
+      "result": "restricted"
+    },
+    {
+      "url": "https://vsco.co/attaboyabhi/media/66d892fdcb549a1437fac762",
+      "status": 403,
+      "finalUrl": "https://vsco.co/attaboyabhi/media/66d892fdcb549a1437fac762",
+      "result": "restricted"
+    },
+    {
+      "url": "https://www.dpreview.com/reviews/canon-eos-70d",
+      "status": 403,
+      "finalUrl": "https://www.dpreview.com/reviews/canon-eos-70d",
+      "result": "restricted"
+    },
+    {
+      "url": "https://www.flickr.com/photos/abhishesh-sharma/albums/",
+      "status": 200,
+      "finalUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.flickr.com/photos/abhishesh-sharma/albums/72157650306560376/",
+      "status": 200,
+      "finalUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72157650306560376/",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.flickr.com/photos/abhishesh-sharma/albums/72157651775379899/",
+      "status": 200,
+      "finalUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72157651775379899/",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.flickr.com/photos/abhishesh-sharma/albums/72157652951357102/",
+      "status": 200,
+      "finalUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72157652951357102/",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.flickr.com/photos/abhishesh-sharma/albums/72157671074602024/with/34523847754",
+      "status": 200,
+      "finalUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72157671074602024/with/34523847754",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314033137/",
+      "status": 200,
+      "finalUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314033137/",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314033207/",
+      "status": 200,
+      "finalUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314033207/",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314040692/",
+      "status": 200,
+      "finalUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314040692/",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314042365/",
+      "status": 200,
+      "finalUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720314042365/",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720322536997/",
+      "status": 403,
+      "finalUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720322536997/",
+      "result": "restricted"
+    },
+    {
+      "url": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720322557197/",
+      "status": 200,
+      "finalUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720322557197/",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720322557431/",
+      "status": 200,
+      "finalUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720322557431/",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720322573168/",
+      "status": 200,
+      "finalUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720322573168/",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720327345765/",
+      "status": 200,
+      "finalUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720327345765/",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720327366393/",
+      "status": 200,
+      "finalUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720327366393/",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720327370819/",
+      "status": 200,
+      "finalUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720327370819/",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720329015948/",
+      "status": 200,
+      "finalUrl": "https://www.flickr.com/photos/abhishesh-sharma/albums/72177720329015948/",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.fotga.com/",
+      "status": 200,
+      "finalUrl": "https://www.fotga.com/",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.imdb.com/list/ls561133549/",
+      "status": 202,
+      "finalUrl": "https://www.imdb.com/list/ls561133549/",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.kenrockwell.com/canon/lenses/50mm-f18.htm",
+      "status": 403,
+      "finalUrl": "https://www.kenrockwell.com/canon/lenses/50mm-f18.htm",
+      "result": "restricted"
+    },
+    {
+      "url": "https://www.linkedin.com/in/abhishesh/",
+      "status": 999,
+      "finalUrl": "https://www.linkedin.com/in/abhishesh",
+      "result": "restricted"
+    },
+    {
+      "url": "https://www.lksamyang.com/en/product/product-view.php?seq=311",
+      "status": 200,
+      "finalUrl": "https://www.lksamyang.com/en/product/product-view.php?seq=311",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.parfumo.com/Users/abhishesh/Collection",
+      "status": 200,
+      "finalUrl": "https://www.parfumo.com/Users/abhishesh/Collection",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.pentaxforums.com/lensreviews/S-M-C-Super-Takumar-135mm-F3.5.html",
+      "status": 403,
+      "finalUrl": "https://www.pentaxforums.com/lensreviews/S-M-C-Super-Takumar-135mm-F3.5.html",
+      "result": "restricted"
+    },
+    {
+      "url": "https://www.pentaxforums.com/userreviews/vivitar-series-1-100-500mm-f5-6-8.html",
+      "status": 403,
+      "finalUrl": "https://www.pentaxforums.com/userreviews/vivitar-series-1-100-500mm-f5-6-8.html",
+      "result": "restricted"
+    },
+    {
+      "url": "https://www.rokkorfiles.com/Battle%20of%2050s2.htm",
+      "status": 200,
+      "finalUrl": "https://www.rokkorfiles.com/Battle%20of%2050s2.htm",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.sigma-global.com/en/accessories/mc-11/",
+      "status": 200,
+      "finalUrl": "https://www.sigma-global.com/en/accessories/mc-11/",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.sony.com.sg/electronics/camera-lenses/sel100400gm",
+      "status": 200,
+      "finalUrl": "https://www.sony.com.sg/electronics/camera-lenses/sel100400gm",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.sony.com.sg/electronics/camera-lenses/sel14tc",
+      "status": 200,
+      "finalUrl": "https://www.sony.com.sg/electronics/camera-lenses/sel14tc",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.sony.com.sg/electronics/camera-lenses/sel28f20-series",
+      "status": 200,
+      "finalUrl": "https://www.sony.com.sg/lenses/e-mount",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.sony.com.sg/microsite/promotions/product.html?series=7R%20V%2035mm%20full-frame%20camera%20with%2061.0MP&category=interchangeable_lens_cameras&sub_category=ilc_cameras&model=ILCE-7RM5&name=ILCE-7RM5",
+      "status": 200,
+      "finalUrl": "https://www.sony.com.sg/microsite/promotions/product.html?series=7R%20V%2035mm%20full-frame%20camera%20with%2061.0MP&category=interchangeable_lens_cameras&sub_category=ilc_cameras&model=ILCE-7RM5&name=ILCE-7RM5",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.stenersenoutdoors.com/blog/pentacon-an-imperfect-jewel-according-to-my-taste-anyway",
+      "status": 200,
+      "finalUrl": "https://www.stenersenoutdoors.com/blog/pentacon-an-imperfect-jewel-according-to-my-taste-anyway",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.stevehuffphoto.com/2016/12/22/voigtlander-nokton-58mm-f1-4-ii-lens-review-going-retro-by-craig-litten/",
+      "status": 200,
+      "finalUrl": "https://www.stevehuffphoto.com/2016/12/22/voigtlander-nokton-58mm-f1-4-ii-lens-review-going-retro-by-craig-litten/",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.tamron.com/global/consumer/lenses/a036/",
+      "status": 200,
+      "finalUrl": "https://www.tamron.com/global/consumer/lenses/a036/",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=0RQtwftu92Y",
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=0RQtwftu92Y",
+      "result": "ok"
+    }
+  ]
+}

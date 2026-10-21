@@ -140,7 +140,8 @@ h2 {
 h3 {
   font-size: 1.45rem;
 }
-h4 {
+h4,
+.subsection-title {
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -552,7 +553,8 @@ td a {
 .region-block {
   padding-block: 1rem;
 }
-.region-block h4 {
+.region-block h4,
+.subsection-title {
   margin-top: 0;
 }
 .chip-row {

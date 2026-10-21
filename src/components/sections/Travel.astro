@@ -40,7 +40,7 @@ import { travelRegions, totalCountries, totalRegions } from '../../lib/content';
 
   {travelRegions.map((region) => (
     <div class="region-block">
-      <h4>{region.data.region}</h4>
+      <h3 class="subsection-title">{region.data.region}</h3>
       <div class="chip-row">
         {region.data.countries.map((c) =>
           c.albumUrl ? (

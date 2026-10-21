@@ -1,3 +1,5 @@
+> Historical design notes from before the Jestsee-inspired migration. The current design and architecture are documented in [docs/MIGRATION.md](docs/MIGRATION.md); styles live in `src/styles/global.css`.
+
 # Design System — abhishesh.com
 
 Personal portfolio for Abhishesh Sharma. Minimal, typographic, monospace-first.

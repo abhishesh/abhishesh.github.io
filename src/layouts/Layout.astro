@@ -13,7 +13,10 @@ const {
   description = 'Chasing clicks, caffeine, colognes, crisp sound, and constant jaunts — while making data boringly reliable. The personal website of Abhishesh Sharma.',
   noindex = false,
 } = Astro.props;
-const canonical = new URL(noindex ? '/404.html' : Astro.url.pathname, Astro.site);
+const canonical = new URL(
+  noindex ? '/404.html' : Astro.url.pathname,
+  Astro.site,
+);
 ---
 
 <!doctype html>
